@@ -6,9 +6,9 @@ header =
   selectable = { AFG ALB ARG AST AUS BEL BHU BOL BRA BUL CAN CGX CHC CHI CHL COL COS CSX CUB CXB CYN CZE DEN DOM ECU ENG EST ETH FIN FRA GER GRE GUA HAI HOL HON HUN IRE IRQ ITA 
 		 JAP LAT LIB LIT LUX MAN MEX MON NEP NIC NOR NZL OMN PAN PAR PER PHI POL POR PRU ROM SOV SWE SAF SAL SAU SCH SIA SIK SPR TAN TIB TUR URU USA VEN YEM YUG   
                }
-  ENG        = { }
-  FRA        = { }
   HON        = { }
+  FRA        = { }
+  ENG        = { }
   GER        = { }
   SOV        = { }
   POL        = { }
