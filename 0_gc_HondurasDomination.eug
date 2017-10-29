@@ -21,7 +21,7 @@ globaldata =
 { startdate = { year = 1936 month = january day = 0 }
   axis =
   { id          = { type = 15000 id = 2 }
-    participant = { GER DEN ICL EST FIN EST LAT LIT NOR SWE JAP MAN ITA}
+    participant = { GER DEN ICL FIN NOR SWE JAP MAN ITA }
   }
   allies =
   { id          = { type = 15000 id = 1 }
@@ -29,11 +29,37 @@ globaldata =
   }
   comintern =
   { id          = { type = 15000 id = 3 }
-    participant = { SOV MON TAN}
+    participant = { SOV MON TAN }
   }
   alliance =
   { id          = { type = 15000 id = 10 }
     participant = { CHI CXB }
+  }
+  war =
+  { id        = { type = 9430 id = 1 }
+    date      = { year = 1935 month = october day = 3 }
+    enddate   = { year = 1936 month = january day = 0 }
+    attackers =
+    { id          = { type = 9430 id = 2 }
+      participant = { ITA }
+    }
+    defenders =
+    { id          = { type = 9430 id = 3 }
+      participant = { ETH }
+    }
+  }
+  war =
+  { id        = { type = 9430 id = 4 }
+    date      = { year = 1936 month = january day = 0 }
+    enddate   = { year = 1936 month = january day = 0 }
+    attackers =
+    { id          = { type = 9430 id = 5 }
+      participant = { CHC }
+    }
+    defenders =
+    { id          = { type = 9430 id = 6 }
+      participant = { CHI CXB }
+    }
   }
   # ########################### 1936 ############################
   treaty =
@@ -622,19 +648,6 @@ globaldata =
     startdate  = { year = 1935 month = december day = 30 }
     expirydate = { year = 1948 month = december day = 30 }
   }
-  treaty =
-  { id             = { type = 16384 id = 321 }
-    type           = trade
-    country        = "JAP"
-    country        = "SIA"
-    startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
-    energy         = -3
-    supplies       = -1.5
-    metal          = 2
-    rare_materials = 5
-    cancel         = no
-  }
   # ###################### 1936 TRADES #####################
   treaty =
   { id             = { type = 16384 id = 300 }
@@ -642,10 +655,10 @@ globaldata =
     country        = "HOL"
     country        = "BEL"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     oil            = -2
     rare_materials = -1
-    supplies       = 1
+    money          = 0.6667
   }
   treaty =
   { id         = { type = 16384 id = 301 }
@@ -653,10 +666,10 @@ globaldata =
     country    = "FRA"
     country    = "BEL"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
+    expirydate = { year = 2035 month = december day = 30 }
     metal      = -3
     energy     = -4
-    supplies   = 1
+    money      = 0.6667
   }
   treaty =
   { id         = { type = 16384 id = 302 }
@@ -664,22 +677,25 @@ globaldata =
     country    = "SWE"
     country    = "GER"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
-    metal      = -4
-    energy     = 8
-    cancel     = no
+    expirydate = { year = 2035 month = december day = 30 }
+    metal      = -27 # was 4 before 1.09
+    energy     = 24 # was 8 before 1.09
+    money      = 2.0000
+    #cancel    = no
   }
   treaty =
   { id         = { type = 16384 id = 303 }
-    type       = trade
+    tradeconvoy_id = { type = 13500 id = 173 } 
+	isoversea = yes 
+	type       = trade
     country    = "VEN"
     country    = "FRA"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
+    expirydate = { year = 2035 month = december day = 30 }
     oil        = -5
-    supplies   = 2
     energy     = 3
-    cancel     = no
+    money      = 0.8
+    #cancel    = no
   }
   treaty =
   { id             = { type = 16384 id = 304 }
@@ -687,13 +703,13 @@ globaldata =
     country        = "SOV"
     country        = "GER"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1941 month = december day = 30 }
-    # ## GER player has till 1941 before he loses the SOV materials
-    rare_materials = -4
-    metal          = -2
-    oil            = -10
-    supplies       = 3
-    cancel         = no
+    expirydate     = { year = 2035 month = december day = 30 }
+    # ## GER player has till 1941 before he loses the SOV materials (changed in 1.09 )
+    rare_materials = -18
+    #metal          = -9 # deleted in 1.09
+    #oil            = -30
+    money          = 4.8000
+    #cancel        = no
   }
   treaty =
   { id             = { type = 16384 id = 305 }
@@ -701,35 +717,42 @@ globaldata =
     country        = "HOL"
     country        = "GER"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
-    rare_materials = -4
-    metal          = -3
-    supplies       = 1
+    expirydate     = { year = 2035 month = december day = 30 }
+    rare_materials = -22
+    metal          = -19.0
+    money          = 7.6
     energy         = 12
   }
   treaty =
   { id             = { type = 16384 id = 306 }
-    type           = trade
+    tradeconvoy_id = { type = 13016 id = 1022 } 
+	isoversea = yes 
+	type           = trade
     country        = "HOL"
     country        = "JAP"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1942 month = july day = 30 }
-    # ## JAP player has till 1942 *max* before he goes down
-    rare_materials = -10
-    supplies       = 2
-    cancel         = no
+    expirydate     = { year = 2035 month = december day = 30 }
+    # ## JAP player has till 1942 *max* before he goes down (changed in 1.09 )
+    rare_materials = -3
+    money          = 0.8000
+    #cancel        = no
   }
   treaty =
   { id         = { type = 16384 id = 307 }
-    type       = trade
+    tradeconvoy_id = { type = 13016 id = 1023 } 
+	isoversea = yes 
+	type       = trade
     country    = "USA"
     country    = "JAP"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
+    expirydate = { year = 2035 month = december day = 30 }
     # ## USA can cancel deal through the Oil Embargo event
-    oil        = -6
-    supplies   = 2
-    cancel     = no
+    oil        = -72 # was 6 before 1.09
+    rare_materials = -34.5
+    metal      = -46.5
+    energy     = -72
+    money      = 34.6
+    #cancel    = no
   }
   treaty =
   { id         = { type = 16384 id = 308 }
@@ -737,10 +760,10 @@ globaldata =
     country    = "GER"
     country    = "ITA"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
-    energy     = -20
-    supplies   = 2
-    cancel     = no
+    expirydate = { year = 2035 month = december day = 30 }
+    energy     = -90
+    money      = 6.0000
+    #cancel    = no
   }
   treaty =
   { id         = { type = 16384 id = 309 }
@@ -748,10 +771,10 @@ globaldata =
     country    = "SAU"
     country    = "ITA"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
+    expirydate = { year = 2035 month = december day = 30 }
     oil        = -3.3
-    supplies   = 1
-    cancel     = no
+    money      = 0.66
+    #cancel    = no
   }
   treaty =
   { id             = { type = 16384 id = 310 }
@@ -759,58 +782,66 @@ globaldata =
     country        = "SIA"
     country        = "ITA"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -2.5
-    supplies       = 1
-    cancel         = no
+    money          = 0.6667
+    #cancel        = no
   }
   treaty =
   { id         = { type = 16384 id = 311 }
-    type       = trade
+    tradeconvoy_id = { type = 22000 id = 210 } 
+	isoversea = yes 
+	type       = trade
     country    = "USA"
     country    = "CHI"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1948 month = december day = 30 }
-    oil        = -4
-    energy     = -4
-    money      = 2
-    cancel     = no
+    expirydate = { year = 2035 month = december day = 30 }
+    oil        = -12
+    #energy     = -4
+    money      = 2.4000
+    #cancel    = no
   }
   treaty =
   { id             = { type = 16384 id = 312 }
-    type           = trade
+    tradeconvoy_id = { type = 10600 id = 21 } 
+	isoversea = yes 
+	type           = trade
     country        = "HOL"
     country        = "NZL"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -2
     oil            = -1
-    supplies       = 1.1
-    cancel         = no
+    money          = 0.7334
+    #cancel        = no
   }
   treaty =
   { id             = { type = 16384 id = 313 }
-    type           = trade
+    tradeconvoy_id = { type = 20000 id = 22 } 
+	isoversea = yes 
+	type           = trade
     country        = "HOL"
     country        = "CAN"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -8
     energy         = 3
-    supplies       = 2.2
-    cancel         = no
+    money          = 1.9334
+    #cancel        = no
   }
   treaty =
   { id             = { type = 16384 id = 314 }
-    type           = trade
+    tradeconvoy_id = { type = 10500 id = 48 } 
+	isoversea = yes 
+	type           = trade
     country        = "HOL"
     country        = "AST"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -4
     oil            = -1
-    supplies       = 2
-    cancel         = no
+    money          = 1.2667
+    #cancel        = no
   }
   treaty =
   { id         = { type = 16384 id = 315 }
@@ -818,10 +849,10 @@ globaldata =
     country    = "SOV"
     country    = "GER"
     startdate  = { year = 1935 month = december day = 30 }
-    expirydate = { year = 1941 month = december day = 30 }
-    oil        = -13
-    supplies   = 5
-    cancel     = no
+    expirydate = { year = 2035 month = december day = 30 }
+    oil        = -50
+    money      = 10.0
+    #cancel    = no
   }
   treaty =
   { id             = { type = 16384 id = 316 }
@@ -829,19 +860,21 @@ globaldata =
     country        = "HOL"
     country        = "NOR"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -2
-    supplies       = 1
+    money          = 0.5334
   }
   treaty =
   { id             = { type = 16384 id = 317 }
-    type           = trade
+    tradeconvoy_id = { type = 18500 id = 48 } 
+	isoversea = yes 
+	type           = trade
     country        = "HOL"
     country        = "MEX"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -4
-    supplies       = 2
+    money          = 1.0667
   }
   treaty =
   { id             = { type = 16384 id = 318 }
@@ -849,20 +882,22 @@ globaldata =
     country        = "HOL"
     country        = "CHI"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -4
-    supplies       = 2
-    cancel         = no
+    money          = 1.0667
+    #cancel        = no
   }
   treaty =
   { id             = { type = 16384 id = 319 }
-    type           = trade
+    tradeconvoy_id = { type = 18500 id = 49 } 
+	isoversea = yes 
+	type           = trade
     country        = "HOL"
     country        = "PRU"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -4
-    supplies       = 2
+    money          = 1.0667
   }
   treaty =
   { id             = { type = 16384 id = 320 }
@@ -870,11 +905,324 @@ globaldata =
     country        = "SPR"
     country        = "ITA"
     startdate      = { year = 1935 month = december day = 30 }
-    expirydate     = { year = 1948 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
     rare_materials = -4
-    supplies       = 2
+    money          = 1.0667
   }
-  enddate   = { year = 1954 month = january day = 0 }
+  treaty =
+  { id             = { type = 16384 id = 321 }
+    tradeconvoy_id = { type = 13016 id = 1024 } 
+	isoversea = yes 
+	type           = trade
+    country        = "SIA" # Order was JAP, SIA before 1.09
+    country        = "JAP"
+    startdate      = { year = 1935 month = december day = 30 }
+    expirydate     = { year = 2035 month = december day = 30 }
+    energy         = 3
+    money          = 1.4
+    metal          = -2
+    rare_materials = -5
+    #cancel        = no
+  } 
+	treaty = { 
+		id = { type = 16384 id = 322 } 
+		type = trade 
+		country = "CHI" 
+		country = "CSX" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		supplies = -1.9
+		energy = 6.6
+		metal = 8.4
+		rare_materials = -3.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 323 } 
+		type = trade 
+		country = "CHI" 
+		country = "CYN" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		supplies = -6.4
+		energy = -4.0
+		metal = 16.0
+		rare_materials = 2.6 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 324 } 
+		type = trade 
+		country = "HOL" 
+		country = "ITA" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -3.0 
+		metal = -30.0
+		money = 4.8 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 325 } 
+		type = trade 
+		country = "PER" 
+		country = "ITA" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		supplies = 3.0
+		oil = -31.0
+		money = 5.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 326 } 
+		type = trade 
+		country = "CHI" 
+		country = "GER" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -9.0 
+		metal = -30.0
+		money = 6.4 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 327 } 
+		tradeconvoy_id = { type = 23500 id = 220 } 
+		isoversea = yes 
+		type = trade 
+		country = "ENG" 
+		country = "ITA" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -6.0 
+		metal = -6.0 
+		money = 2.4 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 328 } 
+		type = trade 
+		country = "GER" 
+		country = "HUN" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		energy = -30.0
+		money = 2.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 329 } 
+		type = trade 
+		country = "GER" 
+		country = "YUG" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		energy = -30.0
+		money = 2.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 330 } 
+		type = trade 
+		country = "GER" 
+		country = "ROM" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		energy = -21.0
+		money = 1.4 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 331 } 
+		type = trade 
+		country = "SWE" 
+		country = "ROM" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		metal = -15.0 
+		money = 2.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 332 } 
+		type = trade 
+		country = "SOV" 
+		country = "ROM" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -7.5 
+		money = 2.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 333 } 
+		type = trade 
+		country = "GER" 
+		country = "BUL" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		energy = -30.0
+		money = 2.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 334 } 
+		type = trade 
+		country = "SWE" 
+		country = "BUL" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		metal = -7.5 
+		money = 1.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 335 } 
+		type = trade 
+		country = "SOV" 
+		country = "BUL" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -7.5 
+		money = 2.0 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 336 } 
+		type = trade 
+		country = "CHI" 
+		country = "CGX" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		supplies = -5.1
+		energy = 12.0
+		metal = 8.1
+		rare_materials = 5.1 
+		money = -1.2 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 337 } 
+		type = trade 
+		country = "SOV" 
+		country = "HUN" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -4.5 
+		money = 1.2 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 338 } 
+		tradeconvoy_id = { type = 19800 id = 41 } 
+		isoversea = yes 
+		type = trade 
+		country = "ENG" 
+		country = "YUG" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -6.0 
+		money = 1.6 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 339 } 
+		tradeconvoy_id = { type = 18600 id = 74 } 
+		isoversea = yes 
+		type = trade 
+		country = "ENG" 
+		country = "POL" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -10.5 
+		metal = -6.0
+		money = 3.6 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 340 } 
+		tradeconvoy_id = { type = 13016 id = 1025 } 
+		isoversea = yes 
+		type = trade 
+		country = "MAN" 
+		country = "JAP" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		oil = 9.0
+		rare_materials = 6.0
+		metal = -1.5
+		energy = -9.0
+		money = -2.6
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 341 } 
+		type = trade 
+		country = "SOV" 
+		country = "SPR" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		oil = -20.0
+		metal = -3.0
+		energy = -30.0
+		money = 6.4 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 342 } 
+		type = trade 
+		country = "SOV" 
+		country = "PER" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		rare_materials = -1.5
+		metal = -3.0
+		energy = -7.5
+		money = 1.3 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 343 } 
+		type = trade 
+		country = "CHI" 
+		country = "CXB" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		supplies = -5.7
+		rare_materials = 0.9 
+		metal = 0.9
+		energy = 1.8
+		money = 1.8 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 344 } 
+		type = trade 
+		country = "SOV" 
+		country = "CZE" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		oil = -9.0
+		rare_materials = -9.0 
+		metal = -3.0
+		money = 4.6 
+		cancel = yes 
+		} 
+	treaty = { 
+		id = { type = 16384 id = 345 } 
+		tradeconvoy_id = { type = 12700 id = 290 } 
+		isoversea = yes 
+		type = trade 
+		country = "USA" 
+		country = "ENG" 
+		startdate = { year = 1935 month = december day = 30 } 
+		expirydate = { year = 2035 month = december day = 30 } 
+		oil = -50.0
+		money = 10.0 
+		cancel = yes 
+		}
+  enddate   = { year = 1964 month = january day = 0 }
 }
 # ###################
 event      = "db\events\AI_GER.txt"
@@ -939,6 +1287,8 @@ event      = "db\events\AI_POL.txt"
 event      = "db\events\AI_MON.txt"
 event      = "db\events\AI_HOL.txt"
 event      = "db\events\AI_BEL.txt"
+#event      = "db\events\ai_disbanding.txt"
+#event      = "db\events\AI_Infra_CHI.txt"
 
 # Includes for global data
 include = "db\events.txt"
