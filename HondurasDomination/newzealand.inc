@@ -9,7 +9,7 @@ province =
   anti_air   = 2
   air_base   = { size = 3 current_size = 3 }
 }              # Wellington
-
+province = { id = 1872 supplypool = 50 } # Christchurch
 #####################
 # Country main data #
 #####################
@@ -21,12 +21,17 @@ country =
   metal                  = 1000
   rare_materials         = 500
   oil                    = 500
-  supplies               = 500
+  supplies               = 450
   money                  = 10
-  transports             = 100
+  consumer = 0.3500 
+  supply = 0.1000 
+  production = 0.5000 
+  reinforcement = 0.0500 
+  upgrading = 0.0000 
+  transports             = 64
   escorts                = 15
   capital                = 1871
-  manpower               = 18
+  manpower               = 17.8 # 18 - building queue
   diplomacy =
   { relation = { tag = AST value = 200 } # was access = yes
     relation = { tag = BEL value = 20 }
@@ -34,7 +39,8 @@ country =
     relation = { tag = CAN value = 200 } # was access = yes
     relation = { tag = ENG value = 200 } # was access = yes
     relation = { tag = FIN value = 50 }
-    relation = { tag = FRA value = 150 }
+    relation = { tag = SWE value = 29 }
+	relation = { tag = FRA value = 150 }
     relation = { tag = GER value = 1 }
     relation = { tag = IRE value = 75 }
     relation = { tag = IRQ value = 100 }
@@ -179,5 +185,76 @@ country =
       type  = transport
       model = 0
     }
-  }
+  } 
+	convoy = { 
+		id = { type = 10600 id = 18 } 
+		istradeconvoy = no 
+		transports = 5 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = no 
+		supplies = no 
+		path = { 1872 2105 1871 } 
+		} 
+	convoy = { 
+		id = { type = 10600 id = 21 } 
+		trade_id = { type = 16384 id = 312 } 
+		istradeconvoy = yes 
+		transports = 31 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = yes 
+		supplies = no 
+		path = { 1871 2105 1977 1980 1981 1986 1987 1968 1963 2574 2575 2576 2524 2539 2540 2314 2312 2353 2354 2361 2371 2421 2599 2400 2399 2472 2395 46 } 
+		} 
+	province_development = { 
+		id = { type = 10600 id = 19 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1871 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = march 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2072 
+		days_for_first = 132 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10600 id = 20 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1868 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = may 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2409 
+		days_for_first = 132 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

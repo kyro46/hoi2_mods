@@ -33,7 +33,7 @@ province =
 country =
 { tag                    = BEL
   capital                = 51
-  manpower               = 40
+  manpower               = 38 # 40 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -41,7 +41,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 20
-  transports             = 100
+  consumer = 0.2880 
+  supply = 0.1060 
+  production = 0.6060 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  transports             = 60
   escorts                = 20
   diplomacy =
   { relation = { tag = AST value = 75 }
@@ -242,5 +247,281 @@ country =
       name = "2de Smaldeel"
       type = transport
     }
-  }
+  } 
+	convoy = { 
+		id = { type = 11500 id = 26 } 
+		istradeconvoy = no 
+		transports = 40 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = no 
+		supplies = no 
+		path = { 1095 2277 2286 2287 2288 2580 2295 2594 2300 2593 2424 2595 2420 2596 2414 2413 2412 2395 45 } 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 27 } 
+		name = "" 
+		progress = 0.0000 
+		location = 51 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 101 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 28 } 
+		name = "" 
+		progress = 0.0000 
+		location = 45 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 101 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 29 } 
+		name = "" 
+		progress = 0.0000 
+		location = 50 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 101 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 30 } 
+		name = "" 
+		progress = 0.0000 
+		location = 68 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 151 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 31 } 
+		name = "" 
+		progress = 0.0000 
+		location = 52 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 126 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 32 } 
+		name = "" 
+		progress = 0.0000 
+		location = 65 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 126 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 33 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1127 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = april 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2620 
+		days_for_first = 126 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 34 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1144 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = march 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 36 
+		done = 0 
+		days = 2861 
+		days_for_first = 151 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 35 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1073 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = march 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 36 
+		done = 0 
+		days = 2861 
+		days_for_first = 252 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 36 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1098 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = april 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2620 
+		days_for_first = 252 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	division_development = { 
+		id = { type = 11500 id = 37 } 
+		name = "Escadrille La Comète" 
+		progress = 0.0000 
+		location = 51 
+		cost = 9.2400 
+		date = { 
+			year = 1938 
+			month = may 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 839 
+		days_for_first = 122 
+		gearing_bonus = 0.0000 
+		type = interceptor 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		}
 }

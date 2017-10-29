@@ -24,8 +24,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 20
+  consumer = 0.2000 
+  supply = 0.0500 
+  production = 0.7500 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 811
-  manpower               = 12
+  manpower               = 11.8 # 12 - building queue
   transports             = 30
   escorts                = 4
   policy =
@@ -95,5 +100,76 @@ country =
       type     = cavalry
       extra    = artillery
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 15800 id = 5 } 
+		name = "" 
+		progress = 0.0000 
+		location = 811 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = august 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2373 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 15800 id = 6 } 
+		name = "" 
+		progress = 0.0000 
+		location = 804 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = august 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2373 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+#	province_development = { 
+#		id = { type = 15800 id = 7 } 
+#		name = "" 
+#		progress = 0.0000 
+#		location = 810 
+#		cost = 2.0000 
+#		date = { 
+#			year = 1952 
+#			month = june 
+#			day = 17 
+#			hour = 0 
+#			} 
+#		manpower = 0.1000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 28 
+#		done = 0 
+#		days = 2373 
+#		days_for_first = 262 
+#		gearing_bonus = 0.0000 
+#		type = infrastructure 
+#		} 
 }

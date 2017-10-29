@@ -15,7 +15,7 @@ province =
 
 country =
 { tag                    = BOL
-  manpower               = 8
+  manpower               = 7.8 # 8 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -23,6 +23,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2186 
+  supply = 0.0757 
+  production = 0.7057 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 832
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -99,5 +104,52 @@ country =
       type     = cavalry
       model    = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 17000 id = 1 } 
+		name = "" 
+		progress = 0.0000 
+		location = 832 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = april 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 1895 
+		days_for_first = 205 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 17000 id = 2 } 
+		name = "" 
+		progress = 0.0000 
+		location = 838 
+		cost = 2.0000 
+		date = { 
+			year = 1950 
+			month = december 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2161 
+		days_for_first = 205 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

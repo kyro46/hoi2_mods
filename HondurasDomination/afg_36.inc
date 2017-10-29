@@ -12,7 +12,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 110
+  consumer = 0.0000 
+  supply = 0.1000 
+  production = 0.8000 
+  reinforcement = 0.1000 
+  upgrading = 0.0000 
+  manpower               = 109.9 # 110 - building queue
   capital                = 1486
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -31,13 +36,17 @@ country =
   # Group E 1936 techs
   # ######################
   # Basic Armoured Car
-  techapps               = { 2150 2290 1010 1190 }
+  techapps               = { 2150 2290 1010 1190 5080 }
+  blueprints             = { 6010 }
   diplomacy =
   { relation = { tag = ENG value = -75 }
-    relation = { tag = ITA value = 50 }
+    relation = { tag = CHI value = 4 }
+	relation = { tag = ITA value = 50 }
     relation = { tag = PER value = 25 }
     relation = { tag = SAU value = 50 }
-    relation = { tag = SOV value = 1 }
+    relation = { tag = GER value = 8 }
+    relation = { tag = JAP value = 2 }
+	relation = { tag = SOV value = 1 }
     relation = { tag = TUR value = 50 }
   }
   headofstate            = { type = 9 id = 54001 }
@@ -114,5 +123,29 @@ country =
       strength = 100
       type     = militia
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 10000 id = 11 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1486 
+		cost = 2.0000 
+		date = { 
+			year = 1949 
+			month = march 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 985 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		}
 }

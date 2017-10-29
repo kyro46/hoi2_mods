@@ -25,8 +25,13 @@ country =
   oil                    = 200
   supplies               = 200
   money                  = 10
+  consumer = 0.1940 
+  supply = 0.0060 
+  production = 0.8000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1819
-  manpower               = 5
+  manpower               = 4.9 # 5 - building queue
   transports             = 12
   escorts                = 2
   policy =
@@ -46,7 +51,7 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
   diplomacy =
   { relation = { tag = AST value = 150 }
     relation = { tag = BHU value = 150 }
@@ -84,5 +89,29 @@ country =
       type     = cavalry
       strength = 15
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 11114 id = 3 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1819 
+		cost = 2.0000 
+		date = { 
+			year = 1950 
+			month = june 
+			day = 4 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2938 
+		days_for_first = 285 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

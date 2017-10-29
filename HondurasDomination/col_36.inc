@@ -24,7 +24,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 28
+  consumer = 0.3300 
+  supply = 0.0327 
+  production = 0.6373 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = 27.7 # 28 - building queue
   capital                = 813
   transports             = 10
   escorts                = 2
@@ -101,5 +106,75 @@ country =
       type  = destroyer
       model = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 23000 id = 4004 } 
+		name = "" 
+		progress = 0.0000 
+		location = 813 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = september 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23000 id = 4005 } 
+		name = "" 
+		progress = 0.0000 
+		location = 803 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = august 
+			day = 28 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 106 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23000 id = 4006 } 
+		name = "" 
+		progress = 0.0000 
+		location = 890 
+		cost = 2.0000 
+		date = { 
+			year = 1952 
+			month = august 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

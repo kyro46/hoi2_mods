@@ -1,6 +1,6 @@
 province = {
 	id = 1433
-	ic = { size = 2 current_size = 2 }
+	ic = { size = 4 current_size = 4 }
 } # Urumqi
 
 ##############################
@@ -16,8 +16,13 @@ country =
   oil                    = 5000
   supplies               = 2000
   money                  = 10
+  consumer = 0.0000 
+  supply = 0.0000 
+  production = 1.0000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1433 # Urumqi
-  manpower               = 200
+  manpower               = 199.9 # 200 - building queue
   dissent                = 30
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -36,11 +41,15 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
+  blueprints             = { 6210 }
   diplomacy =
   { relation = { tag = CHC value = 40 }
     relation = { tag = SOV value = 125 }
     relation = { tag = TAN value = 125 }
+	relation = { tag = GER value = 2 }
+	relation = { tag = JAP value = 2 }
+	relation = { tag = ITA value = 2 }
   }
   headofstate            = { type = 9 id = 72001 }
   headofgovernment       = { type = 9 id = 72002 }
@@ -71,5 +80,29 @@ country =
       name = "8 Xin'jiang LÅE"
       type = militia
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 25600 id = 5 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1433 
+		cost = 2.0000 
+		date = { 
+			year = 1950 
+			month = april 
+			day = 20 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2914 
+		days_for_first = 285 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

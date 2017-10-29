@@ -9,6 +9,7 @@ province =
   anti_air   = 1
   air_base   = { size = 2 current_size = 2 }
   naval_base = { size = 2 current_size = 2 }
+  supplypool = 100
 }              # Crete
 province =
 { id         = 401
@@ -24,14 +25,19 @@ province = { id = 411 landfort = 5 anti_air = 2 } # Salonika
 
 country =
 { tag                    = GRE
-  manpower               = 70
+  manpower               = 69.6 # 70 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
   rare_materials         = 500
   oil                    = 500
-  supplies               = 500
+  supplies               = 400
   money                  = 10
+  consumer = 0.2400 
+  supply = 0.1600 
+  production = 0.6000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 401
   transports             = 60
   escorts                = 15
@@ -222,22 +228,22 @@ country =
   # #######################################################
   navalunit =
   { id       = { type = 15500 id = 23 }
-    location = 401
+    location = 401 #Athens
     base     = 401
     name     = "Basilikos Stolos Ellenas"
     division =
     { id    = { type = 15500 id = 26 }
-      name  = "Georgios Averoff"
-      type  = light_cruiser
+      name  = "Georgios Averof"
+      type  = heavy_cruiser
       model = 0
-      extra1 = naval_fire_controll_s
-      extra2 = naval_anti_air_s
+      extra1 = naval_fire_controll_l
+      extra2 = naval_anti_air_l
       brigade_model1 = 0
       brigade_model2 = 1
     }
     division =
     { id    = { type = 15500 id = 27 }
-      name  = "Helle"
+      name  = "Elli"
       type  = light_cruiser
       model = 0
       extra1 = naval_fire_controll_s
@@ -283,5 +289,98 @@ country =
       name = "2. Metafero Naftiko"
       type = transport
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 15500 id = 32 } 
+		name = "" 
+		progress = 0.0000 
+		location = 401 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = october 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2355 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 15500 id = 33 } 
+		name = "" 
+		progress = 0.0000 
+		location = 411 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = october 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2355 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 15500 id = 34 } 
+		name = "" 
+		progress = 0.0000 
+		location = 403 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = october 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2355 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 15500 id = 35 } 
+		name = "" 
+		progress = 0.0000 
+		location = 395 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = october 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2355 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

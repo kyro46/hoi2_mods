@@ -23,8 +23,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 20
+  consumer = 0.2583 
+  supply = 0.0833 
+  production = 0.6584 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 840
-  manpower               = 15
+  manpower               = 14.7 # 15 - building queue
   transports             = 40
   escorts                = 6
   policy =
@@ -179,5 +184,75 @@ country =
       type  = submarine
       model = 1
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 12500 id = 14 } 
+		name = "" 
+		progress = 0.0000 
+		location = 840 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = october 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 12500 id = 15 } 
+		name = "" 
+		progress = 0.0000 
+		location = 839 
+		cost = 2.0000 
+		date = { 
+			year = 1952 
+			month = august 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 12500 id = 16 } 
+		name = "" 
+		progress = 0.0000 
+		location = 856 
+		cost = 2.0000 
+		date = { 
+			year = 1952 
+			month = august 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

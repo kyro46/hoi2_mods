@@ -26,7 +26,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 50
-  manpower               = 60
+  consumer = 0.3455 
+  supply = 0.1091 
+  production = 0.5454 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = 59.6 # 60 - building queue
   capital                = 417
   # navalunit = {
   # id = { type = 19000 id = 15 }
@@ -184,5 +189,98 @@ country =
       type     = infantry
       model    = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 19000 id = 15 } 
+		name = "" 
+		progress = 0.0000 
+		location = 417 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = august 
+			day = 28 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2412 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19000 id = 16 } 
+		name = "" 
+		progress = 0.0000 
+		location = 422 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = august 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2075 
+		days_for_first = 157 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19000 id = 17 } 
+		name = "" 
+		progress = 0.0000 
+		location = 420 
+		cost = 2.0000 
+		date = { 
+			year = 1952 
+			month = september 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2412 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19000 id = 18 } 
+		name = "" 
+		progress = 0.0000 
+		location = 421 
+		cost = 2.0000 
+		date = { 
+			year = 1952 
+			month = september 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2412 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

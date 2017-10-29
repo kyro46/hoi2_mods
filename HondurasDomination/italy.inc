@@ -60,7 +60,7 @@ province =
   naval_base = { size = 2 current_size = 2 }
   air_base   = { size = 4 current_size = 4 }
   oilpool    = 100
-  supplypool = 800
+  supplypool = 150 # was 800
 }              # Sardinia
 province =
 { id         = 919
@@ -81,7 +81,7 @@ province =
   naval_base = { size = 10 current_size = 10 }
   air_base   = { size = 10 current_size = 10 }
   oilpool    = 100
-  supplypool = 300
+  supplypool = 150 # was 200
 }              # Tripoli
 province =
 { id         = 1033
@@ -122,24 +122,29 @@ province = { id = 1056 oilpool = 100 supplypool = 300 } # Mogadishu
 
 country =
 { tag                    = ITA
-  manpower               = 900
+  manpower               = 893.8 # 900 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
   rare_materials         = 500
   oil                    = 500
-  supplies               = 2000
+  supplies               = 2800
   money                  = 50
+  consumer = 0.1627 
+  supply = 0.0000 
+  production = 0.3373 
+  reinforcement = 0.5000 
+  upgrading = 0.0000 
   belligerence           = 0 # to avoid MP problems
   capital                = 515
-  transports             = 400
-  escorts                = 100
+  transports             = 370
+  escorts                = 96
   # Illyrian Coast
-  diplomacy =
-  { relation = { tag = AFG value = 50 }
+  diplomacy = { 
+	relation = { tag = AFG value = 50 }
     relation =
     { tag        = ALB
-      value      = 10
+      value      = 12 access = yes 
       guaranteed = { day = 17 month = march year = 1934 }
     }
     relation = { tag = ARG value = 30 }
@@ -153,14 +158,18 @@ country =
     relation = { tag = BHU value = 1 }
     relation = { tag = BUL value = 150 }
     relation = { tag = CAN value = 1 }
-    relation = { tag = CHL value = 30 }
+    relation = { tag = CHI value = 4 }
+	relation = { tag = SIK value = 2 }
+	relation = { tag = CHL value = 30 }
     relation = { tag = CZE value = 15 }
+	relation = { tag = CGX value = 2 }
     relation = { tag = ENG value = -50 }
     relation = { tag = ETH value = -200 }
     relation = { tag = FIN value = 50 }
     relation = { tag = FRA value = -50 }
     relation = { tag = GER value = 50 }
-    relation =
+    relation = { tag = JAP value = 9 }
+	relation =
     { tag        = GRE
       value      = -35
       guaranteed = { day = 17 month = march year = 1934 }
@@ -177,13 +186,16 @@ country =
     relation = { tag = NZL value = 1 }
     relation = { tag = OMN value = 50 }
     relation = { tag = POR value = 65 }
-    relation =
+	relation = { tag = POL value = 3 }
+	relation = { tag = PER value = 4 }
+	relation =
     { tag        = ROM
       value      = 50
       guaranteed = { day = 17 month = march year = 1934 }
     }
-    relation = { tag = SAF value = 1 }
-    relation = { tag = SAU value = -25 }
+    relation = { tag = SAF value = 2 }
+    relation = { tag = SIA value = 3 }
+	relation = { tag = SAU value = -25 }
     relation =
     { tag        = SCH
       value      = 1
@@ -192,7 +204,7 @@ country =
     relation = { tag = SPR value = -50 }
     relation =
     { tag        = TUR
-      value      = 1
+      value      = 2
       guaranteed = { day = 17 month = march year = 1934 }
     }
     relation = { tag = YEM value = 50 }
@@ -403,6 +415,12 @@ country =
       type     = infantry
       model    = 1
       strength = 70
+    }
+    division =
+    { id       = { type = 23500 id = 78 }
+      name     = "7a Divisione CC.NN. 'Cirene'"
+      type     = militia
+      strength = 100
     }
   }
   landunit =
@@ -879,12 +897,6 @@ country =
     { id       = { type = 23500 id = 77 }
       name     = "6a Divisione CC.NN. 'Tevere'"
 	  #Gen. Enrico Boscardi
-      type     = militia
-      strength = 100
-    }
-    division =
-    { id       = { type = 23500 id = 78 }
-      name     = "7a Divisione CC.NN. 'Cirene'"
       type     = militia
       strength = 100
     }
@@ -1759,116 +1771,617 @@ country =
   # ################################################
   	### Warships Under Construction ###
   # ################################################
-  division_development =
-  { name  = "RN Littorio"
-    type  = battleship
-    model = 3
-      extra1 = naval_sa_l
-      extra2 = naval_fire_controll_l
-      extra3 = naval_spotter_l
-      extra4 = naval_anti_air_l
-      brigade_model1 = 1
-      brigade_model2 = 1
-      brigade_model3 = 0
-      brigade_model4 = 1
-    cost  = 6.9
-    id    = { type = 23500 id = 201 }
-    date  = { year = 1939 month = april day = 11 }
-  }
-  division_development =
-  { name  = "RN Vittorio Veneto"
-    type  = battleship
-    model = 3
-      extra1 = naval_sa_l
-      extra2 = naval_fire_controll_l
-      extra3 = naval_spotter_l
-      extra4 = naval_anti_air_l
-      brigade_model1 = 1
-      brigade_model2 = 1
-      brigade_model3 = 0
-      brigade_model4 = 1
-    cost  = 6.9
-    id    = { type = 23500 id = 202 }
-    date  = { year = 1939 month = april day = 13 }
-  }
-  division_development =
-  { name  = "RN Conte di Cavour"
-    type  = battleship
-    model = 1
-      extra1 = naval_sa_l
-      extra2 = naval_fire_controll_l
-      extra3 = naval_anti_air_l
-      brigade_model1 = 1
-      brigade_model2 = 1
-      brigade_model3 = 0
-    cost  = 4.8
-    id    = { type = 23500 id = 203 }
-    date  = { year = 1937 month = january day = 6 }
-  }
-  division_development =
-  { name  = "RN Giulio Cesare"
-    type  = battleship
-    model = 1
-      extra1 = naval_sa_l
-      extra2 = naval_fire_controll_l
-      extra3 = naval_anti_air_l
-      brigade_model1 = 1
-      brigade_model2 = 1
-      brigade_model3 = 0
-    cost  = 4.8
-    id    = { type = 23500 id = 204 }
-    date  = { year = 1937 month = january day = 10 }
-  }
-  division_development =
-  { name  = "RN Duca degli Abruzzi"
-    type  = light_cruiser
-    model = 3
-      extra1 = naval_fire_controll_s
-      extra2 = naval_spotter_s
-      brigade_model1 = 1
-      brigade_model2 = 0
-    cost  = 2.8
-    id    = { type = 23500 id = 205 }
-    date  = { year = 1937 month = december day = 1 }
-  }
-  division_development =
-  { name  = "RN Giuseppe Garibaldi"
-    type  = light_cruiser
-    model = 3
-      extra1 = naval_fire_controll_s
-      extra2 = naval_spotter_s
-      brigade_model1 = 1
-      brigade_model2 = 0
-    cost  = 2.8
-    id    = { type = 23500 id = 206 }
-    date  = { year = 1937 month = december day = 20 }
-  }
-  division_development =
-  { name  = "RN Eugenio di Savoia"
-    type  = light_cruiser
-    model = 2
-      extra1 = naval_fire_controll_s
-      extra2 = naval_spotter_s
-      brigade_model1 = 1
-      brigade_model2 = 0
-    cost  = 2.1
-    id    = { type = 23500 id = 29 }
-    date  = { year = 1936 month = january day = 16 }
-  }
-  division_development =
-  { name  = "10a Squadriglia Cacciatorpediniere"
-    type  = destroyer
-    model = 1
-    cost  = 2.9
-    id    = { type = 23500 id = 207 }
-    date  = { year = 1936 month = april day = 30 }
-  }
-  division_development =
-  { name  = "27a Flottiglia Sommergibili"
-    type  = submarine
-    model = 1
-    cost  = 3
-    id    = { type = 23500 id = 42 }
-    date  = { year = 1936 month = april day = 1 }
-  }
+  convoy = { 
+		id = { type = 23500 id = 219 } 
+		istradeconvoy = no 
+		transports = 10 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = no 
+		supplies = no 
+		path = { 534 2438 368 } 
+		} 
+	convoy = { 
+		id = { type = 23500 id = 220 } 
+		trade_id = { type = 16384 id = 327 } 
+		istradeconvoy = yes 
+		transports = 20 
+		escorts = 4 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = yes 
+		supplies = no 
+		path = { 368 2438 2435 2433 2432 2431 2430 2429 2428 2424 2595 2420 2597 2411 23 } 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 208 } 
+		name = "" 
+		progress = 0.0000 
+		location = 370 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = january 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 808 
+		days_for_first = 96 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 209 } 
+		name = "" 
+		progress = 0.0000 
+		location = 378 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = january 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 808 
+		days_for_first = 96 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 210 } 
+		name = "" 
+		progress = 0.0000 
+		location = 515 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = july 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1110 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 211 } 
+		name = "" 
+		progress = 0.0000 
+		location = 531 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 808 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 212 } 
+		name = "" 
+		progress = 0.0000 
+		location = 512 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = july 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1110 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 213 } 
+		name = "" 
+		progress = 0.0000 
+		location = 521 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = march 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1110 
+		days_for_first = 96 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 214 } 
+		name = "" 
+		progress = 0.0000 
+		location = 368 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = july 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 808 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 215 } 
+		name = "" 
+		progress = 0.0000 
+		location = 525 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = january 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 1412 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+#	province_development = { 
+#		id = { type = 23500 id = 216 } 
+#		name = "" 
+#		progress = 0.0000 
+#		location = 534 
+#		cost = 2.0000 
+#		date = { 
+#			year = 1945 
+#			month = january 
+#			day = 17 
+#			hour = 0 
+#			} 
+#		manpower = 0.1000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 28 
+#		done = 0 
+#		days = 1412 
+#		days_for_first = 144 
+#		gearing_bonus = 0.0000 
+#		type = infrastructure 
+#		} 
+	province_development = { 
+		id = { type = 23500 id = 217 } 
+		name = "" 
+		progress = 0.0000 
+		location = 517 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = october 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1865 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 218 } 
+		name = "" 
+		progress = 0.0000 
+		location = 513 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = october 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1865 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 221 } 
+		name = "" 
+		progress = 0.0000 
+		location = 515 
+		cost = 5.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 3024 
+		days_for_first = 302 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = ic 
+		} 
+#	division_development = { 
+#		id = { type = 23500 id = 205 } 
+#		name = "RN Duca degli Abruzzi" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 4.4025 
+#		date = { 
+#			year = 1936 
+#			month = june 
+#			day = 26 
+#			hour = 0 
+#			} 
+#		manpower = 1.4000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 176 
+#		gearing_bonus = 0.0000 
+#		type = light_cruiser 
+#		extra = none 
+#		extra1 = naval_fire_controll_s 
+#		extra2 = naval_spotter_s 
+#		extra3 = none 
+#		extra4 = none 
+#		model = 3 
+#		brigade_model = 0 
+#		brigade_model1 = 1 
+#		brigade_model2 = 0 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
+#	division_development = { 
+#		id = { type = 23500 id = 206 } 
+#		name = "RN Giuseppe Garibaldi" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 4.4025 
+#		date = { 
+#			year = 1936 
+#			month = june 
+#			day = 26 
+#			hour = 0 
+#			} 
+#		manpower = 1.4000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 176 
+#		gearing_bonus = 0.0000 
+#		type = light_cruiser 
+#		extra = none 
+#		extra1 = naval_fire_controll_s 
+#		extra2 = naval_spotter_s 
+#		extra3 = none 
+#		extra4 = none 
+#		model = 3 
+#		brigade_model = 0 
+#		brigade_model1 = 1 
+#		brigade_model2 = 0 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
+	division_development = { 
+		id = { type = 23500 id = 29 } 
+		name = "RN Eugenio di Savoia" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.5625 
+		date = { 
+			year = 1936 
+			month = january 
+			day = 14 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.9148 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 176 
+		gearing_bonus = 0.0000 
+		type = light_cruiser 
+		extra = none 
+		extra1 = naval_fire_controll_s 
+		extra2 = naval_spotter_s 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 23500 id = 42 } 
+		name = "27a Flottiglia Sommergibili" 
+		progress = 0.0000 
+		location = 0 
+		cost = 1.6800 
+		date = { 
+			year = 1939 
+			month = december 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.3000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0109 
+		size = 19 
+		done = 0 
+		days = 1 
+		days_for_first = 92 
+		gearing_bonus = 0.0000 
+		type = submarine 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+#	division_development = { 
+#		id = { type = 23500 id = 207 } 
+#		name = "10a Squadriglia Cacciatorpediniere" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 3.3600 
+#		date = { 
+#			year = 1936 
+#			month = april 
+#			day = 15 
+#			hour = 0 
+#			} 
+#		manpower = 0.6000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 105 
+#		gearing_bonus = 0.0000 
+#		type = destroyer 
+#		extra = none 
+#		extra1 = none 
+#		extra2 = none 
+#		extra3 = none 
+#		extra4 = none 
+#		model = 1 
+#		brigade_model = 0 
+#		brigade_model1 = 0 
+#		brigade_model2 = 0 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
+#	division_development = { 
+#		id = { type = 23500 id = 203 } 
+#		name = "RN Conte di Cavour" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 5.3983 
+#		date = { 
+#			year = 1937 
+#			month = january 
+#			day = 6 
+#			hour = 0 
+#			} 
+#		manpower = 1.4000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0518 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 386 
+#		gearing_bonus = 0.0000 
+#		type = battleship 
+#		extra = none 
+#		extra1 = naval_sa_l 
+#		extra2 = naval_fire_controll_l 
+#		extra3 = naval_anti_air_l 
+#		extra4 = none 
+#		model = 1 
+#		brigade_model = 0 
+#		brigade_model1 = 1 
+#		brigade_model2 = 1 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
+#	division_development = { 
+#		id = { type = 23500 id = 204 } 
+#		name = "RN Giulio Cesare" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 5.3983 
+#		date = { 
+#			year = 1937 
+#			month = january 
+#			day = 10 
+#			hour = 0 
+#			} 
+#		manpower = 1.4000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0415 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 386 
+#		gearing_bonus = 0.0000 
+#		type = battleship 
+#		extra = none 
+#		extra1 = naval_sa_l 
+#		extra2 = naval_fire_controll_l 
+#		extra3 = naval_anti_air_l 
+#		extra4 = none 
+#		model = 1 
+#		brigade_model = 0 
+#		brigade_model1 = 1 
+#		brigade_model2 = 1 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
+	division_development = { 
+		id = { type = 23500 id = 201 } 
+		name = "RN Littorio" 
+		progress = 0.0000 
+		location = 0 
+		cost = 7.0217 
+		date = { 
+			year = 1940 
+			month = may 
+			day = 23 
+			hour = 0 
+			} 
+		manpower = 2.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 4 
+		done = 0 
+		days = 1 
+		days_for_first = 428 
+		gearing_bonus = 0.0000 
+		type = battleship 
+		extra = none 
+		extra1 = naval_sa_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_spotter_l 
+		extra4 = naval_anti_air_l 
+		model = 3 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 1 
+		brigade_model3 = 0 
+		brigade_model4 = 1 
+		} 
+#	division_development = { 
+#		id = { type = 23500 id = 202 } 
+#		name = "RN Vittorio Veneto" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 7.0217 
+#		date = { 
+#			year = 1937 
+#			month = march 
+#			day = 8 
+#			hour = 0 
+#			} 
+#		manpower = 2.5000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 428 
+#		gearing_bonus = 0.0000 
+#		type = battleship 
+#		extra = none 
+#		extra1 = naval_sa_l 
+#		extra2 = naval_fire_controll_l 
+#		extra3 = naval_spotter_l 
+#		extra4 = naval_anti_air_l 
+#		model = 3 
+#		brigade_model = 0 
+#		brigade_model1 = 1 
+#		brigade_model2 = 1 
+#		brigade_model3 = 0 
+#		brigade_model4 = 1 
+#		}
 }

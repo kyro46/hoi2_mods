@@ -16,7 +16,7 @@ province =
 
 country =
 { tag                    = GUA
-  manpower               = 7
+  manpower               = 6.9 # 7 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -24,6 +24,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2857 
+  supply = 0.1429 
+  production = 0.5714 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 757
   transports             = 16
   escorts                = 2
@@ -37,7 +42,7 @@ country =
     defense_lobby     = 5
     interventionism   = 4
   }
-  nationalprovinces      = { 757 759 }
+  nationalprovinces      = { 757 758 }
   ownedprovinces         = { 757 }
   controlledprovinces    = { 757 }
   # ROTW Minor Tech '36
@@ -50,6 +55,7 @@ country =
   { relation = { tag = HON value = 100 }
     relation = { tag = USA value = 125 }
     relation = { tag = ENG value = 50 }
+	relation = { tag = MEX value = -65 }
   }
   headofstate            = { type = 9 id = 46001 }
   headofgovernment       = { type = 9 id = 46002 }
@@ -72,5 +78,29 @@ country =
       type     = infantry
       extra    = anti_air
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 16500 id = 66 } 
+		name = "" 
+		progress = 0.0000 
+		location = 757 
+		cost = 2.0000 
+		date = { 
+			year = 1948 
+			month = august 
+			day = 23 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2585 
+		days_for_first = 287 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		}
 }

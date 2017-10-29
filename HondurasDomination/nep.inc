@@ -14,8 +14,13 @@ country =
   oil                    = 200
   supplies               = 200
   money                  = 10
+  consumer = 0.3286 
+  supply = 0.1000 
+  production = 0.5714 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1473
-  manpower               = 7
+  manpower               = 6.9 # 7 - building queue
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 4
@@ -33,7 +38,7 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
   diplomacy =
   { relation = { tag = AST value = 200 }
     relation = { tag = BHU value = 200 }
@@ -73,5 +78,29 @@ country =
       name = "Royal Household Division"
       type = infantry
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 31500 id = 4 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1473 
+		cost = 2.0000 
+		date = { 
+			year = 1949 
+			month = january 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2654 
+		days_for_first = 285 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

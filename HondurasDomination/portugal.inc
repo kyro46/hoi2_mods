@@ -72,21 +72,41 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 15
+  consumer = 0.2111 
+  supply = 0.0556 
+  production = 0.7333 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 336
-  manpower               = 70
-  transports             = 100
+  manpower               = 69.5 # 70 - building queue
+  transports             = 85
   escorts                = 7
   # Azores
   diplomacy =
-  { relation = { tag = BEL value = -20 }
+  { relation = { tag = AUS value = 10 }
+	relation = { tag = ALB value = 27 }
+	relation = { tag = BEL value = -20 }
     relation = { tag = BRA value = 75 }
-    relation = { tag = ENG value = 100 }
+	relation = { tag = MAN value = 2 }
+    relation = { tag = HUN value = 5 }
+	relation = { tag = ENG value = 100 }
     relation = { tag = FIN value = 50 }
     relation = { tag = GER value = 75 }
     relation = { tag = IRE value = 25 }
     relation = { tag = ITA value = 65 }
     relation = { tag = SAF value = 125 access = yes }
     relation = { tag = SPR value = -50 }
+    relation = { tag = SIA value = 29 }
+	relation = { tag = LIT value = 2 }
+	relation = { tag = LAT value = 3 }
+	relation = { tag = USA value = -4 }
+	relation = { tag = IRQ value = 2 }
+	relation = { tag = CAN value = 4 }
+	relation = { tag = MEX value = -21 }
+	relation = { tag = NOR value = -21 }
+	relation = { tag = SWE value = -22}
+	relation = { tag = LUX value = 0 }
+	
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 3 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 2 }
@@ -204,5 +224,133 @@ country =
       strength = 100
       model    = 0
     }
-  }
+  } 
+	convoy = { 
+		id = { type = 19600 id = 1013 } 
+		istradeconvoy = no 
+		transports = 15 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = no 
+		supplies = no 
+		path = { 1096 2277 2286 2287 2288 2580 2295 2594 2300 2593 2424 2426 336 } 
+		} 
+	province_development = { 
+		id = { type = 19600 id = 1014 } 
+		name = "" 
+		progress = 0.0000 
+		location = 336 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = july 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2228 
+		days_for_first = 114 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19600 id = 1015 } 
+		name = "" 
+		progress = 0.0000 
+		location = 335 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = september 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 26 
+		done = 0 
+		days = 2319 
+		days_for_first = 114 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19600 id = 1016 } 
+		name = "" 
+		progress = 0.0000 
+		location = 337 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = may 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 16 
+		done = 0 
+		days = 2319 
+		days_for_first = 171 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19600 id = 1017 } 
+		name = "" 
+		progress = 0.0000 
+		location = 344 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = may 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 2590 
+		days_for_first = 114 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19600 id = 1018 } 
+		name = "" 
+		progress = 0.0000 
+		location = 345 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = may 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 2590 
+		days_for_first = 114 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

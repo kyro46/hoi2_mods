@@ -20,7 +20,7 @@ province = { id = 533 landfort = 5 anti_air = 3 } # Zürich
 country =
 { tag                    = SCH
   capital                = 532
-  manpower               = 135
+  manpower               = 134.6 # 135 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -28,6 +28,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 25
+  consumer = 0.2750 
+  supply = 0.1000 
+  production = 0.6250 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 10
@@ -54,6 +59,10 @@ country =
     relation = { tag = ITA value = 1 }
     relation = { tag = SOV value = 1 }
     relation = { tag = USA value = 1 }
+	relation = { tag = CAN value = 3 }
+	relation = { tag = SWE value = 3 }
+	relation = { tag = MEX value = 3 }
+	
   }
   headofstate            = { type = 9 id = 17001 }
   headofgovernment       = { type = 9 id = 17002 }
@@ -165,5 +174,98 @@ country =
       type     = tactical_bomber
       model    = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 30600 id = 16 } 
+		name = "" 
+		progress = 0.0000 
+		location = 532 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = march 
+			day = 8 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1676 
+		days_for_first = 215 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30600 id = 17 } 
+		name = "" 
+		progress = 0.0000 
+		location = 533 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = october 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1405 
+		days_for_first = 129 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30600 id = 18 } 
+		name = "" 
+		progress = 0.0000 
+		location = 530 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = october 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1405 
+		days_for_first = 129 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30600 id = 19 } 
+		name = "" 
+		progress = 0.0000 
+		location = 372 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = august 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1676 
+		days_for_first = 215 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

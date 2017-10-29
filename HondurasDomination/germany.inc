@@ -3,15 +3,14 @@
 # Country definition for GER #
 ##############################
 
-province = { id = 66 landfort = 1 } # Aachen
 province =
 { id            = 67
   synthetic_oil = 1
   anti_air      = 3
   air_base      = { size = 4 current_size = 4 }
 }            # Essen
-province = { id = 74 landfort = 1 anti_air = 2 } # Saarbrücken
-province = { id = 75 landfort = 1 synthetic_oil = 1 } # Cologne
+province = { id = 74 anti_air = 2 } # Saarbrücken
+province = { id = 75 synthetic_oil = 1 } # Cologne
 province = { id = 76 anti_air = 2 } # Dortmund
 province =
 { id         = 80
@@ -44,8 +43,9 @@ province =
   anti_air = 2
   air_base = { size = 10 current_size = 10 }
 }            # Berlin
-province = { id = 302 synthetic_oil = 1 } # Stettin
-province = { id = 304 supplypool = 100 } # Elbing
+province = { id = 302 landfort = 1 synthetic_oil = 1 } # Stettin
+province = { id = 304 landfort = 1 supplypool = 100 } # Elbing
+province = { id = 308 landfort = 2 } # Küstrin
 province = { id = 310 anti_air = 1 synthetic_oil = 1 synthetic_rares = 1 } # Leipzig
 province = { id = 312 anti_air = 1 } # Nuremberg
 province =
@@ -55,11 +55,9 @@ province =
 }            # Frankfurt-am-Main
 province =
 { id       = 314
-  landfort = 1
   anti_air = 2
   air_base = { size = 4 current_size = 4 }
 }            # Stuttgart
-province = { id = 315 landfort = 1 } # Freiburg
 province =
 { id       = 376
   anti_air = 2
@@ -67,11 +65,14 @@ province =
 }            # Munich
 province =
 { id       = 473
+  landfort = 1
   anti_air = 2
   air_base = { size = 10 current_size = 10 }
 }            # Breslau
+province = { id = 482 landfort = 1 } # Oppeln
 province =
 { id         = 510
+  landfort   = 2 
   anti_air   = 4
   air_base   = { size = 10 current_size = 10 }
   naval_base = { size = 10 current_size = 10 }
@@ -85,7 +86,7 @@ country =
 { tag                    = GER
   peacetime_ic_mod       = 0.9
   capital                = 300
-  manpower               = 1800
+  manpower               = 1783.2 # 1800 - building queue
   transports             = 160
   escorts                = 30
   # Resource Reserves
@@ -95,9 +96,17 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 70
+  consumer = 0.1500 
+  supply = 0.1130 
+  production = 0.7370 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  expense_synthetic = 0.0000 
+  expense_synthetic_rares = 0.0000  
   diplomacy =
   { relation = { tag = ARG value = 75 }
-    relation = { tag = AST value = 1 }
+    relation = { tag = ALB value = 3 }
+	relation = { tag = AST value = 1 }
     relation =
     { tag        = AUS
       value      = 100
@@ -114,7 +123,8 @@ country =
     }
     relation = { tag = CAN value = 1 }
     relation = { tag = CHL value = 50 }
-    relation = { tag = COL value = -20 }
+    relation = { tag = CGX value = 2 }
+	relation = { tag = COL value = -20 }
     relation =
     { tag        = CZE
       value      = -25
@@ -145,11 +155,15 @@ country =
     }
     relation = { tag = JAP value = 20 }
     relation = { tag = LAT value = 10 }
-    relation = { tag = LIT value = 10 }
-    relation = { tag = LUX value = -50 }
+    relation = { tag = LIT value = 8 }
+    relation = { tag = LIB value = 10 }
+	relation = { tag = LUX value = -50 }
     relation = { tag = MAN value = 20 }
     relation = { tag = NEP value = 1 }
-    relation = { tag = NZL value = 1 }
+    relation = { tag = CHI value = 24 }
+	relation = { tag = SIK value = 2 }
+	relation = { tag = SIA value = 2 }
+	relation = { tag = NZL value = 1 }
     relation = { tag = OMN value = 1 }
     relation =
     { tag        = POL
@@ -229,11 +243,14 @@ country =
                            }
   # Germany 1936 techs
   # ######################
-  techapps               = { 1070 4010  4020  4120  4130  4250  2150  2010  2020  2030  2290  2300  2310  2320  2400  2450  2460  2510  1010  1020  1190 
-                             1200  1210  1220  1110  1310  5010  5020  5080  5090  5190  5310  5470  5480  5490  5550  9010  9020  9030  9040  9050 
-                             9090  6210  6220  6230  6240  6250  8010  8020  8030  8040  8050  8080  8150  8160  8170  3010  3020  3070  3080  3090 
-                             3100  3130  3140  3150  3160  3190  3200  3210  3220  3250  3260  3270  3280  3320  3400  3410  3420  14000 1380  5410
-                             5290 
+  techapps               = { 1010  1020  1070  1110  1190  1200  1210  1220  1310  1380  
+							 2010  2020  2030  2150  2290  2300  2310  2320  2400  2450  2460  2510  
+                             3010  3020  3070  3080  3090  3100  3130  3140  3150  3160  3190  3200  3210  3220  3250  3260  3270  3280  3320  3400  3410  3420  
+                             4010  4020  4120  4130  4250  
+							 5010  5020  5080  5090  5100  5190  5310  5470  5480  5490  5410  5290  5550  
+							 6210  6220  6230  6240  6250  14000  
+							 8010  8020  8030  8040  8050  8080  8150  8160  8170  
+							 9010  9020  9030  9040  9050  9090  
                            }
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -259,8 +276,8 @@ country =
                                #574 575 576 577 578 579
   nationalidentity = "policy_identity_frustrated" 
 	socialpolicy = "policy_social_ethnic" 
-	nationalculture = "policy_culture_ethnic"                              
-                           
+	nationalculture = "policy_culture_ethnic" 
+    
 	### Germany Land OOB ###
   landunit =
   { location = 302
@@ -714,7 +731,7 @@ country =
     }
     division = 
     { id = { type = 14500 id = 101 }
-      name = "1. Torpedobootflottille"
+      name = "1. Torpedobootsflottille"
       type = destroyer
       model = 0
     }
@@ -780,7 +797,7 @@ country =
     }
    division = 
     { id = { type = 14500 id = 100 }
-      name = "2. Torpedobootflottille"
+      name = "2. Torpedobootsflottille"
       type = destroyer
       model = 0
     }
@@ -886,80 +903,1160 @@ country =
       type     = tactical_bomber
       model    = 0
     }
-  }
+  } 
   # ####under developement#####
-  division_development =
-  { name = "Gneisenau"
-    type = battlecruiser
-    cost = 6
-    model = 3
-    extra1 = naval_sa_l
-    extra2 = naval_fire_controll_l
-    extra3 = naval_spotter_l
-    extra4 = naval_anti_air_l
-    brigade_model1 = 1
-    brigade_model2 = 0
-    brigade_model3 = 0
-    brigade_model4 = 1
-    id = { type = 14500 id = 90 }
-    date = { year = 1938 month = may day = 21 }
-  }
-  division_development =
-  { name = "Scharnhorst"
-    type = battlecruiser
-    cost = 6
-    model = 3
-    extra1 = naval_sa_l
-    extra2 = naval_fire_controll_l
-    extra3 = naval_spotter_l
-    extra4 = naval_anti_air_l
-    brigade_model1 = 1
-    brigade_model2 = 0
-    brigade_model3 = 0
-    brigade_model4 = 1
-    id = { type = 14500 id = 91 }
-    date = { year = 1939 month = january day = 7 }
-  }
-  division_development =
-  { name = "Admiral Graf Spee"
-    type = heavy_cruiser
-    cost = 4
-    model = 3
-    extra1 = naval_sa_l
-    extra2 = naval_fire_controll_l
-    extra3 = naval_anti_air_l
-    brigade_model1 = 1
-    brigade_model2 = 0
-    brigade_model3 = 0
-    id = { type = 14500 id = 92 }
-    date = { year = 1936 month = january day = 16 }
-  }
-  division_development =
-  { name  = "1. Zerstörerflottille"
-    type  = destroyer
-    model = 1
-    cost  = 1.6
-    extra1 = naval_fire_controll_s
-    brigade_model1 = 0
-    id = { type = 14500 id = 93 }
-    date = { year = 1936 month = march day = 6 }
-  }
-  division_development =
-  { name  = "2. Zerstörerflottille"
-    type  = destroyer
-    model = 1
-    cost  = 1.6
-    extra1 = naval_fire_controll_s
-    brigade_model1 = 0
-    id = { type = 14500 id = 94 }
-    date = { year = 1936 month = february day = 16 }
-  }
-  division_development =
-  { name = "4. Unterseebootsflottille"
-    type = submarine
-    model = 1
-    cost = 2
-    id = { type = 14500 id = 95 }
-    date = { year = 1936 month = march day = 1 }
-  }
+	province_development = { 
+		id = { type = 14500 id = 202 } 
+		name = "" 
+		progress = 0.0000 
+		location = 300 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = january 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 203 } 
+		name = "" 
+		progress = 0.0000 
+		location = 75 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = january 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 204 } 
+		name = "" 
+		progress = 0.0000 
+		location = 314 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 206 } 
+		name = "" 
+		progress = 0.0000 
+		location = 311 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 207 } 
+		name = "" 
+		progress = 0.0000 
+		location = 482 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = june 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1357 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 208 } 
+		name = "" 
+		progress = 0.0000 
+		location = 313 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 209 } 
+		name = "" 
+		progress = 0.0000 
+		location = 312 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 211 } 
+		name = "" 
+		progress = 0.0000 
+		location = 473 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = october 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 219 } 
+		name = "" 
+		progress = 0.0000 
+		location = 510 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = september 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 143 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 210 } 
+		name = "" 
+		progress = 0.0000 
+		location = 76 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 212 } 
+		name = "" 
+		progress = 0.0000 
+		location = 81 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = october 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 213 } 
+		name = "" 
+		progress = 0.0000 
+		location = 83 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 201 } 
+		name = "" 
+		progress = 0.0000 
+		location = 376 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 205 } 
+		name = "" 
+		progress = 0.0000 
+		location = 86 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = october 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 214 } 
+		name = "" 
+		progress = 0.0000 
+		location = 67 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = october 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 200 } 
+		name = "" 
+		progress = 0.0000 
+		location = 74 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 172 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 215 } 
+		name = "" 
+		progress = 0.0000 
+		location = 302 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = october 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 218 } 
+		name = "" 
+		progress = 0.0000 
+		location = 310 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 216 } 
+		name = "" 
+		progress = 0.0000 
+		location = 80 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 217 } 
+		name = "" 
+		progress = 0.0000 
+		location = 88 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 985 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 221 } 
+		name = "" 
+		progress = 0.0000 
+		location = 298 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1916 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 220 } 
+		name = "" 
+		progress = 0.0000 
+		location = 90 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1916 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 222 } 
+		name = "" 
+		progress = 0.0000 
+		location = 82 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = may 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 1916 
+		days_for_first = 143 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 223 } 
+		name = "" 
+		progress = 0.0000 
+		location = 87 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 1916 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 224 } 
+		name = "" 
+		progress = 0.0000 
+		location = 296 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1916 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 234 } 
+		name = "" 
+		progress = 0.0000 
+		location = 86 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = october 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 3456 
+		days_for_first = 346 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 235 } 
+		name = "" 
+		progress = 0.0000 
+		location = 300 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = october 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 3802 
+		days_for_first = 346 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 225 } 
+		name = "" 
+		progress = 0.0000 
+		location = 315 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = november 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 3 
+		done = 0 
+		days = 328 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = land_fort 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 226 } 
+		name = "" 
+		progress = 0.0000 
+		location = 314 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = november 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 3 
+		done = 0 
+		days = 328 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = land_fort 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 227 } 
+		name = "" 
+		progress = 0.0000 
+		location = 74 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = november 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 3 
+		done = 0 
+		days = 328 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = land_fort 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 228 } 
+		name = "" 
+		progress = 0.0000 
+		location = 75 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = november 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 3 
+		done = 0 
+		days = 328 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = land_fort 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 229 } 
+		name = "" 
+		progress = 0.0000 
+		location = 66 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = april 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 1 
+		done = 0 
+		days = 115 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = land_fort 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 230 } 
+		name = "" 
+		progress = 0.0000 
+		location = 75 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = august 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 599 
+		days_for_first = 86 
+		gearing_bonus = 0.0000 
+		type = air_base 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 231 } 
+		name = "" 
+		progress = 0.0000 
+		location = 75 
+		cost = 3.0000 
+		date = { 
+			year = 1937 
+			month = february 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 399 
+		days_for_first = 58 
+		gearing_bonus = 0.0000 
+		type = flak 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 232 } 
+		name = "" 
+		progress = 0.0000 
+		location = 314 
+		cost = 2.0000 
+		date = { 
+			year = 1936 
+			month = november 
+			day = 18 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 4 
+		done = 0 
+		days = 320 
+		days_for_first = 86 
+		gearing_bonus = 0.0000 
+		type = air_base 
+		} 
+	province_development = { 
+		id = { type = 14500 id = 233 } 
+		name = "" 
+		progress = 0.0000 
+		location = 314 
+		cost = 3.0000 
+		date = { 
+			year = 1936 
+			month = november 
+			day = 8 
+			hour = 0 
+			} 
+		manpower = 0.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 6 
+		done = 0 
+		days = 306 
+		days_for_first = 58 
+		gearing_bonus = 0.0000 
+		type = flak 
+		}
+	division_development = { 
+		id = { type = 14500 id = 96 } 
+		name = "Bismarck" 
+		progress = 2.0000 
+		location = 300 
+		cost = 8.2913 
+		date = { 
+			year = 1938 
+			month = august 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 2.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 2 
+		done = 0 
+		days = 469 
+		days_for_first = 490 
+		gearing_bonus = 0.0000 
+		type = battleship 
+		extra = naval_anti_air_l 
+		extra1 = naval_radar_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_sa_l 
+		extra4 = naval_spotter_l 
+		model = 3 
+		brigade_model = 1 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 1 
+		brigade_model4 = 0 
+		} 
+#   division_development = { 
+#		id = { type = 14500 id = 90 } 
+#		name = "Gneisenau" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 6.1859 
+#		date = { 
+#			year = 1937 
+#			month = march 
+#			day = 2 
+#			hour = 0 
+#			} 
+#		manpower = 1.5000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 422 
+#		gearing_bonus = 0.0000 
+#		type = battlecruiser 
+#		extra = none 
+#		extra1 = naval_sa_l 
+#		extra2 = naval_fire_controll_l 
+#		extra3 = naval_spotter_l 
+#		extra4 = naval_anti_air_l 
+#		model = 3 
+#		brigade_model = 0 
+#		brigade_model1 = 1 
+#		brigade_model2 = 0 
+#		brigade_model3 = 0 
+#		brigade_model4 = 1 
+#		} 
+	division_development = { 
+		id = { type = 14500 id = 91 } 
+		name = "Scharnhorst" 
+		progress = 0.0000 
+		location = 0 
+		cost = 6.1859 
+		date = { 
+			year = 1938 
+			month = april 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 2 
+		done = 0 
+		days = 1 
+		days_for_first = 422 
+		gearing_bonus = 0.0000 
+		type = battlecruiser 
+		extra = none 
+		extra1 = naval_sa_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_spotter_l 
+		extra4 = naval_anti_air_l 
+		model = 3 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 1 
+		} 
+	division_development = { 
+		id = { type = 14500 id = 92 } 
+		name = "Admiral Graf Spee" 
+		progress = 0.0000 
+		location = 0 
+		cost = 4.4674 
+		date = { 
+			year = 1936 
+			month = january 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.9479 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 307 
+		gearing_bonus = 0.0000 
+		type = heavy_cruiser 
+		extra = none 
+		extra1 = naval_sa_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_anti_air_l 
+		extra4 = none 
+		model = 3 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 14500 id = 93 } 
+		name = "1. Zerstörerflottille" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.9291 
+		date = { 
+			year = 1936 
+			month = march 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.7000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.4500 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		type = destroyer 
+		extra = none 
+		extra1 = naval_fire_controll_s 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 14500 id = 94 } 
+		name = "2. Zerstörerflottille" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.9291 
+		date = { 
+			year = 1936 
+			month = february 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 0.7000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.6167 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		type = destroyer 
+		extra = none 
+		extra1 = naval_fire_controll_s 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 14500 id = 95 } 
+		name = "4. Unterseebootsflottille" 
+		progress = 0.0000 
+		location = 0 
+		cost = 1.9200 
+		date = { 
+			year = 1936 
+			month = march 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.3000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.4245 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 106 
+		gearing_bonus = 0.0000 
+		type = submarine 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	convoy_development = { 
+		id = { type = 14500 id = 236 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1941 
+			month = november 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 30 
+		done = 0 
+		days = 1 
+		days_for_first = 86 
+		gearing_bonus = 0.0000 
+		type = transports 
+		} 
+	convoy_development = { 
+		id = { type = 14500 id = 237 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1941 
+			month = november 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 30 
+		done = 0 
+		days = 1 
+		days_for_first = 86 
+		gearing_bonus = 0.0000 
+		type = transports 
+		} 
+	convoy_development = { 
+		id = { type = 14500 id = 238 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = november 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.6000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 30 
+		done = 0 
+		days = 1 
+		days_for_first = 86 
+		gearing_bonus = 0.0000 
+		type = escorts 
+		}
 }

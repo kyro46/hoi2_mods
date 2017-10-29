@@ -23,7 +23,12 @@ country =
   oil                    = 200
   supplies               = 500
   money                  = 10
-  manpower               = 7
+  consumer = 0.2000 
+  supply = 0.0880 
+  production = 0.7120 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = 6.9 # 7 - building queue
   capital                = 1404
   diplomacy =
   { relation = { tag = CHC value = 25 }
@@ -40,7 +45,8 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
+  blueprints             = { 6210 }
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 1
@@ -86,5 +92,29 @@ country =
       name = "4. Nayramdakh Opolcheniya Div."
       type = militia
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 30500 id = 6 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1404 
+		cost = 2.0000 
+		date = { 
+			year = 1952 
+			month = december 
+			day = 20 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 36 
+		done = 0 
+		days = 3362 
+		days_for_first = 300 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

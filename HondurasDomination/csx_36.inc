@@ -6,19 +6,36 @@
 province =
 { id       = 1205
   air_base = { size = 5 current_size = 5 }
-  ic = { size = 1 current_size = 1 }
+  ic = { size = 3 current_size = 3 }
 }            # Beiping
+province =
+{ id       = 1204
+  ic = { size = 3 current_size = 3 }
+}            # Tianjin
+province = {
+	id = 1209
+  landfort = 1
+} # Datong
+province = {
+	id = 1211
+	ic = { size = 1 current_size = 1 }
+  landfort = 1
+} # Shijiazhuang
 province =
 { id       = 1216
   anti_air = 2
   air_base = { size = 4 current_size = 4 }
-  ic = { size = 1 current_size = 1 }
+  ic = { size = 3 current_size = 3 }
 }            # Jinan
-
 province = {
 	id = 1225
-	ic = { size = 1 current_size = 1 }
+	ic = { size = 3 current_size = 3 }
+  landfort = 1
 } # Taiyuan
+province = {
+	id = 1226
+  landfort = 1
+} # Changzhi
 
 #####################
 # Country main data #
@@ -36,8 +53,13 @@ country =
   oil                    = 100
   supplies               = 100
   money                  = 50
+  consumer = 0.2143 
+  supply = 0.2857 
+  production = 0.5000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1225 # Taiyuan
-  manpower               = 200
+  manpower               = 199.6 # 200 - building queue
   dissent                = 25
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -59,7 +81,8 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 } # allow digging
+  blueprints             = { 6210 }
   diplomacy =
   { relation = { tag = CHI value = 200 access = yes }
     relation = { tag = CGX value = 200 }
@@ -392,5 +415,97 @@ country =
       type  = militia
       model = 0
     }
-  }
+  }  
+	province_development = { 
+		id = { type = 22300 id = 200 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1216 
+		cost = 2.0000 
+		date = { 
+			year = 1948 
+			month = october 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 1195 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22300 id = 201 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1225 
+		cost = 2.0000 
+		date = { 
+			year = 1957 
+			month = april 
+			day = 18 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 1195 
+		days_for_first = 300 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22300 id = 202 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1205 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = june 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 821 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22300 id = 203 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1204 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = january 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 30 
+		done = 0 
+		days = 2880 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

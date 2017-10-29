@@ -17,8 +17,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2000 
+  supply = 0.0000 
+  production = 0.0000 
+  reinforcement = 0.8000 
+  upgrading = 0.0000 
   capital                = 1046
-  manpower               = 80
+  manpower               = 80 # 80 - "building queue"
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 3

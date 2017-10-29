@@ -56,6 +56,7 @@ province =
   ic          = 2
 }               # Sydney
 province = { id = 1728 anti_air = 2 } # Canberra
+province = { id = 1729 supplypool = 50 } # Tasmania
 province = { id = 1730  coastalfort = 1 anti_air = 3 ic = 2 } # Melbourne
 province = { id = 1733 anti_air = 2 ic = 2 } # Adelaide
 
@@ -65,17 +66,22 @@ province = { id = 1733 anti_air = 2 ic = 2 } # Adelaide
 
 country =
 { tag                    = AST
-  manpower               = 25
+  manpower               = 21.9 # 25 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
   rare_materials         = 500
   oil                    = 500
-  supplies               = 500
+  supplies               = 450
   money                  = 20
+  consumer = 0.2655 
+  supply = 0.0845 
+  production = 0.6500 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1728
   # 1st Transport Flotilla#
-  transports             = 65
+  transports             = 34
   escorts                = 5
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -111,7 +117,9 @@ country =
     relation = { tag = CAN value = 200 } # was access = yes
     relation = { tag = ENG value = 200 } # was access = yes
     relation = { tag = FIN value = 65 }
-    relation = { tag = FRA value = 150 }
+    relation = { tag = SWE value = 4 }
+	relation = { tag = NOR value = 6 }
+	relation = { tag = FRA value = 150 }
     relation = { tag = GER value = 1 }
     relation = { tag = IRE value = 75 }
     relation = { tag = IRQ value = 100 }
@@ -123,8 +131,10 @@ country =
     relation = { tag = SAF value = 200 } # was access = yes
     relation = { tag = SAU value = 50 }
     relation = { tag = USA value = 125 }
-    relation = { tag = YEM value = 150 }
-  }
+    relation = { tag = MEX value = 4 }
+	relation = { tag = YEM value = 150 }
+  
+ }
   headofstate            = { type = 9 id = 56001 }
   headofgovernment       = { type = 9 id = 56002 }
   foreignminister        = { type = 9 id = 56003 }
@@ -389,12 +399,329 @@ country =
   # Note on Warships Under Construction or Refit#
   # HMAS Adelaide was refitted by 1939.
   # Adelaide had a max speed of only 24 knots.
-  division_development =
-  { name  = "HMAS Perth"
-    type  = light_cruiser
-    model = 2
-    cost  = 3.1
-    id    = { type = 10500 id = 39 }
-    date  = { year = 1936 month = january day = 13 }
-  }
+  convoy = { 
+		id = { type = 10500 id = 48 } 
+		trade_id = { type = 16384 id = 314 } 
+		istradeconvoy = yes 
+		transports = 31 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = yes 
+		supplies = no 
+		path = { 1712 2087 2083 2084 2067 2066 2014 2009 2007 2272 2582 2287 2288 2580 2295 2594 2300 2593 2424 2595 2420 2596 2414 2413 2412 2395 46 } 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 40 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1727 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = october 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1969 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 41 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1728 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = october 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1969 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 42 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1730 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = june 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1969 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 43 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1722 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = march 
+			day = 3 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1969 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 44 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1733 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = may 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2288 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 45 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1734 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = march 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2608 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 46 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1724 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = november 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 14 
+		done = 0 
+		days = 1969 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 47 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1729 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = march 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 2288 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 10500 id = 49 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1721 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = september 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 16 
+		done = 0 
+		days = 2608 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+#	province_development = { 
+#		id = { type = 10500 id = 50 } 
+#		name = "" 
+#		progress = 0.0000 
+#		location = 1712 
+#		cost = 2.0000 
+#		date = { 
+#			year = 1939 
+#			month = june 
+#			day = 29 
+#			hour = 0 
+#			} 
+#		manpower = 0.1000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 12 
+#		done = 0 
+#		days = 2288 
+#		days_for_first = 125 
+#		gearing_bonus = 0.0000 
+#		type = infrastructure 
+#		} 
+#	province_development = { 
+#		id = { type = 10500 id = 51 } 
+#		name = "" 
+#		progress = 0.0000 
+#		location = 1703 
+#		cost = 2.0000 
+#		date = { 
+#			year = 1939 
+#			month = june 
+#			day = 29 
+#			hour = 0 
+#			} 
+#		manpower = 0.1000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 12 
+#		done = 0 
+#		days = 2288 
+#		days_for_first = 125 
+#		gearing_bonus = 0.0000 
+#		type = infrastructure 
+#		} 
+	division_development = { 
+		id = { type = 10500 id = 39 } 
+		name = "HMAS Perth" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.1680 
+		date = { 
+			year = 1936 
+			month = january 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.2000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.9277 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 166 
+		gearing_bonus = 0.0000 
+		type = light_cruiser 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	convoy_development = { 
+		id = { type = 10500 id = 52 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1941 
+			month = may 
+			day = 7 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 30 
+		done = 0 
+		days = 1 
+		days_for_first = 79 
+		gearing_bonus = 0.0000 
+		type = transports 
+		}
 }

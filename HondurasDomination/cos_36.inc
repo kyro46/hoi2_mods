@@ -16,7 +16,7 @@ province =
 
 country =
 { tag                    = COS
-  manpower               = 5
+  manpower               = 4.9 # 5 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -24,6 +24,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2920 
+  supply = 0.0320 
+  production = 0.6760 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 540
   transports             = 50
   escorts                = 6
@@ -71,5 +76,29 @@ country =
       model    = 0
       extra    = artillery
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 25000 id = 3 } 
+		name = "" 
+		progress = 0.0000 
+		location = 540 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = october 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2389 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		}
 }

@@ -22,8 +22,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2917 
+  supply = 0.0417 
+  production = 0.6666 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 837
-  manpower               = 5
+  manpower               = 4.9 # 5 - building queue
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 7
@@ -81,5 +86,29 @@ country =
       strength = 100
       type     = militia
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 15600 id = 61 } 
+		name = "" 
+		progress = 0.0000 
+		location = 837 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = may 
+			day = 28 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2745 
+		days_for_first = 106 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

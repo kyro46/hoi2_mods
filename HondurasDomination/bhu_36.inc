@@ -5,7 +5,7 @@
 
 country =
 { tag                    = BHU
-  manpower               = 5
+  manpower               = 4.9 # 5 - building queue
   control                = ENG
   puppet                 = ENG
   # Resource Reserves
@@ -15,6 +15,11 @@ country =
   oil                    = 200
   supplies               = 200
   money                  = 10
+  consumer = 0.2750 
+  supply = 0.0875 
+  production = 0.6375 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1455
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -33,7 +38,7 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
   diplomacy =
   { relation = { tag = AST value = 200 }
     relation = { tag = CAN value = 200 }
@@ -77,5 +82,29 @@ country =
       model    = 0
       strength = 100
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 16000 id = 4 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1455 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = september 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2370 
+		days_for_first = 265 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

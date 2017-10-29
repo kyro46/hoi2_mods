@@ -23,8 +23,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.0000 
+  supply = 0.0000 
+  production = 1.0000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1343
-  manpower               = 145
+  manpower               = 144.7 # 145 - building queue
   transports             = 40
   escorts                = 5
   policy =
@@ -50,6 +55,10 @@ country =
     relation = { tag = FRA value = -100 }
     relation = { tag = JAP value = 75 }
     relation = { tag = MAN value = 75 }
+	relation = { tag = POR value = 29 }
+	relation = { tag = GER value = 3 }
+	relation = { tag = ITA value = 4 }
+	relation = { tag = USA value = -12 }
   }
   headofstate            = { type = 9 id = 62001 }
   headofgovernment       = { type = 9 id = 62002 }
@@ -113,19 +122,89 @@ country =
     base     = 1345
     name     = "Royal Thai Airforce"
     id       = { type = 23600 id = 9 }
-    Division =
+    division =
     { id       = { type = 23600 id = 10 }
       name     = "1. RTAF Fighter Group"
       type     = interceptor
       model    = 0
       strength = 50
     }
-    Division =
+    division =
     { id       = { type = 23600 id = 11 }
       name     = "1. RTAF Tactic Bomb Group"
       type     = tactical_bomber
       model    = 0
       strength = 44
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 23600 id = 12 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1343 
+		cost = 2.0000 
+		date = { 
+			year = 1946 
+			month = november 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2704 
+		days_for_first = 300 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23600 id = 13 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1348 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = april 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2704 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23600 id = 14 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1347 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = april 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2704 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

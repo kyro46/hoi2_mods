@@ -5,8 +5,8 @@
 
 country =
 { tag                    = YEM
-  puppet                 = ENG
-  control                = ENG
+  #puppet                 = ENG
+  #control                = ENG
   # Resource Reserves
   energy                 = 200
   metal                  = 200
@@ -14,7 +14,12 @@ country =
   oil                    = 200
   supplies               = 200
   money                  = 10
-  manpower               = 5
+  consumer = 0.3134 
+  supply = 0.0200 
+  production = 0.6666 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = 4.9 # 5 - building queue
   capital                = 1812
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -33,7 +38,7 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
   diplomacy =
   { relation = { tag = AST value = 150 }
     relation = { tag = BHU value = 150 }
@@ -70,7 +75,31 @@ country =
       name         = "Royal Division"
       type         = cavalry
       strength     = 15
-      max_strength = 15
+      #max_strength = 15
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 16800 id = 3 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1812 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = january 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 3067 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		}
 }

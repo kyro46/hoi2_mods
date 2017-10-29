@@ -16,7 +16,7 @@ province =
 
 country =
 { tag                    = IRE
-  manpower               = 30
+  manpower               = 29.6 # 30 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -24,6 +24,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2500 
+  supply = 0.0334 
+  production = 0.6666 
+  reinforcement = 0.0500 
+  upgrading = 0.0000 
   capital                = 30
   transports             = 30
   escorts                = 5
@@ -50,6 +55,11 @@ country =
     relation = { tag = SOV value = 1 }
     relation = { tag = SPR value = 50 }
     relation = { tag = USA value = 75 }
+	relation = { tag = DEN value = 3 }
+	relation = { tag = SWE value = 2 }
+	relation = { tag = CZE value = 3 }
+	relation = { tag = NOR value = 3 }
+	relation = { tag = ALB value = -8 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 4 }
   SpyInfo                = { country = "GER" NumberOfSpies = 1 }
@@ -91,7 +101,7 @@ country =
     { id           = { type = 21500 id = 2 }
       name         = "1/2/3/4/5 Rifle Battalions"
       strength     = 50
-      max_strength = 50
+      #max_strength = 50
       type         = infantry
     }
   }
@@ -112,5 +122,97 @@ country =
       type  = transport
       model = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 21500 id = 6 } 
+		name = "" 
+		progress = 0.0000 
+		location = 30 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = may 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1531 
+		days_for_first = 141 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 21500 id = 7 } 
+		name = "" 
+		progress = 0.0000 
+		location = 24 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = may 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1531 
+		days_for_first = 141 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 21500 id = 8 } 
+		name = "" 
+		progress = 0.0000 
+		location = 26 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = april 
+			day = 4 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1531 
+		days_for_first = 94 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 21500 id = 9 } 
+		name = "" 
+		progress = 0.0000 
+		location = 27 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = may 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1531 
+		days_for_first = 141 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

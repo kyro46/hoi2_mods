@@ -24,7 +24,12 @@ country =
   supplies               = 500
   money                  = 10
   capital                = 197
-  manpower               = 20
+  manpower               = 19.7 # 20 - building queue
+  consumer = 0.2222 
+  supply = 0.0888 
+  production = 0.6890 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   transports             = 15
   escorts                = 3
   diplomacy =
@@ -37,13 +42,15 @@ country =
     relation = { tag = FIN value = 90 }
     relation = { tag = FRA value = 65 }
     relation = { tag = GER value = 10 }
-    relation =
+    relation = { tag = JAP value = 4 }
+	relation =
     { tag        = LIT
       value      = 120
       guaranteed = { day = 12 month = september year = 1934 }
     }
     relation = { tag = POL value = 75 }
     relation = { tag = SOV value = -30 }
+	relation = { tag = POR value = 2 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }
@@ -86,26 +93,26 @@ country =
   { id       = { type = 24500 id = 1 }
     location = 197
     name     = "Latvijas Armija"
-    Division =
+    division =
     { id       = { type = 24500 id = 2 }
       name     = "Kurzemes Divizija"
       type     = infantry
       strength = 100
     }
-    Division =
+    division =
     { id       = { type = 24500 id = 3 }
       name     = "Vidzemes Divizija"
       type     = infantry
       strength = 100
     }
-    Division =
+    division =
     { id       = { type = 24500 id = 4 }
       name     = "Zemgales Divizija"
       extra    = artillery
       type     = infantry
       strength = 100
     }
-    Division =
+    division =
     { id       = { type = 24500 id = 5 }
       name     = "Latgales Divizija"
       type     = infantry
@@ -117,12 +124,82 @@ country =
     location = 197
     base     = 197
     name     = "Latvijas Juras Speki"
-    Division =
+    division =
     { id       = { type = 24500 id = 7 }
       name     = "1. Zemudens flotile"
       type     = submarine
       model    = 0
       strength = 40
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 24500 id = 8 } 
+		name = "" 
+		progress = 0.0000 
+		location = 197 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = june 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2220 
+		days_for_first = 142 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 24500 id = 9 } 
+		name = "" 
+		progress = 0.0000 
+		location = 202 
+		cost = 2.0000 
+		date = { 
+			year = 1938 
+			month = march 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 782 
+		days_for_first = 114 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 24500 id = 10 } 
+		name = "" 
+		progress = 0.0000 
+		location = 204 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = june 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 4 
+		done = 0 
+		days = 782 
+		days_for_first = 142 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

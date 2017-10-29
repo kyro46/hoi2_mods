@@ -13,7 +13,7 @@ province =
 { id         = 1739
   anti_air   = 4
   air_base   = { size = 5 current_size = 5 }
-  Naval_base = { size = 2 current_size = 2 }
+  naval_base = { size = 2 current_size = 2 }
 }              # Clark Field
 
 #####################
@@ -31,7 +31,12 @@ country =
   oil                    = 200
   supplies               = 500
   money                  = 10
-  manpower               = 0
+  consumer = 0.0000 
+  supply = 0.0000 
+  production = 1.0000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = -0.1 # 0 - "building queue"
   transports             = 50
   capital                = 1737
   policy =
@@ -80,5 +85,29 @@ country =
       name     = "Philippine Constabulary"
       type     = garrison
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 11804 id = 3 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1737 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = october 
+			day = 3 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2424 
+		days_for_first = 108 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		}
 }

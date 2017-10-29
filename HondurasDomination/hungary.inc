@@ -18,7 +18,7 @@ province = { id = 497 ic = 2 } # Debrecen
 
 country =
 { tag                    = HUN
-  manpower               = 150
+  manpower               = 148.5 # 150 - building queue
   capital                = 457
   # Resource Reserves
   energy                 = 1000
@@ -27,6 +27,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2356 
+  supply = 0.0607 
+  production = 0.7037 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   diplomacy =
   { relation =
     { tag        = AUS
@@ -34,14 +39,18 @@ country =
       guaranteed = { day = 17 month = march year = 1934 }
     }
     relation = { tag = CZE value = -50 }
-    relation = { tag = ENG value = -50 }
+    relation = { tag = ALB value = 1 }
+	relation = { tag = ENG value = -50 }
     relation = { tag = FIN value = 75 }
     relation = { tag = FRA value = -70 }
     relation = { tag = GER value = 100 }
     relation = { tag = IRE value = 25 }
-    relation = { tag = ITA value = 125 }
+    relation = { tag = JAP value = 4 }
+	relation = { tag = TUR value = 11 }
+	relation = { tag = ITA value = 125 }
     relation = { tag = POL value = 50 }
-    relation = { tag = ROM value = 1 }
+    relation = { tag = POR value = 5 }
+	relation = { tag = ROM value = 1 }
     relation = { tag = YUG value = 80 }
   }
   SpyInfo                = { country = "HUN" NumberOfSpies = 7 }
@@ -85,8 +94,8 @@ country =
   ministerofintelligence = { type = 9 id = 21006 }
   chiefofstaff           = { type = 9 id = 21125 }
   chiefofarmy            = { type = 9 id = 21140 }
-  chiefofnavy            = { type = 9 id = 21009 }
-  chiefofair             = { type = 9 id = 21010 }
+  chiefofnavy            = { type = 9 id = 21010 }
+  chiefofair             = { type = 9 id = 21009 }
   landunit =
   { id       = { type = 20500 id = 1 }
     name     = "Magyar Hadsereg"
@@ -178,5 +187,144 @@ country =
       model    = 0
       strength = 30
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 20500 id = 200 } 
+		name = "" 
+		progress = 0.0000 
+		location = 457 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = june 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1280 
+		days_for_first = 110 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 20500 id = 201 } 
+		name = "" 
+		progress = 0.0000 
+		location = 458 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1280 
+		days_for_first = 110 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 20500 id = 202 } 
+		name = "" 
+		progress = 0.0000 
+		location = 456 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1280 
+		days_for_first = 110 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 20500 id = 203 } 
+		name = "" 
+		progress = 0.0000 
+		location = 497 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1280 
+		days_for_first = 110 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 20500 id = 204 } 
+		name = "" 
+		progress = 0.0000 
+		location = 491 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2150 
+		days_for_first = 110 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 20500 id = 205 } 
+		name = "" 
+		progress = 0.0000 
+		location = 457 
+		cost = 5.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 5 
+		done = 0 
+		days = 1656 
+		days_for_first = 331 
+		gearing_bonus = 0.0000 
+		type = ic 
+		}
 }

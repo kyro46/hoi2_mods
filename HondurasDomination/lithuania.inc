@@ -21,7 +21,7 @@ province =
 country =
 { tag                    = LIT
   capital                = 207
-  manpower               = 28
+  manpower               = 27.7 # 28 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -29,6 +29,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2390 
+  supply = 0.0610 
+  production = 0.7000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   transports             = 10
   escorts                = 1
   diplomacy =
@@ -41,13 +46,15 @@ country =
     relation = { tag = FIN value = 80 }
     relation = { tag = FRA value = 65 }
     relation = { tag = GER value = 10 }
-    relation =
+    relation = { tag = JAP value = 4 }
+	relation =
     { tag        = LAT
       value      = 120
       guaranteed = { day = 12 month = september year = 1934 }
     }
     relation = { tag = POL value = -75 }
     relation = { tag = SOV value = -30 }
+	relation = { tag = POR value = 3 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }
@@ -95,20 +102,20 @@ country =
   { id       = { type = 26500 id = 1 }
     location = 207
     name     = "1. Lietuvas Kariuomenes Korpusas"
-    Division =
+    division =
     { id       = { type = 26500 id = 2 }
       name     = "I Pestininkai Brigata"
       type     = infantry
       strength = 100
     }
-    Division =
+    division =
     { id       = { type = 26500 id = 3 }
       name     = "II Pestininkai Brigata"
       type     = infantry
       extra    = artillery
       strength = 100
     }
-    Division =
+    division =
     { id       = { type = 26500 id = 4 }
       name     = "III Pestininkai Brigata"
       type     = infantry
@@ -132,12 +139,82 @@ country =
     location = 206
     base     = 206
     name     = "Lietuvas Karines Oro Pajegos"
-    Division =
+    division =
     { id       = { type = 26500 id = 6 }
       name     = "1. Naikintuvas Aviacijos Grupo"
       type     = interceptor
       model    = 0
       strength = 45
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 26500 id = 9 } 
+		name = "" 
+		progress = 0.0000 
+		location = 207 
+		cost = 2.0000 
+		date = { 
+			year = 1946 
+			month = february 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2579 
+		days_for_first = 228 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26500 id = 10 } 
+		name = "" 
+		progress = 0.0000 
+		location = 511 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = september 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2220 
+		days_for_first = 142 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26500 id = 11 } 
+		name = "" 
+		progress = 0.0000 
+		location = 206 
+		cost = 2.0000 
+		date = { 
+			year = 1938 
+			month = march 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 782 
+		days_for_first = 114 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

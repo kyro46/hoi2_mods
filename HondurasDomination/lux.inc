@@ -12,7 +12,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 0
+  consumer = 0.3234 
+  supply = 0.0100 
+  production = 0.6666 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = -0.1 # 0 - "building queue"
   capital                = 71
   diplomacy =
   { relation = { tag = BEL value = 200 }
@@ -24,6 +29,11 @@ country =
     relation = { tag = IRE value = 75 }
     relation = { tag = NOR value = 100 }
     relation = { tag = SWE value = 100 }
+	relation = { tag = ENG value = 28 }
+	relation = { tag = CAN value = 5 }
+	relation = { tag = ALB value = 4 }
+	relation = { tag = POR value = 0 }
+	relation = { tag = CZE value = 5 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }
@@ -60,13 +70,37 @@ country =
   chiefofair             = { type = 9 id = 66010 }
   landunit =
   { id       = { type = 27500 id = 1 }
-    name     = "Luxembourgerschützen"
+    name     = "Luxembourger Schützen"
     location = 71
     division =
     { id       = { type = 27500 id = 2 }
-      name     = "1. Landesschützendivision"
+      name     = "1. Landesschützen-Division"
       strength = 30
       type     = infantry
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 27500 id = 3 } 
+		name = "" 
+		progress = 0.0000 
+		location = 71 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = january 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1649 
+		days_for_first = 125 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

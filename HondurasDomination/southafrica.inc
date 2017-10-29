@@ -37,7 +37,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 20
+  consumer = 0.1800 
+  supply = 0.0533 
+  production = 0.7667 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = 19.5 # 20 - building queue
   capital                = 1121
   transports             = 40
   escorts                = 12
@@ -59,6 +64,9 @@ country =
     relation = { tag = POR value = 125 }
     relation = { tag = USA value = 125 }
     relation = { tag = YEM value = 150 }
+	relation = { tag = SWE value = 4 }
+	relation = { tag = NOR value = 3 }
+	relation = { tag = DEN value = 10 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 3 }
   SpyInfo                = { country = "USA" NumberOfSpies = 2 }
@@ -175,5 +183,121 @@ country =
       name = "6th SAN Transport Flotilla"
       type = transport
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 26600 id = 16 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1121 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = january 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2047 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26600 id = 17 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1120 
+		cost = 2.0000 
+		date = { 
+			year = 1950 
+			month = april 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2047 
+		days_for_first = 225 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26600 id = 18 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1119 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = july 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2047 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26600 id = 19 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1118 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = july 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2047 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26600 id = 20 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1116 
+		cost = 2.0000 
+		date = { 
+			year = 1938 
+			month = july 
+			day = 29 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 618 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

@@ -23,7 +23,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 10
+  consumer = 0.3286 
+  supply = 0.1000 
+  production = 0.5714 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
+  manpower               = 9.9 # 10 - building queue
   capital                = 194
   transports             = 20
   escorts                = 3
@@ -88,26 +93,50 @@ country =
   { id       = { type = 30000 id = 1 }
     location = 194
     name     = "1. Eesti Armee"
-    Division =
+    division =
     { id       = { type = 30000 id = 2 }
       name     = "I Jalaväediviis"
       type     = infantry
       strength = 100
       model    = 0
     }
-    Division =
+    division =
     { id       = { type = 30000 id = 3 }
       name     = "II Jalaväediviis"
       type     = infantry
       strength = 100
       model    = 0
     }
-    Division =
+    division =
     { id       = { type = 30000 id = 4 }
       name     = "III Jalaväediviis"
       type     = infantry
       strength = 100
       model    = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 30000 id = 5 } 
+		name = "" 
+		progress = 0.0000 
+		location = 194 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2337 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		}
 }

@@ -28,7 +28,7 @@ province =
 
 country =
 { tag                    = DEN
-  manpower               = 3
+  manpower               = 2.8 # 3 - building queue
   capital                = 294
   transports             = 60
   escorts                = 10
@@ -39,10 +39,16 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.4000 
+  supply = 0.0667 
+  production = 0.5333 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   diplomacy =
   { relation = { tag = BEL value = 100 }
     relation = { tag = ENG value = 100 }
-    relation = { tag = FIN value = 75 }
+    relation = { tag = IRE value = 2 }
+	relation = { tag = FIN value = 75 }
     relation = { tag = GER value = 25 }
     relation = { tag = HOL value = 100 }
     relation = { tag = LUX value = 100 }
@@ -50,6 +56,10 @@ country =
     relation = { tag = PER value = 50 }
     relation = { tag = SWE value = 75 }
     relation = { tag = USA value = 75 }
+	relation = { tag = CZE value = 8 }
+	relation = { tag = CAN value = 15 }
+	relation = { tag = SAF value = 10 }
+	relation = { tag = ALB value = -8 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 3 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 2 }
@@ -143,5 +153,52 @@ country =
       type  = submarine
       model = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 27000 id = 47 } 
+		name = "" 
+		progress = 0.0000 
+		location = 294 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = january 
+			day = 3 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1880 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27000 id = 48 } 
+		name = "" 
+		progress = 0.0000 
+		location = 92 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = march 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1880 
+		days_for_first = 115 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

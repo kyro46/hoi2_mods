@@ -28,8 +28,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 20
+  consumer = 0.2380 
+  supply = 0.1190 
+  production = 0.6430 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 448
-  manpower               = 165
+  manpower               = 164.1 # 165 - building queue
   transports             = 35
   escorts                = 10
   policy =
@@ -53,16 +58,18 @@ country =
                            }
   diplomacy =
   { relation = { tag = AFG value = 50 }
-    relation = { tag = BUL value = 75 }
+    relation = { tag = AUS value = 5 }
+	relation = { tag = BUL value = 75 }
     relation = { tag = ENG value = 75 }
     relation = { tag = FRA value = 50 }
     relation = { tag = GER value = 10 }
-    relation =
+    relation = { tag = HUN value = 11 }
+	relation =
     { tag        = GRE
       value      = 100
       guaranteed = { day = 30 month = december year = 1934 }
     }
-    relation = { tag = ITA value = 1 }
+    relation = { tag = ITA value = 3 }
     relation = { tag = OMN value = 35 }
     relation = { tag = PER value = -50 }
     relation =
@@ -329,5 +336,236 @@ country =
       organisation = 30
       name         = "1. Taktik Bombardiman Ucagi Grup"
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 11700 id = 36 } 
+		name = "" 
+		progress = 0.0000 
+		location = 448 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = december 
+			day = 4 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2518 
+		days_for_first = 110 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 37 } 
+		name = "" 
+		progress = 0.0000 
+		location = 409 
+		cost = 2.0000 
+		date = { 
+			year = 1946 
+			month = june 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2518 
+		days_for_first = 165 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 38 } 
+		name = "" 
+		progress = 0.0000 
+		location = 439 
+		cost = 2.0000 
+		date = { 
+			year = 1946 
+			month = june 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2518 
+		days_for_first = 165 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 39 } 
+		name = "" 
+		progress = 0.0000 
+		location = 408 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = october 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 18 
+		done = 0 
+		days = 2518 
+		days_for_first = 165 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 40 } 
+		name = "" 
+		progress = 0.0000 
+		location = 445 
+		cost = 2.0000 
+		date = { 
+			year = 1953 
+			month = june 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2518 
+		days_for_first = 275 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 41 } 
+		name = "" 
+		progress = 0.0000 
+		location = 447 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = november 
+			day = 28 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2870 
+		days_for_first = 165 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 42 } 
+		name = "" 
+		progress = 0.0000 
+		location = 438 
+		cost = 2.0000 
+		date = { 
+			year = 1953 
+			month = june 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2518 
+		days_for_first = 275 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+#	province_development = { 
+#		id = { type = 11700 id = 43 } 
+#		name = "" 
+#		progress = 0.0000 
+#		location = 443 
+#		cost = 2.0000 
+#		date = { 
+#			year = 1953 
+#			month = june 
+#			day = 2 
+#			hour = 0 
+#			} 
+#		manpower = 0.1000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 28 
+#		done = 0 
+#		days = 2518 
+#		days_for_first = 275 
+#		gearing_bonus = 0.0000 
+#		type = infrastructure 
+#		} 
+	province_development = { 
+		id = { type = 11700 id = 44 } 
+		name = "" 
+		progress = 0.0000 
+		location = 450 
+		cost = 2.0000 
+		date = { 
+			year = 1953 
+			month = june 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2518 
+		days_for_first = 275 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11700 id = 45 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1852 
+		cost = 2.0000 
+		date = { 
+			year = 1947 
+			month = november 
+			day = 28 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2870 
+		days_for_first = 165 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

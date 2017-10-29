@@ -22,8 +22,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.1720 
+  supply = 0.0280 
+  production = 0.8000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 539
-  manpower               = 5
+  manpower               = 4.9 # 5 - building queue
   transports             = 5
   escorts                = 1
   policy =
@@ -69,5 +74,29 @@ country =
       type     = infantry
       extra    = anti_air
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 11600 id = 46 } 
+		name = "" 
+		progress = 0.0000 
+		location = 539 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = november 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 1963 
+		days_for_first = 86 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
 }

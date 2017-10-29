@@ -35,6 +35,7 @@ province =
 province =
 { id       = 504
   air_base = { size = 3 current_size = 3 }
+  landfort = 1
 }            # Brest Litovsk
 province = { id = 509 anti_air = 1 } # Suwalki
 
@@ -45,7 +46,7 @@ province = { id = 509 anti_air = 1 } # Suwalki
 country =
 { tag                    = POL
   capital                = 485
-  manpower               = 275
+  manpower               = 274.0 # 275 - building queue
   transports             = 32
   escorts                = 6
   # Resource Reserves
@@ -55,6 +56,11 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 20
+  consumer = 0.2280 
+  supply = 0.1550 
+  production = 0.6170 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   diplomacy =
   { relation =
     { tag        = CZE
@@ -68,7 +74,8 @@ country =
     relation = { tag = GER value = -10 }
     relation = { tag = GRE value = 35 }
     relation = { tag = HUN value = 50 }
-    relation = { tag = LAT value = 75 }
+    relation = { tag = ITA value = 3 }
+	relation = { tag = LAT value = 75 }
     relation = { tag = LIT value = -75 }
     relation =
     { tag        = ROM
@@ -472,5 +479,251 @@ country =
       type  = tactical_bomber
       model = 0
     }
-  }
+  } 
+	convoy = { 
+		id = { type = 18600 id = 74 } 
+		trade_id = { type = 16384 id = 339 } 
+		istradeconvoy = yes 
+		transports = 17 
+		escorts = 0 
+		rare_materials = yes 
+		energy = yes 
+		metal = yes 
+		oil = yes 
+		supplies = no 
+		path = { 303 2478 2477 2476 2473 2472 2395 2412 2413 23 } 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 64 } 
+		name = "" 
+		progress = 0.0000 
+		location = 485 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = february 
+			day = 14 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1953 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 65 } 
+		name = "" 
+		progress = 0.0000 
+		location = 480 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = october 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1953 
+		days_for_first = 125 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 66 } 
+		name = "" 
+		progress = 0.0000 
+		location = 479 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = september 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1953 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 67 } 
+		name = "" 
+		progress = 0.0000 
+		location = 483 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = may 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1953 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 68 } 
+		name = "" 
+		progress = 0.0000 
+		location = 562 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = april 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2270 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 69 } 
+		name = "" 
+		progress = 0.0000 
+		location = 487 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = may 
+			day = 27 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1953 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 70 } 
+		name = "" 
+		progress = 0.0000 
+		location = 501 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 1953 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 71 } 
+		name = "" 
+		progress = 0.0000 
+		location = 508 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 1953 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 72 } 
+		name = "" 
+		progress = 0.0000 
+		location = 502 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 689 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 18600 id = 73 } 
+		name = "" 
+		progress = 0.0000 
+		location = 229 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 689 
+		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

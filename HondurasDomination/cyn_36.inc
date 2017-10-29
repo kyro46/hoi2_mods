@@ -1,7 +1,7 @@
 
 province = {
 	id = 1307
-	ic = { size = 2 current_size = 2 }
+	ic = { size = 5 current_size = 5 }
 } # Kunming
 
 
@@ -21,8 +21,13 @@ country =
   oil                    = 100
   supplies               = 100
   money                  = 50
+  consumer = 0.0000 
+  supply = 0.0500 
+  production = 0.9500 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1307 # Kunming
-  manpower               = 200
+  manpower               = 199.8 # 200 - building queue
   dissent                = 25
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -41,7 +46,8 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 } # allow digging
+  blueprints             = { 6210 }
   diplomacy =
   { relation = { tag = CHI value = 200 }
     relation = { tag = CSX value = 200 }
@@ -255,5 +261,52 @@ country =
       type  = militia
       model = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 22100 id = 200 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1307 
+		cost = 2.0000 
+		date = { 
+			year = 1950 
+			month = april 
+			day = 20 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 1135 
+		days_for_first = 285 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22100 id = 201 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1305 
+		cost = 2.0000 
+		date = { 
+			year = 1959 
+			month = december 
+			day = 8 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 38 
+		done = 0 
+		days = 1669 
+		days_for_first = 285 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

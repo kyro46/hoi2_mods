@@ -37,18 +37,24 @@ province =
   anti_air   = 2
   naval_base = { size = 7 current_size = 7 }
   air_base   = { size = 4 current_size = 4 }
+  supplypool = 50
 }              # Mallorca
+province = { id = 957 supplypool = 50 } # Ceuta
 province =
 { id         = 963
   naval_base = { size = 1 current_size = 1 }
   air_base   = { size = 2 current_size = 2 }
+  oilpool    = 50
+  supplypool = 50
 }              # Gran Canaria
 province =
 { id         = 972
   anti_air   = 2
   naval_base = { size = 2 current_size = 2 }
   air_base   = { size = 2 current_size = 2 }
+  supplypool = 50
 }              # Villa Cisneros
+province = { id = 1091 supplypool = 50 } # Bata
 
 #####################
 # Country main data #
@@ -58,14 +64,19 @@ country =
 { tag                    = SPR
   regular_id             = SPA
   intrinsic_gov_type     = left_wing_radical
-  manpower               = 250
+  manpower               = 246.9 # 250 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
   rare_materials         = 500
-  oil                    = 500
-  supplies               = 500
+  oil                    = 450
+  supplies               = 250
   money                  = 20
+  consumer = 0.3000 
+  supply = 0.2000 
+  production = 0.5000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   dissent                = 30
   capital                = 341
   transports             = 100
@@ -74,7 +85,8 @@ country =
   diplomacy =
   { relation = { tag = ENG value = -10 }
     relation = { tag = FIN value = 35 }
-    relation = { tag = FRA value = 10 }
+    relation = { tag = SWE value = 2 }
+	relation = { tag = FRA value = 10 }
     relation = { tag = GER value = -50 }
     relation = { tag = IRE value = 50 }
     relation = { tag = ITA value = -50 }
@@ -96,7 +108,7 @@ country =
   SpyInfo                = { country = "ITA" NumberOfSpies = 4 }
   # Spanish Guinea
   nationalprovinces      = { 334 332 333 339 338 341 343 346 347 349 350 351 352 353 354 342 355 340 330 331 356 329 357 535 536 537 961 962 963 964
-                             965 348
+                             965 348 954 955 957
                            }
   ownedprovinces         = { 334  332  333  339  338  341  343  346  347  349  350  351  352  353  354  342  355  340  330  331  356  329  357  535 
                              536  537  961  962  963  964  965  957  955  954  967  971  972  1091
@@ -540,22 +552,329 @@ navalunit =
       strength = 30
       type     = interceptor
     }
-  }
+  } 
 	### Development ###
-  division_development =
-  { name  = "Canarias"
-    type  = heavy_cruiser
-    model = 1
-    cost  = 5
-    id    = { type = 27600 id = 62 }
-    date  = { year = 1936 month = march day = 1 }
-  }
-  division_development =
-  { name  = "Baleares"
-    type  = heavy_cruiser
-    model = 1
-    cost  = 5
-    id    = { type = 27600 id = 63 }
-    date  = { year = 1936 month = june day = 1 }
-  }
+	province_development = { 
+		id = { type = 27600 id = 64 } 
+		name = "" 
+		progress = 0.0000 
+		location = 341 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2103 
+		days_for_first = 108 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 65 } 
+		name = "" 
+		progress = 0.0000 
+		location = 347 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 29 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2443 
+		days_for_first = 108 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 66 } 
+		name = "" 
+		progress = 0.0000 
+		location = 357 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = june 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 2103 
+		days_for_first = 162 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 67 } 
+		name = "" 
+		progress = 0.0000 
+		location = 339 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = july 
+			day = 14 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2443 
+		days_for_first = 108 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 68 } 
+		name = "" 
+		progress = 0.0000 
+		location = 354 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = january 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 26 
+		done = 0 
+		days = 2188 
+		days_for_first = 162 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 69 } 
+		name = "" 
+		progress = 0.0000 
+		location = 342 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = july 
+			day = 14 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2443 
+		days_for_first = 108 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 70 } 
+		name = "" 
+		progress = 0.0000 
+		location = 334 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = august 
+			day = 3 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2784 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 71 } 
+		name = "" 
+		progress = 0.0000 
+		location = 351 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = july 
+			day = 14 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2443 
+		days_for_first = 162 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 72 } 
+		name = "" 
+		progress = 0.0000 
+		location = 331 
+		cost = 2.0000 
+		date = { 
+			year = 1954 
+			month = february 
+			day = 23 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 30 
+		done = 0 
+		days = 2614 
+		days_for_first = 270 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 73 } 
+		name = "" 
+		progress = 0.0000 
+		location = 332 
+		cost = 2.0000 
+		date = { 
+			year = 1955 
+			month = april 
+			day = 29 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2784 
+		days_for_first = 270 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 74 } 
+		name = "" 
+		progress = 0.0000 
+		location = 343 
+		cost = 2.0000 
+		date = { 
+			year = 1946 
+			month = march 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2443 
+		days_for_first = 162 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	division_development = { 
+		id = { type = 27600 id = 62 } 
+		name = "Canarias" 
+		progress = 0.0000 
+		location = 0 
+		cost = 2.5000 
+		date = { 
+			year = 1936 
+			month = march 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.7897 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 290 
+		gearing_bonus = 0.0000 
+		type = heavy_cruiser 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 27600 id = 63 } 
+		name = "Baleares" 
+		progress = 0.0000 
+		location = 0 
+		cost = 2.5000 
+		date = { 
+			year = 1936 
+			month = june 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.4793 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 290 
+		gearing_bonus = 0.0000 
+		type = heavy_cruiser 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
 }

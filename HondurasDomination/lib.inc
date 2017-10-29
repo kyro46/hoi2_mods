@@ -25,8 +25,13 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
+  consumer = 0.2000 
+  supply = 0.2000 
+  production = 0.6000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 992
-  manpower               = 7
+  manpower               = 6.9 # 7 - building queue
   transports             = 10
   escorts                = 1
   policy =
@@ -46,10 +51,13 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
   diplomacy =
   { relation = { tag = PHI value = 200 }
-    relation = { tag = USA value = 200 }
+    relation = { tag = ENG value = 5 }
+	relation = { tag = FRA value = 5 }
+	relation = { tag = USA value = 200 }
+	relation = { tag = GER value = 8 }
   }
   headofstate            = { type = 9 id = 69001 }
   headofgovernment       = { type = 9 id = 69002 }
@@ -78,5 +86,28 @@ country =
       type     = infantry
       strength = 100
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 25500 id = 4 } 
+		name = "" 
+		progress = 0.0000 
+		location = 992 
+		cost = 2.0000 
+		date = { 
+			year = 1955 
+			month = march 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2760 
+		days_for_first = 270 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		}
 }

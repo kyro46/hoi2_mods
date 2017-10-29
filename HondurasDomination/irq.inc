@@ -29,8 +29,13 @@ country =
   rare_materials         = 100
   oil                    = 1000
   supplies               = 500
-  manpower               = 15
+  manpower               = 14.8 # 15 - building queue
   money                  = 10
+  consumer = 0.1533 
+  supply = 0.1800 
+  production = 0.6667 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1866
   transports             = 16
   escorts                = 3
@@ -51,7 +56,7 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 }
   diplomacy =
   { relation = { tag = AST value = 100 }
     relation = { tag = BHU value = 100 }
@@ -68,6 +73,8 @@ country =
     relation = { tag = SAU value = 125 }
     relation = { tag = USA value = 120 }
     relation = { tag = YEM value = 125 }
+	relation = { tag = SWE value = 2 }
+	relation = { tag = POR value = 2 }
   }
   headofstate            = { type = 9 id = 91001 }
   headofgovernment       = { type = 9 id = 91002 }
@@ -127,5 +134,52 @@ country =
       type     = interceptor
       model    = 0
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 22500 id = 9 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1866 
+		cost = 2.0000 
+		date = { 
+			year = 1948 
+			month = february 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2476 
+		days_for_first = 272 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22500 id = 10 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1864 
+		cost = 2.0000 
+		date = { 
+			year = 1943 
+			month = october 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2821 
+		days_for_first = 109 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }

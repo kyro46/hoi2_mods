@@ -22,7 +22,12 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 15
+  manpower               = 13.8 # 15 - building queue
+  consumer = 0.2857 
+  supply = 0.0477 
+  production = 0.6666 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 654
   transports             = 24
   escorts                = 3
@@ -80,5 +85,75 @@ country =
       model    = 0
       extra    = artillery
     }
-  }
+  } 
+	province_development = { 
+		id = { type = 26000 id = 4002 } 
+		name = "" 
+		progress = 0.0000 
+		location = 654 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 29 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2031 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26000 id = 4003 } 
+		name = "" 
+		progress = 0.0000 
+		location = 655 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = june 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2031 
+		days_for_first = 135 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 26000 id = 4004 } 
+		name = "" 
+		progress = 0.0000 
+		location = 654 
+		cost = 2.0000 
+		date = { 
+			year = 1936 
+			month = june 
+			day = 4 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 2 
+		done = 0 
+		days = 154 
+		days_for_first = 79 
+		gearing_bonus = 0.0000 
+		type = air_base 
+		}
 }

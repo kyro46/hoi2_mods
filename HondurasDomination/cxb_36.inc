@@ -1,7 +1,7 @@
 
 province = {
 	id = 1442
-	ic = { size = 2 current_size = 2 }
+	ic = { size = 3 current_size = 3 }
 } # Golmud
 
 
@@ -22,8 +22,13 @@ country =
   oil                    = 100
   supplies               = 100
   money                  = 50
+  consumer = 0.0000 
+  supply = 0.0000 
+  production = 1.0000 
+  reinforcement = 0.0000 
+  upgrading = 0.0000 
   capital                = 1442 # Golmud
-  manpower               = 200
+  manpower               = 199.9 # 200 - building queue
   dissent                = 25
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -42,7 +47,8 @@ country =
   # Group E 1936 techs
   # ######################
   # GW fighter
-  techapps               = { 4010 2150 2290 1010 1190 }
+  techapps               = { 4010 2150 2290 1010 1190 5080 } # allow digging
+  blueprints             = { 6210 }
   diplomacy =
   { relation = { tag = CHI value = 200 access = yes }
     relation = { tag = CSX value = 200 access = yes }
@@ -97,7 +103,7 @@ country =
       id           = { type = 22200 id = 5 }
       name         = "Xin 7. Qibing Shi"
       type         = cavalry
-      max_strength = 100
+      #max_strength = 100
       strength     = 100
       model        = 0
     }
@@ -236,10 +242,33 @@ country =
       id           = { type = 22200 id = 25 }
       name         = "25. Bubing Shi"
       type         = infantry
-      max_strength = 50
+      #max_strength = 50
       strength     = 50
       model        = 0
     }
     dig_in   = 20.000
-  }
+  } 
+	province_development = { 
+		id = { type = 22200 id = 200 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1442 
+		cost = 2.0000 
+		date = { 
+			year = 1949 
+			month = august 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 956 
+		days_for_first = 192 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
 }
