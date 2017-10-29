@@ -76,7 +76,7 @@ country =
     location = 760
     division =
     { id       = { type = 19500 id = 5500 }
-      name     = "1a Brig. de Inf. 'Francesco  Marazán'"
+      name     = "1a Brig. de Inf. 'Francesco Marazán'"
       strength = 100
       type     = infantry
       extra    = anti_air
