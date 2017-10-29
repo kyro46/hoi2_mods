@@ -1,0 +1,1515 @@
+# #####################################
+# LAND DOCTRINES	     	 #
+# #####################################
+technology =
+{ id          = 6
+  category    = land_doctrines
+  name        = TECH_LD_NAME # Localized name
+  desc        = TECH_LD_DESC # Localized description
+  # Firepower Focus Doctrine
+  application =
+  { id        = 6010
+    name      = TECH_APP_LD_1_NAME
+    desc      = TECH_APP_LD_1_DESC
+    position  = { x = 88 y = 16 }
+    year      = 1930
+    # Tactical unit - Battalion 
+    component = { id = 6011 name = TECH_CMP_LD_1_1_NAME type = infantry_focus difficulty = 10 }
+    # Fire disciplin 
+    component = { id = 6012 name = TECH_CMP_LD_1_2_NAME type = training difficulty = 10 }
+    # Interlocking fields of fire
+    component = { id = 6013 name = TECH_CMP_LD_1_3_NAME type = training difficulty = 10 }
+    # Drill and discipline mentality 
+    component = { id = 6014 name = TECH_CMP_LD_1_4_NAME type = training difficulty = 10 }
+    # Organic regimental firesupport
+    component = { id = 6015 name = TECH_CMP_LD_1_5_NAME type = training difficulty = 10 }
+    required  = { }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = counterattack value = 2 }
+      command = { type = deactivate which = 6210 }
+      command = { type = activate_unit_type which = hq }
+      command = { type = new_model which = hq value = 0 }
+    }
+  }
+  # Superior Firepower Doctrine
+  application =
+  { id        = 6020
+    name      = TECH_APP_LD_2_NAME
+    desc      = TECH_APP_LD_2_DESC
+    position  = { x = 24 y = 56 }
+    year      = 1936
+    # High Echelon Fire Support
+    component = { id = 6021 name = TECH_CMP_LD_2_1_NAME type = infantry_focus difficulty = 10 }
+    # Advance under Fire
+    component = { id = 6022 name = TECH_CMP_LD_2_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Tactical unit - Company
+    component = { id = 6023 name = TECH_CMP_LD_2_3_NAME type = centralized_execution difficulty = 10 }
+    # Indirect firesupport focus
+    component = { id = 6024 name = TECH_CMP_LD_2_4_NAME type = technical_efficiency difficulty = 10 }
+    # Officer training - West Point method
+    component = { id = 6025 name = TECH_CMP_LD_2_5_NAME type = training difficulty = 10 }
+    required  = { 6010 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = assault value = 2 }
+      command = { type = deactivate which = 6030 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # Delay Doctrine
+  application =
+  { id        = 6040
+    name      = TECH_APP_LD_4_NAME
+    desc      = TECH_APP_LD_4_DESC
+    position  = { x = 24 y = 88 }
+    year      = 1937
+    # Mid Echelon Fire Support
+    component = { id = 6041 name = TECH_CMP_LD_4_1_NAME type = infantry_focus difficulty = 10 }
+    # Enemy Contact and Delay
+    component = { id = 6042 name = TECH_CMP_LD_4_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Object Control Focus
+    component = { id = 6043 name = TECH_CMP_LD_4_3_NAME type = centralized_execution difficulty = 10 }
+    # Basic fire direction center
+    component = { id = 6044 name = TECH_CMP_LD_4_4_NAME type = technical_efficiency difficulty = 10 }
+    # Limited NCO initiative
+    component = { id = 6045 name = TECH_CMP_LD_4_5_NAME type = training difficulty = 10 }
+    required  = { 6020 }
+    effects =
+    { command = { type = delay value = 2 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Mobile Defense Doctrine
+  application =
+  { id        = 6050
+    name      = TECH_APP_LD_5_NAME
+    desc      = TECH_APP_LD_5_DESC
+    position  = { x = 24 y = 104 }
+    year      = 1938
+    # Pre-computed firing data
+    component = { id = 6051 name = TECH_CMP_LD_5_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Enemy Contact and Lock Down
+    component = { id = 6052 name = TECH_CMP_LD_5_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Area Control Focus
+    component = { id = 6053 name = TECH_CMP_LD_5_3_NAME type = decentralized_execution difficulty = 10 }
+    # Improved fire direction center
+    component = { id = 6054 name = TECH_CMP_LD_5_4_NAME type = technical_efficiency difficulty = 10 }
+    # Tactical unit - Platoon
+    component = { id = 6055 name = TECH_CMP_LD_5_5_NAME type = training difficulty = 10 }
+    required  = { 6040 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Stand Off Doctrine
+  application =
+  { id        = 6060
+    name      = TECH_APP_LD_6_NAME
+    desc      = TECH_APP_LD_6_DESC
+    position  = { x = 144 y = 88 }
+    year      = 1939
+    # Mid Echelon Fire Support
+    component = { id = 6061 name = TECH_CMP_LD_6_1_NAME type = infantry_focus difficulty = 10 }
+    # Enemy Contact and Lock Down
+    component = { id = 6062 name = TECH_CMP_LD_6_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Object Control Focus
+    component = { id = 6063 name = TECH_CMP_LD_6_3_NAME type = centralized_execution difficulty = 10 }
+    # Basic air/land cooperation
+    component = { id = 6064 name = TECH_CMP_LD_6_4_NAME type = technical_efficiency difficulty = 10 }
+    # Supressive fire emphasis
+    component = { id = 6065 name = TECH_CMP_LD_6_5_NAME type = training difficulty = 10 }
+    required  = { 6020 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Integrated Support Doctrine
+  application =
+  { id        = 6070
+    name      = TECH_APP_LD_7_NAME
+    desc      = TECH_APP_LD_7_DESC
+    position  = { x = 144 y = 104 }
+    year      = 1940
+    # Low Echelon Fire Support
+    component = { id = 6071 name = TECH_CMP_LD_7_1_NAME type = infantry_focus difficulty = 10 }
+    # Enemy Contact and Destruction
+    component = { id = 6072 name = TECH_CMP_LD_7_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Area Control Focus
+    component = { id = 6073 name = TECH_CMP_LD_7_3_NAME type = decentralized_execution difficulty = 10 }
+    # Improved fire direction center
+    component = { id = 6074 name = TECH_CMP_LD_7_4_NAME type = technical_efficiency difficulty = 10 }
+    # Basic Air/Land coordination
+    component = { id = 6075 name = TECH_CMP_LD_7_5_NAME type = training difficulty = 10 }
+    required  = { 6060 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = counterattack value = 4 }
+      command = { type = breakthrough value = 1 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = new_model which = hq value = 1 }
+      command = { type = scrap_model which = hq value = 0 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Regimental Combat Teams
+  application =
+  { id        = 6080
+    name      = TECH_APP_LD_8_NAME
+    desc      = TECH_APP_LD_8_DESC
+    position  = { x = 80 y = 128 }
+    year      = 1942
+    # Tactical unit - Platoon
+    component = { id = 6081 name = TECH_CMP_LD_8_1_NAME type = infantry_focus difficulty = 10 }
+    # Organic battalion firesupport
+    component = { id = 6082 name = TECH_CMP_LD_8_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Emphasis on NCO initiative
+    component = { id = 6083 name = TECH_CMP_LD_8_3_NAME type = decentralized_execution difficulty = 10 }
+    # Advanced fire control center
+    component = { id = 6084 name = TECH_CMP_LD_8_4_NAME type = technical_efficiency difficulty = 10 }
+    # Fire and movement platoon coordination
+    component = { id = 6085 name = TECH_CMP_LD_8_5_NAME type = training difficulty = 10 }
+    required  = { 6070 6050 }
+    effects =
+    { command = { type = tactical_withdrawal value = 4 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = delay value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = ambush value = 1 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = build_cost which = infantry when = now where = relative value = 10 }
+      command = { type = build_cost which = artillery when = now where = relative value = 10 }
+      command = { type = build_cost which = sp_artillery when = now where = relative value = -10 }
+      command = { type = build_cost which = motorized when = now where = relative value = -10 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Combined Arms Defense
+  application =
+  { id        = 6090
+    name      = TECH_APP_LD_9_NAME
+    desc      = TECH_APP_LD_9_DESC
+    position  = { x = 25 y = 159 }
+    year      = 1943
+    # Time on Target firemissions
+    component = { id = 6091 name = TECH_CMP_LD_9_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Fire and movement
+    component = { id = 6092 name = TECH_CMP_LD_9_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Tactical unit - Squad
+    component = { id = 6093 name = TECH_CMP_LD_9_3_NAME type = decentralized_execution difficulty = 10 }
+    # Advanced air/land coordination
+    component = { id = 6094 name = TECH_CMP_LD_9_4_NAME type = technical_efficiency difficulty = 10 }
+    # Integrated operations
+    component = { id = 6095 name = TECH_CMP_LD_9_5_NAME type = training difficulty = 10 }
+    required  = { 6080 }
+    effects =
+    { command = { type = deactivate which = 6100 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = morale which = land value = 20 }
+      command = { type = max_organization which = land value = 20 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = 5 }
+      command = { type = build_cost which = artillery when = now where = relative value = 5 }
+      command = { type = build_cost which = sp_artillery when = now where = relative value = -5 }
+      command = { type = build_cost which = motorized when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Mechanized Offensive
+  application =
+  { id        = 6100
+    name      = TECH_APP_LD_10_NAME
+    desc      = TECH_APP_LD_10_DESC
+    position  = { x = 146 y = 159 }
+    year      = 1943
+    # Artillery Proximity fuses
+    component = { id = 6101 name = TECH_CMP_LD_10_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Tactical unit - Squad
+    component = { id = 6102 name = TECH_CMP_LD_10_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Air/Land mobility theory
+    component = { id = 6103 name = TECH_CMP_LD_10_3_NAME type = decentralized_execution difficulty = 10 }
+    # Advanced air/land coordination
+    component = { id = 6104 name = TECH_CMP_LD_10_4_NAME type = technical_efficiency difficulty = 10 }
+    # Advanced squad level tactics
+    component = { id = 6105 name = TECH_CMP_LD_10_5_NAME type = training difficulty = 10 }
+    required  = { 6080 }
+    effects =
+    { command = { type = deactivate which = 6090 }
+      command = { type = morale which = land value = 20 }
+      command = { type = max_organization which = land value = 20 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = 5 }
+      command = { type = build_cost which = artillery when = now where = relative value = 5 }
+      command = { type = build_cost which = sp_artillery when = now where = relative value = -5 }
+      command = { type = build_cost which = motorized when = now where = relative value = -5 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -15 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Air Land Battle
+  application =
+  { id          = 14050
+    name        = TECH_APP_LD_105_NAME
+    desc        = TECH_APP_LD_105_DESC
+    position    = { x = 81 y = 177 }
+    year        = 1946
+    # ?
+    component   = { id = 14051 name = TECH_CMP_LD_105_1_NAME type = aeronautics difficulty = 8 }
+    # ?
+    component   = { id = 14052 name = TECH_CMP_LD_105_2_NAME type = training difficulty = 8 }
+    # ?
+    component   = { id = 14053 name = TECH_CMP_LD_105_3_NAME type = electronics difficulty = 10 }
+    # ?
+    component   = { id = 14054 name = TECH_CMP_LD_105_4_NAME type = individual_courage difficulty = 8 }
+    # ?
+    component   = { id = 14055 name = TECH_CMP_LD_105_5_NAME type = training difficulty = 6 }
+    OR_required = { 6090 6100 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 10 }
+      command = { type = build_cost which = cavalry when = now where = relative value = -5 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+    }
+  }
+  # Grand Battleplan Doctrine
+  application =
+  { id        = 6030
+    name      = TECH_APP_LD_3_NAME
+    desc      = TECH_APP_LD_3_DESC
+    year      = 1936
+    position  = { x = 136 y = 56 }
+    # High Echelon Fire Support
+    component = { id = 6031 name = TECH_CMP_LD_3_1_NAME type = infantry_focus difficulty = 9 }
+    # Advance under Fire
+    component = { id = 6032 name = TECH_CMP_LD_3_2_NAME type = large_unit_tactics difficulty = 9 }
+    # General staff planning
+    component = { id = 6033 name = TECH_CMP_LD_3_3_NAME type = centralized_execution difficulty = 9 }
+    # Offensive spirit
+    component = { id = 6034 name = TECH_CMP_LD_3_4_NAME type = individual_courage difficulty = 9 }
+    # Officer training - Sandhurst method
+    component = { id = 6035 name = TECH_CMP_LD_3_5_NAME type = training difficulty = 9 }
+    required  = { 6010 }
+    effects =
+    { command = { type = delay value = 2 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = assault value = 1 }
+      command = { type = deactivate which = 6020 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Trench Warfare Doctrine
+  application =
+  { id        = 6120
+    name      = TECH_APP_LD_12_NAME
+    desc      = TECH_APP_LD_12_DESC
+    position  = { x = 264 y = 120 }
+    year      = 1936
+    # Organic divisional artillery
+    component = { id = 6121 name = TECH_CMP_LD_12_1_NAME type = infantry_focus difficulty = 9 }
+    # Fast Trench-building
+    component = { id = 6122 name = TECH_CMP_LD_12_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Stringent Hierarchy
+    component = { id = 6123 name = TECH_CMP_LD_12_3_NAME type = centralized_execution difficulty = 9 }
+    # Defend-every-inch Mentality
+    component = { id = 6124 name = TECH_CMP_LD_12_4_NAME type = individual_courage difficulty = 9 }
+    # Static machine gun use
+    component = { id = 6125 name = TECH_CMP_LD_12_5_NAME type = training difficulty = 9 }
+    required  = { 6030 }
+    effects =
+    { command = { type = delay value = 4 }
+      command = { type = morale which = land value = 10 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # Preplanned Defense Doctrine
+  application =
+  { id        = 6130
+    name      = TECH_APP_LD_13_NAME
+    desc      = TECH_APP_LD_13_DESC
+    position  = { x = 264 y = 136 }
+    year      = 1940
+    # Multiple Bunker-lines
+    component = { id = 6131 name = TECH_CMP_LD_13_1_NAME type = infantry_focus difficulty = 9 }
+    # Layered minefields
+    component = { id = 6132 name = TECH_CMP_LD_13_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Strongpoint-mentality
+    component = { id = 6133 name = TECH_CMP_LD_13_3_NAME type = centralized_execution difficulty = 9 }
+    # Tunnel complex
+    component = { id = 6134 name = TECH_CMP_LD_13_4_NAME type = individual_courage difficulty = 9 }
+    # Local reserves
+    component = { id = 6135 name = TECH_CMP_LD_13_5_NAME type = training difficulty = 9 }
+    required  = { 6120 }
+    effects =
+    { command = { type = delay value = 4 }
+      command = { type = morale which = land value = 10 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = anti_tank when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Central Planing Doctrine
+  application =
+  { id        = 6140
+    name      = TECH_APP_LD_14_NAME
+    desc      = TECH_APP_LD_14_DESC
+    position  = { x = 264 y = 152 }
+    year      = 1942
+    # Artillery divisions
+    component = { id = 6141 name = TECH_CMP_LD_14_1_NAME type = infantry_focus difficulty = 9 }
+    # Multiple attack directions
+    component = { id = 6142 name = TECH_CMP_LD_14_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Advanced staff planning
+    component = { id = 6143 name = TECH_CMP_LD_14_3_NAME type = centralized_execution difficulty = 9 }
+    # Centralized artillery control 
+    component = { id = 6144 name = TECH_CMP_LD_14_4_NAME type = individual_courage difficulty = 9 }
+    # Tactical unit - Company
+    component = { id = 6145 name = TECH_CMP_LD_14_5_NAME type = training difficulty = 9 }
+    required  = { 6130 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = counterattack value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = anti_tank when = now where = relative value = -5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Assault Concentration Doctrine
+  application =
+  { id        = 14070
+    name      = TECH_APP_LD_107_NAME
+    desc      = TECH_APP_LD_107_DESC
+    position  = { x = 263 y = 168 }
+    year      = 1946
+    # ?
+    component = { id = 14071 name = TECH_CMP_LD_107_1_NAME type = combined_arms_focus difficulty = 8 }
+    # ?
+    component = { id = 14072 name = TECH_CMP_LD_107_2_NAME type = infantry_focus difficulty = 8 }
+    # ?
+    component = { id = 14073 name = TECH_CMP_LD_107_3_NAME type = centralized_execution difficulty = 8 }
+    # ?
+    component = { id = 14074 name = TECH_CMP_LD_107_4_NAME type = artillery difficulty = 8 }
+    # ?
+    component = { id = 14075 name = TECH_CMP_LD_107_5_NAME type = training difficulty = 8 }
+    required  = { 6140 }
+    effects =
+    { command = { type = max_organization which = artillery value = 20 }
+      command = { type = morale which = artillery value = 20 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+    }
+  }
+  # C3I theory
+  application =
+  { id        = 6380
+    name      = TECH_APP_LD_38_NAME
+    desc      = TECH_APP_LD_38_DESC
+    position  = { x = 407 y = 176 }
+    year      = 1956
+    component = { id = 6381 name = TECH_CMP_LD_38_1_NAME type = combined_arms_focus difficulty = 10 }
+    component = { id = 6382 name = TECH_CMP_LD_38_2_NAME type = centralized_execution difficulty = 10 }
+    component = { id = 6383 name = TECH_CMP_LD_38_3_NAME type = training difficulty = 10 }
+    component = { id = 6384 name = TECH_CMP_LD_38_4_NAME type = small_unit_tactics difficulty = 9 }
+    component = { id = 6385 name = TECH_CMP_LD_38_5_NAME type = technical_efficiency difficulty = 10 }
+    OR_required = { 14070 14100 14060 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = breakthrough value = 5 }
+      command = { type = delay value = 5 }
+      command = { type = ambush value = 5 }
+    }
+  }
+  # Mass Assault Doctrine
+  application =
+  { id        = 6110
+    name      = TECH_APP_LD_11_NAME
+    desc      = TECH_APP_LD_11_DESC
+    position  = { x = 272 y = 48 }
+    year      = 1938
+    # Multiple pre-planned targets
+    component = { id = 6111 name = TECH_CMP_LD_11_1_NAME type = infantry_focus difficulty = 9 }
+    # Concentrated Attack
+    component = { id = 6112 name = TECH_CMP_LD_11_2_NAME type = large_unit_tactics difficulty = 9 }
+    # War by Timetable
+    component = { id = 6113 name = TECH_CMP_LD_11_3_NAME type = centralized_execution difficulty = 9 }
+    # Over-the-Top Mentality
+    component = { id = 6114 name = TECH_CMP_LD_11_4_NAME type = individual_courage difficulty = 9 }
+    # Limited NCO initiative
+    component = { id = 6115 name = TECH_CMP_LD_11_5_NAME type = training difficulty = 9 }
+    required  = { 6030 }
+    effects =
+    { command = { type = morale which = land value = 30 }
+      command = { type = counterattack value = 4 }
+      command = { type = breakthrough value = 1 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = new_model which = hq value = 1 }
+      command = { type = scrap_model which = hq value = 0 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+    }
+  }
+  # Infiltration Assault Doctrine
+  application =
+  { id        = 6160
+    name      = TECH_APP_LD_16_NAME
+    desc      = TECH_APP_LD_16_DESC
+    position  = { x = 408 y = 16 }
+    year      = 1942
+    # Night Attacks
+    component = { id = 6161 name = TECH_CMP_LD_16_1_NAME type = infantry_focus difficulty = 9 }
+    # Dispersed Combat Elements
+    component = { id = 6162 name = TECH_CMP_LD_16_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Staff: Terrain Assesment
+    component = { id = 6163 name = TECH_CMP_LD_16_3_NAME type = centralized_execution difficulty = 9 }
+    # Hand-to-Hand combat focus
+    component = { id = 6164 name = TECH_CMP_LD_16_4_NAME type = individual_courage difficulty = 9 }
+    # Platoon level night combat training
+    component = { id = 6165 name = TECH_CMP_LD_16_5_NAME type = training difficulty = 9 }
+    required  = { 6110 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 5 }
+      command = { type = deactivate which = 6150 }
+      command = { type = deactivate which = 6170 }
+      command = { type = night_move which = infantry value = 10 }
+      command = { type = night_move which = paratrooper value = 10 }
+      command = { type = night_move which = marine value = 10 }
+      command = { type = night_move which = bergsjaeger value = 10 }
+      command = { type = night_attack which = infantry value = 10 }
+      command = { type = night_attack which = paratrooper value = 10 }
+      command = { type = night_attack which = marine value = 10 }
+      command = { type = night_attack which = bergsjaeger value = 10 }
+      command = { type = night_defense which = infantry value = 10 }
+      command = { type = night_defense which = paratrooper value = 10 }
+      command = { type = night_defense which = marine value = 10 }
+      command = { type = night_defense which = bergsjaeger value = 10 }
+      command = { type = build_cost which = marine when = now where = relative value = -5 }
+      command = { type = build_cost which = militia when = now where = relative value = -10 }
+      command = { type = build_cost which = armor when = now where = relative value = 5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Infiltration in Depth
+  application =
+  { id        = 6190
+    name      = TECH_APP_LD_19_NAME
+    desc      = TECH_APP_LD_19_DESC
+    position  = { x = 408 y = 152 }
+    year      = 1943
+    # Self sustaining units
+    component = { id = 6191 name = TECH_CMP_LD_19_1_NAME type = infantry_focus difficulty = 9 }
+    # Isolated Combat Elements
+    component = { id = 6192 name = TECH_CMP_LD_19_2_NAME type = small_unit_tactics difficulty = 9 }
+    # Mobile command posts
+    component = { id = 6193 name = TECH_CMP_LD_19_3_NAME type = decentralized_execution difficulty = 9 }
+    # Do-or-die-mentality
+    component = { id = 6194 name = TECH_CMP_LD_19_4_NAME type = individual_courage difficulty = 9 }
+    # Infantry assault tactics
+    component = { id = 6195 name = TECH_CMP_LD_19_5_NAME type = training difficulty = 9 }
+    required  = { 6140 6160 }
+    effects =
+    { command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = ambush value = 6 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = night_move which = infantry value = 40 }
+      command = { type = night_move which = paratrooper value = 40 }
+      command = { type = night_move which = marine value = 40 }
+      command = { type = night_move which = bergsjaeger value = 40 }
+      command = { type = night_attack which = infantry value = 40 }
+      command = { type = night_attack which = paratrooper value = 40 }
+      command = { type = night_attack which = marine value = 40 }
+      command = { type = night_attack which = bergsjaeger value = 40 }
+      command = { type = night_defense which = infantry value = 40 }
+      command = { type = night_defense which = paratrooper value = 40 }
+      command = { type = night_defense which = marine value = 40 }
+      command = { type = night_defense which = bergsjaeger value = 40 }
+      command = { type = build_cost which = marine when = now where = relative value = -5 }
+      command = { type = build_cost which = militia when = now where = relative value = -10 }
+      command = { type = build_cost which = armor when = now where = relative value = 5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Attritional Containment Doctrine
+  application =
+  { id        = 6150
+    name      = TECH_APP_LD_15_NAME
+    desc      = TECH_APP_LD_15_DESC
+    position  = { x = 408 y = 48 }
+    year      = 1942
+    # Field fortification emphasis
+    component = { id = 6151 name = TECH_CMP_LD_15_1_NAME type = infantry_focus difficulty = 9 }
+    # Operational reserves
+    component = { id = 6152 name = TECH_CMP_LD_15_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Large unit counterattacks
+    component = { id = 6153 name = TECH_CMP_LD_15_3_NAME type = centralized_execution difficulty = 9 }
+    # Static Gun emplacements
+    component = { id = 6154 name = TECH_CMP_LD_15_4_NAME type = individual_courage difficulty = 9 }
+    # Tactical unit - Company
+    component = { id = 6155 name = TECH_CMP_LD_15_5_NAME type = training difficulty = 9 }
+    required  = { 6110 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = assault value = 3 }
+      command = { type = ambush value = 1 }
+      command = { type = deactivate which = 6160 }
+      command = { type = deactivate which = 6170 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = build_cost which = engineer when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Assault Breakthrough
+  application =
+  { id        = 6180
+    name      = TECH_APP_LD_18_NAME
+    desc      = TECH_APP_LD_18_DESC
+    position  = { x = 408 y = 128 }
+    year      = 1944
+    # low level field artillery
+    component = { id = 6181 name = TECH_CMP_LD_18_1_NAME type = infantry_focus difficulty = 9 }
+    # Penetration reserves
+    component = { id = 6182 name = TECH_CMP_LD_18_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Areas of responsibility
+    component = { id = 6183 name = TECH_CMP_LD_18_3_NAME type = centralized_execution difficulty = 9 }
+    # Squad level light machine guns
+    component = { id = 6184 name = TECH_CMP_LD_18_4_NAME type = individual_courage difficulty = 9 }
+    # Squad SOP
+    component = { id = 6185 name = TECH_CMP_LD_18_5_NAME type = training difficulty = 9 }
+    required  = { 6140 6150 }
+    effects =
+    { command = { type = morale which = land value = 25 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = breakthrough value = 2 }
+      command = { type = assault value = 6 }
+      command = { type = ambush value = 2 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = build_cost which = engineer when = now where = relative value = -5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Operational Stages Doctrine
+  application =
+  { id        = 6170
+    name      = TECH_APP_LD_17_NAME
+    desc      = TECH_APP_LD_17_DESC
+    position  = { x = 408 y = 80 }
+    year      = 1942
+    # Dedicated artillery
+    component = { id = 6171 name = TECH_CMP_LD_17_1_NAME type = infantry_focus difficulty = 9 }
+    # Dedicated airsupport
+    component = { id = 6172 name = TECH_CMP_LD_17_2_NAME type = large_unit_tactics difficulty = 9 }
+    # Secured Objectives Principle
+    component = { id = 6173 name = TECH_CMP_LD_17_3_NAME type = centralized_execution difficulty = 9 }
+    # Squad SOP
+    component = { id = 6174 name = TECH_CMP_LD_17_4_NAME type = technical_efficiency difficulty = 9 }
+    # Tactical unit - Platoon
+    component = { id = 6175 name = TECH_CMP_LD_17_5_NAME type = training difficulty = 9 }
+    required  = { 6110 }
+    effects =
+    { command = { type = tactical_withdrawal value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = max_organization which = land value = 15 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = deactivate which = 6150 }
+      command = { type = deactivate which = 6160 }
+      command = { type = build_cost which = motorized when = now where = relative value = -10 }
+      command = { type = build_cost which = infantry when = now where = relative value = 10 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Branch Interoperability
+  application =
+  { id        = 6200
+    name      = TECH_APP_LD_20_NAME
+    desc      = TECH_APP_LD_20_DESC
+    position  = { x = 408 y = 104 }
+    year      = 1944
+    # Combined arms operations
+    component = { id = 6201 name = TECH_CMP_LD_20_1_NAME type = combined_arms_focus difficulty = 9 }
+    # Long-Range Reconnaissance
+    component = { id = 6202 name = TECH_CMP_LD_20_2_NAME type = small_unit_tactics difficulty = 9 }
+    # Forward command posts
+    component = { id = 6203 name = TECH_CMP_LD_20_3_NAME type = centralized_execution difficulty = 9 }
+    # Fire direction centers
+    component = { id = 6204 name = TECH_CMP_LD_20_4_NAME type = technical_efficiency difficulty = 9 }
+    # Tactical unit - squad
+    component = { id = 6205 name = TECH_CMP_LD_20_5_NAME type = training difficulty = 9 }
+    required  = { 6140 6170 }
+    effects =
+    { command = { type = tactical_withdrawal value = 4 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 4 }
+      command = { type = ambush value = 1 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -10 }
+      command = { type = build_cost which = armor when = now where = relative value = -10 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Mobility Focus Doctrine
+  application =
+  { id        = 6210
+    name      = TECH_APP_LD_21_NAME
+    desc      = TECH_APP_LD_21_DESC
+    position  = { x = 88 y = 208 }
+    year      = 1930
+    # Motorized Reconnaissance
+    component = { id = 6211 name = TECH_CMP_LD_21_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Basic infiltration tactics
+    component = { id = 6212 name = TECH_CMP_LD_21_2_NAME type = training difficulty = 10 }
+    # Shock tactics
+    component = { id = 6213 name = TECH_CMP_LD_21_3_NAME type = training difficulty = 10 }
+    # NCO responsibility
+    component = { id = 6214 name = TECH_CMP_LD_21_4_NAME type = training difficulty = 10 }
+    # Manuever disciplin
+    component = { id = 6215 name = TECH_CMP_LD_21_5_NAME type = training difficulty = 10 }
+    required  = { }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = deactivate which = 6010 }
+      command = { type = activate_unit_type which = hq }
+      command = { type = new_model which = hq value = 0 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = speed_cap_art which = hq value = 1 }
+      command = { type = speed_cap_at which = hq value = 1 }
+      command = { type = speed_cap_aa which = hq value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Spearhead Doctrine
+  application =
+  { id        = 6220
+    name      = TECH_APP_LD_22_NAME
+    desc      = TECH_APP_LD_22_DESC
+    position  = { x = 24 y = 250 }
+    year      = 1937
+    # Assault detachments
+    component = { id = 6221 name = TECH_CMP_LD_22_1_NAME type = combined_arms_focus difficulty = 10 }
+    # tactical reconnassaince
+    component = { id = 6222 name = TECH_CMP_LD_22_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Tactical unit - Platoon
+    component = { id = 6223 name = TECH_CMP_LD_22_3_NAME type = decentralized_execution difficulty = 10 }
+    # Infiltration to line of departure
+    component = { id = 6224 name = TECH_CMP_LD_22_4_NAME type = technical_efficiency difficulty = 10 }
+    # Officer training - Bad Toelz method
+    component = { id = 6225 name = TECH_CMP_LD_22_5_NAME type = training difficulty = 10 }
+    required  = { 6210 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = max_organization which = land value = 15 }
+      command = { type = counterattack value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 4 }
+      command = { type = assault value = 2 }
+      command = { type = ambush value = 1 }
+      command = { type = deactivate which = 6300 }
+      command = { type = new_model which = hq value = 1 }
+      command = { type = scrap_model which = hq value = 0 }
+      command = { type = build_cost which = light_armor when = now where = relative value = -10 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = speed_cap_art which = hq value = 1 }
+      command = { type = speed_cap_at which = hq value = 1 }
+      command = { type = speed_cap_aa which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Delay Doctrine
+  application =
+  { id        = 6230
+    name      = TECH_APP_LD_23_NAME
+    desc      = TECH_APP_LD_23_DESC
+    position  = { x = 40 y = 272 }
+    year      = 1939
+    # Mobile Operational Deployments
+    component = { id = 6231 name = TECH_CMP_LD_23_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Local Reserves
+    component = { id = 6232 name = TECH_CMP_LD_23_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Reverse slope defence emphasis
+    component = { id = 6233 name = TECH_CMP_LD_23_3_NAME type = decentralized_execution difficulty = 10 }
+    # Multiple pre-planned artillery targets
+    component = { id = 6234 name = TECH_CMP_LD_23_4_NAME type = technical_efficiency difficulty = 10 }
+    # Emphasis on NCO initiative
+    component = { id = 6235 name = TECH_CMP_LD_23_5_NAME type = training difficulty = 10 }
+    required  = { 6220 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = delay value = 4 }
+      command = { type = ambush value = 1 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Elastic Defense Doctrine
+  application =
+  { id        = 6240
+    name      = TECH_APP_LD_24_NAME
+    desc      = TECH_APP_LD_24_DESC
+    position  = { x = 40 y = 288 }
+    year      = 1940
+    # Mobile reserves
+    component = { id = 6241 name = TECH_CMP_LD_24_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Local counterattacks
+    component = { id = 6242 name = TECH_CMP_LD_24_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Local commands
+    component = { id = 6243 name = TECH_CMP_LD_24_3_NAME type = decentralized_execution difficulty = 10 }
+    # Nuisanse minefields
+    component = { id = 6244 name = TECH_CMP_LD_24_4_NAME type = technical_efficiency difficulty = 10 }
+    # Infantry anti-tank tactics
+    component = { id = 6245 name = TECH_CMP_LD_24_5_NAME type = training difficulty = 10 }
+    required  = { 6230 }
+    effects =
+    { command = { type = tactical_withdrawal value = 4 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = artillery when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Schwerpunkt Doctrine
+  application =
+  { id        = 6250
+    name      = TECH_APP_LD_25_NAME
+    desc      = TECH_APP_LD_25_DESC
+    position  = { x = 40 y = 312 }
+    year      = 1937
+    # Decentralized field artillery
+    component = { id = 6251 name = TECH_CMP_LD_25_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Mobile Forward Elements
+    component = { id = 6252 name = TECH_CMP_LD_25_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Tactical unit - Squad
+    component = { id = 6253 name = TECH_CMP_LD_25_3_NAME type = decentralized_execution difficulty = 10 }
+    # Screening Minefields
+    component = { id = 6254 name = TECH_CMP_LD_25_4_NAME type = technical_efficiency difficulty = 10 }
+    # Squad level light machine guns
+    component = { id = 6255 name = TECH_CMP_LD_25_5_NAME type = training difficulty = 10 }
+    required  = { 6220 }
+    effects =
+    { command = { type = morale which = land value = 20 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = build_cost which = light_armor when = now where = relative value = -5 }
+      command = { type = build_cost which = light_armor_brigade when = now where = relative value = -5 }
+      command = { type = build_cost which = armor when = now where = relative value = -10 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Blitzkrieg Doctrine
+  application =
+  { id        = 6260
+    name      = TECH_APP_LD_26_NAME
+    desc      = TECH_APP_LD_26_DESC
+    position  = { x = 40 y = 328 }
+    year      = 1938
+    # Concentrated combined arms employment
+    component = { id = 6261 name = TECH_CMP_LD_26_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Gefechtsaufklaerung
+    component = { id = 6262 name = TECH_CMP_LD_26_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Low level independent commands
+    component = { id = 6263 name = TECH_CMP_LD_26_3_NAME type = decentralized_execution difficulty = 10 }
+    # Forward air controllers
+    component = { id = 6264 name = TECH_CMP_LD_26_4_NAME type = technical_efficiency difficulty = 10 }
+    # Advanced Infantry - Armor cooperation
+    component = { id = 6265 name = TECH_CMP_LD_26_5_NAME type = training difficulty = 10 }
+    required  = { 6250 }
+    effects =
+    { command = { type = morale which = land value = 20 }
+      command = { type = max_organization which = land value = 10 }
+      command = { type = breakthrough value = 4 }
+      command = { type = encirclement value = 4 }
+      command = { type = build_cost which = light_armor when = now where = relative value = -5 }
+      command = { type = build_cost which = armor when = now where = relative value = -10 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = speed_cap_art which = hq value = 1 }
+      command = { type = speed_cap_at which = hq value = 1 }
+      command = { type = speed_cap_aa which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+      command = { type = task_efficiency which = airborne_assault value = 0.2 }
+    }
+  }
+  # Kampfgruppe Doctrine
+  application =
+  { id        = 6270
+    name      = TECH_APP_LD_27_NAME
+    desc      = TECH_APP_LD_27_DESC
+    position  = { x = 360 y = 208 }
+    year      = 1941
+    # Self propelled support elements
+    component = { id = 6271 name = TECH_CMP_LD_27_1_NAME type = combined_arms_focus difficulty = 10 }
+    # operational reconnaissance tactics
+    component = { id = 6272 name = TECH_CMP_LD_27_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Low level attachments
+    component = { id = 6273 name = TECH_CMP_LD_27_3_NAME type = decentralized_execution difficulty = 10 }
+    # Self-sufficient combat elements
+    component = { id = 6274 name = TECH_CMP_LD_27_4_NAME type = technical_efficiency difficulty = 10 }
+    # Infantry mounted combat tactics
+    component = { id = 6275 name = TECH_CMP_LD_27_5_NAME type = training difficulty = 10 }
+    required  = { 6260 6240 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = ambush value = 3 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -5 }
+      command = { type = build_cost which = tank_destroyer when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.4 }
+    }
+  }
+  # Firebrigade Doctrine
+  application =
+  { id        = 6280
+    name      = TECH_APP_LD_28_NAME
+    desc      = TECH_APP_LD_28_DESC
+    position  = { x = 303 y = 228 }
+    year      = 1943
+    # Fluid battle mentality
+    component = { id = 6281 name = TECH_CMP_LD_28_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Flexible combat formations
+    component = { id = 6282 name = TECH_CMP_LD_28_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Attack from march formation capability
+    component = { id = 6283 name = TECH_CMP_LD_28_3_NAME type = decentralized_execution difficulty = 10 }
+    # Advanced C3 capability
+    component = { id = 6284 name = TECH_CMP_LD_28_4_NAME type = technical_efficiency difficulty = 10 }
+    # Deploying subunits
+    component = { id = 6285 name = TECH_CMP_LD_28_5_NAME type = training difficulty = 10 }
+    required  = { 6270 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = tactical_withdrawal value = 4 }
+      command = { type = counterattack value = 4 }
+      command = { type = delay value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = 10 }
+      command = { type = build_cost which = artillery when = now where = relative value = 10 }
+      command = { type = build_cost which = motorized when = now where = relative value = -10 }
+      command = { type = build_cost which = sp_artillery when = now where = relative value = -10 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Spearhead HQs
+  application =
+  { id        = 6290
+    name      = TECH_APP_LD_29_NAME
+    desc      = TECH_APP_LD_29_DESC
+    position  = { x = 415 y = 228 }
+    year      = 1943
+    # Deep reconnaissance focus
+    component = { id = 6291 name = TECH_CMP_LD_29_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Advanced subunit SOP
+    component = { id = 6292 name = TECH_CMP_LD_29_2_NAME type = small_unit_tactics difficulty = 10 }
+    # Territorial zones of responsibility
+    component = { id = 6293 name = TECH_CMP_LD_29_3_NAME type = decentralized_execution difficulty = 10 }
+    # Enemy disorganization focus
+    component = { id = 6294 name = TECH_CMP_LD_29_4_NAME type = technical_efficiency difficulty = 10 }
+    # Self sustaining units
+    component = { id = 6295 name = TECH_CMP_LD_29_5_NAME type = training difficulty = 10 }
+    required  = { 6270 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = breakthrough value = 4 }
+      command = { type = encirclement value = 2 }
+      command = { type = assault value = 1 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -10 }
+      command = { type = build_cost which = tank_destroyer when = now where = relative value = -10 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = speed_cap_art which = hq value = 1 }
+      command = { type = speed_cap_at which = hq value = 1 }
+      command = { type = speed_cap_aa which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.3 }
+    }
+  }
+  # Volkssturm Doctrine
+  application =
+  { id        = 14090
+    name      = TECH_APP_LD_109_NAME
+    desc      = TECH_APP_LD_109_DESC
+    position  = { x = 303 y = 260 }
+    year      = 1944
+    # ?
+    component = { id = 14091 name = TECH_CMP_LD_109_1_NAME type = decentralized_execution difficulty = 8 }
+    # ?
+    component = { id = 14092 name = TECH_CMP_LD_109_2_NAME type = small_unit_tactics difficulty = 9 }
+    # ?
+    component = { id = 14093 name = TECH_CMP_LD_109_3_NAME type = centralized_execution difficulty = 6 }
+    # ?
+    component = { id = 14094 name = TECH_CMP_LD_109_4_NAME type = individual_courage difficulty = 9 }
+    # ?
+    component = { id = 14095 name = TECH_CMP_LD_109_5_NAME type = training difficulty = 5 }
+    required  = { 6290 }
+    effects =
+    { command = { type = deactivate which = 14100 }
+      command = { type = max_organization which = infantry value = -10 }
+     command = { type = build_time which = militia when = now where = relative value = -20 }
+      command = { type = morale which = infantry value = -10 }
+      command = { type = trickleback_mod value = 5 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }	
+        command = { type = urban_defense which = militia value = 10 }
+	command = { type = urban_defense which = infantry value = 10 }
+	command = { type = urban_defense which = garrison value = 10 }
+	command = { type = urban_defense which = paratrooper value = 10 }
+	command = { type = urban_defense which = marine value = 10 }
+	command = { type = urban_defense which = bergsjaeger value = 10 }
+	command = { type = urban_defense which = motorized value = 10 }
+	command = { type = urban_defense which = cavalry value = 10 }
+	command = { type = urban_defense which = mechanized value = 5 }
+	command = { type = urban_defense which = light_armor value = 5 }
+	command = { type = urban_defense which = armor value = 5 }
+    }
+  }
+  # Modern Blitzkrieg
+  application =
+  { id        = 14100
+    name      = TECH_APP_LD_110_NAME
+    desc      = TECH_APP_LD_110_DESC
+    position  = { x = 415 y = 260 }
+    year      = 1947
+    component = { id = 14101 name = TECH_CMP_LD_10_3_NAME type = combined_arms_focus difficulty = 8 }
+    component = { id = 14102 name = TECH_CMP_LD_37_3_NAME type = centralized_execution difficulty = 8 }
+    component = { id = 14103 name = TECH_CMP_LD_105_2_NAME type = training difficulty = 8 }
+    component = { id = 14104 name = TECH_CMP_LD_105_3_NAME type = electronics difficulty = 10 }
+    component = { id = 14105 name = TECH_CMP_LD_9_4_NAME type = technical_efficiency difficulty = 8 }
+    required  = { 6290 }
+    effects =
+    { command = { type = deactivate which = 14090 }
+      command = { type = max_organization which = land value = 5 }
+      command = { type = breakthrough value = 5 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+    }
+  }
+  # C3I theory, copy
+#  application =
+#  { id        = 6380
+#    name      = TECH_APP_LD_38_NAME
+#    desc      = TECH_APP_LD_38_DESC
+#    position  = { x = 407 y = 176 }
+#    year      = 1956
+#    component = { id = 6381 name = TECH_CMP_LD_38_1_NAME type = combined_arms_focus difficulty = 10 }
+#    component = { id = 6382 name = TECH_CMP_LD_38_2_NAME type = centralized_execution difficulty = 10 }
+#    component = { id = 6383 name = TECH_CMP_LD_38_3_NAME type = training difficulty = 10 }
+#    component = { id = 6384 name = TECH_CMP_LD_38_4_NAME type = small_unit_tactics difficulty = 9 }
+#    component = { id = 6385 name = TECH_CMP_LD_38_5_NAME type = technical_efficiency difficulty = 10 }
+#    OR_required = { 14070 14100 14060 }
+#    effects =
+#    { command = { type = max_organization which = land value = 5 }
+#      command = { type = breakthrough value = 5 }
+#      command = { type = delay value = 5 }
+#      command = { type = ambush value = 5 }
+#    }
+#  }
+  # Human Wave Doctrine
+  application =
+  { id        = 6300
+    name      = TECH_APP_LD_30_NAME
+    desc      = TECH_APP_LD_30_DESC
+    position  = { x = 137 y = 250 }
+    year      = 1936
+    # High Echelon Fire Support
+    component = { id = 6301 name = TECH_CMP_LD_30_1_NAME type = infantry_focus difficulty = 10 }
+    # Advance under fire
+    component = { id = 6302 name = TECH_CMP_LD_30_2_NAME type = large_unit_tactics difficulty = 10 }
+    # General staff planning
+    component = { id = 6303 name = TECH_CMP_LD_30_3_NAME type = centralized_execution difficulty = 10 }
+    # Blocking detatchments
+    component = { id = 6304 name = TECH_CMP_LD_30_4_NAME type = individual_courage difficulty = 10 }
+    # Officer training - Frunze method
+    component = { id = 6305 name = TECH_CMP_LD_30_5_NAME type = training difficulty = 10 }
+    required  = { 6210 }
+    effects =
+    { command = { type = morale which = land value = 40 }
+      command = { type = counterattack value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = deactivate which = 6220 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = cavalry when = now where = relative value = -10 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Guerilla Warfare Doctrine
+  application =
+  { id        = 14080
+    name      = TECH_APP_LD_108_NAME
+    desc      = TECH_APP_LD_108_DESC
+    position  = { x = 189 y = 228 }
+    year      = 1944
+    # ?
+    component = { id = 14081 name = TECH_CMP_LD_108_1_NAME type = infantry_focus difficulty = 8 }
+    # ?
+    component = { id = 14082 name = TECH_CMP_LD_108_2_NAME type = individual_courage difficulty = 8 }
+    # ?
+    component = { id = 14083 name = TECH_CMP_LD_108_3_NAME type = small_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14084 name = TECH_CMP_LD_108_4_NAME type = training difficulty = 8 }
+    # ?
+    component = { id = 14085 name = TECH_CMP_LD_108_5_NAME type = decentralized_execution difficulty = 8 }
+    required  = { 6300 }
+    effects =
+    { command = { type = max_organization which = infantry value = -10 }
+      command = { type = morale which = militia value = 50 }
+	command = { type = delay value = 2 }
+	command = { type = ambush value = 4 }
+	command = { type = mountain_attack which = militia value = 5 }
+	command = { type = mountain_defense which = militia value = 10 }
+	command = { type = mountain_move which = militia value = 5 }
+	command = { type = hill_attack which = militia value = 5 }
+	command = { type = hill_defense which = militia value = 10 }
+	command = { type = hill_move which = militia value = 5 }
+	command = { type = swamp_attack which = militia value = 5 }
+	command = { type = swamp_defense which = militia value = 10 }
+    }
+  }
+  # Large Front Doctrine
+  application =
+  { id        = 6310
+    name      = TECH_APP_LD_31_NAME
+    desc      = TECH_APP_LD_31_DESC
+    position  = { x = 184 y = 272 }
+    year      = 1937
+    # Artillery divisions
+    component = { id = 6311 name = TECH_CMP_LD_31_1_NAME type = infantry_focus difficulty = 10 }
+    # Wide attack area
+    component = { id = 6312 name = TECH_CMP_LD_31_2_NAME type = large_unit_tactics difficulty = 10 }
+    # Tactical unit - Battalion
+    component = { id = 6313 name = TECH_CMP_LD_31_3_NAME type = centralized_execution difficulty = 10 }
+    # Multiple blocking detachments
+    component = { id = 6314 name = TECH_CMP_LD_31_4_NAME type = individual_courage difficulty = 10 }
+    # Discourage NCO initiative
+    component = { id = 6315 name = TECH_CMP_LD_31_5_NAME type = training difficulty = 10 }
+    required  = { 6300 }
+    effects =
+    { command = { type = max_organization which = land value = 10 }
+      command = { type = morale which = land value = 10 }
+      command = { type = tactical_withdrawal value = 2 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 1 }
+      command = { type = assault value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = cavalry when = now where = relative value = -10 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Deep Operations Doctrine
+  application =
+  { id        = 6330
+    name      = TECH_APP_LD_33_NAME
+    desc      = TECH_APP_LD_33_DESC
+    position  = { x = 184 y = 288 }
+    year      = 1940
+    # Mechanized forward elements
+    component = { id = 6331 name = TECH_CMP_LD_33_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Self-sufficient commands
+    component = { id = 6332 name = TECH_CMP_LD_33_2_NAME type = large_unit_tactics difficulty = 10 }
+    # Forward command posts
+    component = { id = 6333 name = TECH_CMP_LD_33_3_NAME type = centralized_execution difficulty = 10 }
+    # Long-Range reconnaissance
+    component = { id = 6334 name = TECH_CMP_LD_33_4_NAME type = individual_courage difficulty = 10 }
+    # Tactical unit - Company
+    component = { id = 6335 name = TECH_CMP_LD_33_5_NAME type = training difficulty = 10 }
+    required  = { 6310 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 10 }
+      command = { type = breakthrough value = 2 }
+      command = { type = encirclement value = 2 }
+      command = { type = ambush value = 2 }
+      command = { type = new_model which = hq value = 1 }
+      command = { type = scrap_model which = hq value = 0 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = militia when = now where = relative value = -10 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+      command = { type = task_efficiency which = airborne_assault value = 0.2 }
+    }
+  }
+  # Pocket Defense Doctrine
+  application =
+  { id        = 6320
+    name      = TECH_APP_LD_32_NAME
+    desc      = TECH_APP_LD_32_DESC
+    position  = { x = 184 y = 312 }
+    year      = 1941
+    # Artillery groups
+    component = { id = 6321 name = TECH_CMP_LD_32_1_NAME type = infantry_focus difficulty = 10 }
+    # All-around defence
+    component = { id = 6322 name = TECH_CMP_LD_32_2_NAME type = large_unit_tactics difficulty = 10 }
+    # Detailed army command planning
+    component = { id = 6323 name = TECH_CMP_LD_32_3_NAME type = centralized_execution difficulty = 10 }
+    # Collective responsibility mentality
+    component = { id = 6324 name = TECH_CMP_LD_32_4_NAME type = individual_courage difficulty = 10 }
+    # Static machine guns
+    component = { id = 6325 name = TECH_CMP_LD_32_5_NAME type = training difficulty = 10 }
+    required  = { 6300 }
+    effects =
+    { 
+      command = { type = max_organization which = land value = 5 }
+      command = { type = morale which = land value = 10 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = militia when = now where = relative value = -10 }
+      command = { type = sce_frequency value = 0.1 }
+    }
+  }
+  # Defense in Depth
+  application =
+  { id        = 6340
+    name      = TECH_APP_LD_34_NAME
+    desc      = TECH_APP_LD_34_DESC
+    position  = { x = 184 y = 328 }
+    year      = 1941
+    # Counterpreparating artillery fire
+    component = { id = 6341 name = TECH_CMP_LD_34_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Anti-tank gun fronts
+    component = { id = 6342 name = TECH_CMP_LD_34_2_NAME type = large_unit_tactics difficulty = 10 }
+    # Army reserves 
+    component = { id = 6343 name = TECH_CMP_LD_34_3_NAME type = centralized_execution difficulty = 10 }
+    # Layered minefields 
+    component = { id = 6344 name = TECH_CMP_LD_34_4_NAME type = individual_courage difficulty = 10 }
+    # Large formation camouflage 
+    component = { id = 6345 name = TECH_CMP_LD_34_5_NAME type = training difficulty = 10 }
+    required  = { 6320 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = tactical_withdrawal value = 3 }
+      command = { type = counterattack value = 2 }
+      command = { type = delay value = 3 }
+      command = { type = build_cost which = infantry when = now where = relative value = -5 }
+      command = { type = build_cost which = anti_tank when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Large Formation SOP Doctrine
+  application =
+  { id        = 6350
+    name      = TECH_APP_LD_35_NAME
+    desc      = TECH_APP_LD_35_DESC
+    position  = { x = 360 y = 280 }
+    year      = 1941
+    # Operational deception 
+    component = { id = 6351 name = TECH_CMP_LD_35_1_NAME type = combined_arms_focus difficulty = 10 }
+    # Maskirovka 
+    component = { id = 6352 name = TECH_CMP_LD_35_2_NAME type = large_unit_tactics difficulty = 10 }
+    # Mobile command posts 
+    component = { id = 6353 name = TECH_CMP_LD_35_3_NAME type = centralized_execution difficulty = 10 }
+    # Counter-reconnaissance 
+    component = { id = 6354 name = TECH_CMP_LD_35_4_NAME type = individual_courage difficulty = 10 }
+    # Organic tank battalions 
+    component = { id = 6355 name = TECH_CMP_LD_35_5_NAME type = training difficulty = 10 }
+    required  = { 6330 6340 }
+    effects =
+    { command = { type = max_organization which = land value = 5 }
+      command = { type = counterattack value = 2 }
+      command = { type = assault value = 2 }
+      command = { type = new_model which = hq value = 2 }
+      command = { type = scrap_model which = hq value = 1 }
+      command = { type = build_cost which = infantry when = now where = relative value = 5 }
+      command = { type = build_cost which = militia when = now where = relative value = 5 }
+      command = { type = build_cost which = cavalry when = now where = relative value = 5 }
+      command = { type = build_cost which = motorized when = now where = relative value = -5 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -5 }
+      command = { type = speed which = hq value = 1 }
+      command = { type = hq_supply_eff value = 1 }
+      command = { type = sce_frequency value = 0.2 }
+    }
+  }
+  # Breakthrough Priority Doctrine
+  application =
+  { id        = 6360
+    name      = TECH_APP_LD_36_NAME
+    desc      = TECH_APP_LD_36_DESC
+    position  = { x = 318 y = 309 }
+    year      = 1943
+    # Bind enemy in depth-operations
+    component = { id = 6361 name = TECH_CMP_LD_36_1_NAME type = combined_arms_focus difficulty = 8 }
+    # Counterattack disruption priority
+    component = { id = 6362 name = TECH_CMP_LD_36_2_NAME type = large_unit_tactics difficulty = 8 }
+    # Staff - Enemy assessment 
+    component = { id = 6363 name = TECH_CMP_LD_36_3_NAME type = centralized_execution difficulty = 8 }
+    # Strict formation coordination
+    component = { id = 6364 name = TECH_CMP_LD_36_4_NAME type = individual_courage difficulty = 8 }
+    # Prolonged endurance
+    component = { id = 6365 name = TECH_CMP_LD_36_5_NAME type = training difficulty = 8 }
+    required  = { 6350 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = breakthrough value = 4 }
+      command = { type = assault value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = 5 }
+      command = { type = build_cost which = militia when = now where = relative value = 5 }
+      command = { type = build_cost which = cavalry when = now where = relative value = 5 }
+      command = { type = build_cost which = motorized when = now where = relative value = -5 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -5 }
+      command = { type = build_cost which = armor when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.25 }
+    }
+  }
+  # Movement Speed Offensive Doctrine
+  application =
+  { id        = 6370
+    name      = TECH_APP_LD_37_NAME
+    desc      = TECH_APP_LD_37_DESC
+    position  = { x = 426 y = 309 }
+    year      = 1943
+    # Airmobile combined-arms formations 
+    component = { id = 6371 name = TECH_CMP_LD_37_1_NAME type = combined_arms_focus difficulty = 8 }
+    # Deep penetration raids
+    component = { id = 6372 name = TECH_CMP_LD_37_2_NAME type = large_unit_tactics difficulty = 8 }
+    # Multi-dimentional offensives
+    component = { id = 6373 name = TECH_CMP_LD_37_3_NAME type = centralized_execution difficulty = 8 }
+    # Specialized anti-recon detachments
+    component = { id = 6374 name = TECH_CMP_LD_37_4_NAME type = individual_courage difficulty = 8 }
+    # Camouflaged lines of departure
+    component = { id = 6375 name = TECH_CMP_LD_37_5_NAME type = training difficulty = 8 }
+    required  = { 6350 }
+    effects =
+    { command = { type = morale which = land value = 10 }
+      command = { type = encirclement value = 2 }
+      command = { type = build_cost which = infantry when = now where = relative value = 5 }
+      command = { type = build_cost which = militia when = now where = relative value = 5 }
+      command = { type = build_cost which = cavalry when = now where = relative value = 5 }
+      command = { type = build_cost which = motorized when = now where = relative value = -5 }
+      command = { type = build_cost which = mechanized when = now where = relative value = -5 }
+      command = { type = build_cost which = armor when = now where = relative value = -5 }
+      command = { type = hq_supply_eff value = 2 }
+      command = { type = sce_frequency value = 0.25 }
+    }
+  }
+  # Mechanized Wave
+  application =
+  { id        = 14060
+    name      = TECH_APP_LD_106_NAME
+    desc      = TECH_APP_LD_106_DESC
+    position  = { x = 364 y = 329 }
+    year      = 1946
+    # ?
+    component = { id = 14061 name = TECH_CMP_LD_106_1_NAME type = individual_courage difficulty = 8 }
+    # ?
+    component = { id = 14062 name = TECH_CMP_LD_106_2_NAME type = large_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14063 name = TECH_CMP_LD_106_3_NAME type = training difficulty = 8 }
+    # ?
+    component = { id = 14064 name = TECH_CMP_LD_106_4_NAME type = individual_courage difficulty = 8 }
+    # ?
+    component = { id = 14065 name = TECH_CMP_LD_106_5_NAME type = training difficulty = 8 }
+    required  = { 6360 6370 }
+    effects =
+    { command = { type = morale which = armor value = 30 }
+      command = { type = morale which = mechanized value = 30 }
+      command = { type = new_model which = hq value = 3 }
+      command = { type = scrap_model which = hq value = 2 }
+    }
+  }
+  # C3I theory, copy
+#  application =
+#  { id        = 6380
+#    name      = TECH_APP_LD_38_NAME
+#    desc      = TECH_APP_LD_38_DESC
+#    position  = { x = 407 y = 176 }
+#    year      = 1956
+#    component = { id = 6381 name = TECH_CMP_LD_38_1_NAME type = combined_arms_focus difficulty = 10 }
+#    component = { id = 6382 name = TECH_CMP_LD_38_2_NAME type = centralized_execution difficulty = 10 }
+#    component = { id = 6383 name = TECH_CMP_LD_38_3_NAME type = training difficulty = 10 }
+#    component = { id = 6384 name = TECH_CMP_LD_38_4_NAME type = small_unit_tactics difficulty = 9 }
+#    component = { id = 6385 name = TECH_CMP_LD_38_5_NAME type = technical_efficiency difficulty = 10 }
+#    OR_required = { 14070 14100 14060 }
+#    effects =
+#    { command = { type = max_organization which = land value = 5 }
+#      command = { type = breakthrough value = 5 }
+#      command = { type = delay value = 5 }
+#      command = { type = ambush value = 5 }
+#    }
+#  }
+  # Great War Hospital System
+  application =
+  { id        = 14000
+    name      = TECH_APP_LD_100_NAME
+    desc      = TECH_APP_LD_100_DESC
+    position  = { x = 18 y = 376 }
+    year      = 1936
+    # ?
+    component = { id = 14001 name = TECH_CMP_LD_100_1_NAME type = centralized_execution difficulty = 8 }
+    # ?
+    component = { id = 14002 name = TECH_CMP_LD_100_2_NAME type = training difficulty = 8 }
+    # ?
+    component = { id = 14003 name = TECH_CMP_LD_100_3_NAME type = combined_arms_focus difficulty = 8 }
+    # ?
+    component = { id = 14004 name = TECH_CMP_LD_100_4_NAME type = individual_courage difficulty = 8 }
+    # ?
+    component = { id = 14005 name = TECH_CMP_LD_100_5_NAME type = mechanics difficulty = 8 }
+    required  = { }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 5 }
+    }
+  }
+  # Early Hospital System
+  application =
+  { id        = 14010
+    name      = TECH_APP_LD_101_NAME
+    desc      = TECH_APP_LD_101_DESC
+    position  = { x = 113 y = 394 }
+    year      = 1938
+    # ?
+    component = { id = 14011 name = TECH_CMP_LD_101_1_NAME type = centralized_execution difficulty = 8 }
+    # ?
+    component = { id = 14012 name = TECH_CMP_LD_101_2_NAME type = infantry_focus difficulty = 8 }
+    # ?
+    component = { id = 14013 name = TECH_CMP_LD_101_3_NAME type = small_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14014 name = TECH_CMP_LD_101_4_NAME type = technical_efficiency difficulty = 8 }
+    # ?
+    component = { id = 14015 name = TECH_CMP_LD_101_5_NAME type = training difficulty = 8 }
+    required  = { 14000 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 5 }
+    }
+  }
+  # Basic Hospital System
+  application =
+  { id        = 14020
+    name      = TECH_APP_LD_102_NAME
+    desc      = TECH_APP_LD_102_DESC
+    position  = { x = 225 y = 374 }
+    year      = 1941
+    # ?
+    component = { id = 14021 name = TECH_CMP_LD_102_1_NAME type = centralized_execution difficulty = 8 }
+    # ?
+    component = { id = 14022 name = TECH_CMP_LD_102_2_NAME type = large_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14023 name = TECH_CMP_LD_102_3_NAME type = chemistry difficulty = 8 }
+    # ?
+    component = { id = 14024 name = TECH_CMP_LD_102_4_NAME type = mechanics difficulty = 8 }
+    # ?
+    component = { id = 14025 name = TECH_CMP_LD_102_5_NAME type = training difficulty = 8 }
+    required  = { 14010 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 5 }
+    }
+  }
+  # Improved Hospital System
+  application =
+  { id        = 14030
+    name      = TECH_APP_LD_103_NAME
+    desc      = TECH_APP_LD_103_DESC
+    position  = { x = 320 y = 394 }
+    year      = 1945
+    # ?
+    component = { id = 14031 name = TECH_CMP_LD_103_1_NAME type = centralized_execution difficulty = 8 }
+    # ?
+    component = { id = 14032 name = TECH_CMP_LD_103_2_NAME type = large_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14033 name = TECH_CMP_LD_103_3_NAME type = chemistry difficulty = 8 }
+    # ?
+    component = { id = 14034 name = TECH_CMP_LD_103_4_NAME type = small_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14035 name = TECH_CMP_LD_103_5_NAME type = training difficulty = 8 }
+    required  = { 14020 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 5 }
+    }
+  }
+  # Advanced Hospital System
+  application =
+  { id        = 14040
+    name      = TECH_APP_LD_104_NAME
+    desc      = TECH_APP_LD_104_DESC
+    position  = { x = 429 y = 375 }
+    year      = 1950
+    # ?
+    component = { id = 14041 name = TECH_CMP_LD_104_1_NAME type = aeronautics difficulty = 8 }
+    # ?
+    component = { id = 14042 name = TECH_CMP_LD_104_2_NAME type = large_unit_tactics difficulty = 8 }
+    # ?
+    component = { id = 14043 name = TECH_CMP_LD_104_3_NAME type = chemistry difficulty = 8 }
+    # ?
+    component = { id = 14044 name = TECH_CMP_LD_104_4_NAME type = electronics difficulty = 8 }
+    # ?
+    component = { id = 14045 name = TECH_CMP_LD_104_5_NAME type = training difficulty = 8 }
+    required  = { 14030 }
+    effects =
+    { command = { type = attrition_mod value = 2 }
+      command = { type = trickleback_mod value = 5 }
+    }
+  }
+}
