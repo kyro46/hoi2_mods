@@ -16,7 +16,7 @@ province =
 
 country =
 { tag                    = IRE
-  manpower               = 29.6 # 30 - building queue
+  manpower               = 28.6 # 30 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -24,10 +24,10 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  consumer = 0.2500 
-  supply = 0.0334 
-  production = 0.6666 
-  reinforcement = 0.0500 
+  consumer = 0.1674 
+  supply = 0.0134 
+  production = 0.8192 
+  reinforcement = 0.0000 
   upgrading = 0.0000 
   capital                = 30
   transports             = 30
@@ -51,7 +51,8 @@ country =
     relation = { tag = MEX value = 30 }
     relation = { tag = NZL value = 75 }
     relation = { tag = POR value = 25 }
-    relation = { tag = SAF value = 80 }
+    relation = { tag = POL value = -3 }
+	relation = { tag = SAF value = 80 }
     relation = { tag = SOV value = 1 }
     relation = { tag = SPR value = 50 }
     relation = { tag = USA value = 75 }
@@ -59,6 +60,7 @@ country =
 	relation = { tag = SWE value = 2 }
 	relation = { tag = CZE value = 3 }
 	relation = { tag = NOR value = 3 }
+	relation = { tag = ROM value = 1 }
 	relation = { tag = ALB value = -8 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 4 }
@@ -130,9 +132,9 @@ country =
 		location = 30 
 		cost = 2.0000 
 		date = { 
-			year = 1942 
-			month = may 
-			day = 21 
+			year = 1940 
+			month = july 
+			day = 7 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -144,6 +146,7 @@ country =
 		days = 1531 
 		days_for_first = 141 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -214,5 +217,28 @@ country =
 		days_for_first = 141 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
+		} 
+	convoy_development = { 
+		id = { type = 21500 id = 10 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1937 
+			month = december 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 699 
+		days_for_first = 83 
+		gearing_bonus = 0.0000 
+		type = transports 
 		} 
 }

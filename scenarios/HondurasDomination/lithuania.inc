@@ -154,9 +154,9 @@ country =
 		location = 207 
 		cost = 2.0000 
 		date = { 
-			year = 1946 
-			month = february 
-			day = 17 
+			year = 1944 
+			month = april 
+			day = 8 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -168,7 +168,7 @@ country =
 		days = 2579 
 		days_for_first = 228 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
+		speed_step = 2 
 		type = infrastructure 
 		} 
 	province_development = { 

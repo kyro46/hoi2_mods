@@ -27,9 +27,9 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  consumer = 0.4000 
-  supply = 0.1000 
-  production = 0.5000 
+  consumer = 0.2500 
+  supply = 0.0000 
+  production = 0.7500 
   reinforcement = 0.0000 
   upgrading = 0.0000 
   capital                = 390
@@ -63,6 +63,8 @@ country =
 	relation = { tag = CZE value = -8 }
 	relation = { tag = IRE value = -7 }
 	relation = { tag = DEN value = -8 }
+	relation = { tag = ROM value = 1 }
+	relation = { tag = SCH value = -12 }
   }
   headofstate            = { type = 9 id = 32001 } # King Zog
   headofgovernment       = { type = 9 id = 32054 } # Mehdi Frashëri
@@ -81,9 +83,9 @@ country =
 		location = 390 
 		cost = 2.0000 
 		date = { 
-			year = 1953 
-			month = june 
-			day = 2 
+			year = 1948 
+			month = april 
+			day = 25 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -95,6 +97,7 @@ country =
 		days = 2518 
 		days_for_first = 275 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 }

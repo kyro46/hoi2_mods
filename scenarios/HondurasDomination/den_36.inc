@@ -57,8 +57,10 @@ country =
     relation = { tag = SWE value = 75 }
     relation = { tag = USA value = 75 }
 	relation = { tag = CZE value = 8 }
+	relation = { tag = POL value = -12 }
 	relation = { tag = CAN value = 15 }
 	relation = { tag = SAF value = 10 }
+	relation = { tag = ROM value = 1 }
 	relation = { tag = ALB value = -8 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 3 }

@@ -16,7 +16,7 @@ province =
 
 country =
 { tag                    = HAI
-  manpower               = 8.9 # 9 - building queue
+  manpower               = 7.9 # 9 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -65,7 +65,7 @@ country =
   chiefofnavy            = { type = 9 id = 78009 }
   chiefofair             = { type = 9 id = 78010 }
   landunit =
-  { id       = { type = 17500 id = 53 }
+  { id       = { type = 17500 id = 5302 }
     name     = "La Grandé Armée du Haiti"
     location = 892
     division =
@@ -77,7 +77,7 @@ country =
     }
   } 
 	province_development = { 
-		id = { type = 17500 id = 54 } 
+		id = { type = 17500 id = 5303 } 
 		name = "" 
 		progress = 0.0000 
 		location = 892 
@@ -99,5 +99,28 @@ country =
 		gearing_bonus = 0.0000 
 		speed_step = 1 
 		type = infrastructure 
+		} 
+	convoy_development = { 
+		id = { type = 17500 id = 5304 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1938 
+			month = february 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 756 
+		days_for_first = 90 
+		gearing_bonus = 0.0000 
+		type = transports 
 		} 
 }

@@ -417,48 +417,25 @@ country =
     }
   }  
 	province_development = { 
-		id = { type = 22300 id = 200 } 
+		id = { type = 22300 id = 203 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1216 
+		location = 1204 
 		cost = 2.0000 
 		date = { 
-			year = 1948 
-			month = october 
-			day = 10 
+			year = 1944 
+			month = january 
+			day = 0 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 32 
+		size = 30 
 		done = 0 
-		days = 1195 
-		days_for_first = 180 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 22300 id = 201 } 
-		name = "" 
-		progress = 0.0000 
-		location = 1225 
-		cost = 2.0000 
-		date = { 
-			year = 1957 
-			month = april 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 32 
-		done = 0 
-		days = 1195 
-		days_for_first = 300 
+		days = 2880 
+		days_for_first = 120 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -486,25 +463,48 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 22300 id = 203 } 
+		id = { type = 22300 id = 200 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1204 
+		location = 1216 
 		cost = 2.0000 
 		date = { 
 			year = 1944 
-			month = january 
-			day = 0 
+			month = july 
+			day = 7 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 30 
+		size = 32 
 		done = 0 
-		days = 2880 
-		days_for_first = 120 
+		days = 1195 
+		days_for_first = 180 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22300 id = 201 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1225 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = july 
+			day = 7 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 1195 
+		days_for_first = 300 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 

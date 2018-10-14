@@ -47,7 +47,7 @@ country =
   reinforcement = 0.0000 
   upgrading = 0.0000 
   capital                = 142
-  manpower               = 34.3 # 35 - building queue
+  manpower               = 33.3 # 35 - building queue
   transports             = 40
   escorts                = 6
   diplomacy =
@@ -82,6 +82,7 @@ country =
     relation = { tag = SWE value = 151 }
     relation = { tag = USA value = 90 }
     relation = { tag = YUG value = 35 }
+	relation = { tag = SCH value = 2 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }
@@ -301,9 +302,9 @@ country =
 		location = 142 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = january 
-			day = 2 
+			year = 1940 
+			month = april 
+			day = 0 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -315,11 +316,79 @@ country =
 		days = 1521 
 		days_for_first = 78 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
 		id = { type = 32000 id = 28 } 
+		name = "" 
+		progress = 0.0000 
+		location = 132 
+		cost = 2.0000 
+		date = { 
+			year = 1944 
+			month = june 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 32 
+		done = 0 
+		days = 2015 
+		days_for_first = 117 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 32000 id = 29 } 
+		name = "" 
+		progress = 0.0000 
+		location = 145 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = april 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1521 
+		days_for_first = 97 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 32000 id = 30 } 
+		name = "" 
+		progress = 0.0000 
+		location = 142 
+		cost = 5.0000 
+		date = { 
+			year = 1939 
+			month = may 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 5 
+		done = 0 
+		days = 1224 
+		days_for_first = 245 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 32000 id = 31 } 
 		name = "" 
 		progress = 0.0000 
 		location = 141 
@@ -342,7 +411,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 32000 id = 29 } 
+		id = { type = 32000 id = 32 } 
 		name = "" 
 		progress = 0.0000 
 		location = 138 
@@ -365,53 +434,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 32000 id = 30 } 
-		name = "" 
-		progress = 0.0000 
-		location = 145 
-		cost = 2.0000 
-		date = { 
-			year = 1937 
-			month = november 
-			day = 8 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 8 
-		done = 0 
-		days = 1521 
-		days_for_first = 97 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 32000 id = 31 } 
-		name = "" 
-		progress = 0.0000 
-		location = 143 
-		cost = 2.0000 
-		date = { 
-			year = 1938 
-			month = september 
-			day = 16 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 1521 
-		days_for_first = 97 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 32000 id = 32 } 
+		id = { type = 32000 id = 33 } 
 		name = "" 
 		progress = 0.0000 
 		location = 148 
@@ -434,15 +457,15 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 32000 id = 33 } 
+		id = { type = 32000 id = 34 } 
 		name = "" 
 		progress = 0.0000 
-		location = 132 
+		location = 143 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = april 
-			day = 8 
+			year = 1938 
+			month = september 
+			day = 16 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -451,8 +474,8 @@ country =
 		total_progress = 0.0000 
 		size = 12 
 		done = 0 
-		days = 2015 
-		days_for_first = 117 
+		days = 1521 
+		days_for_first = 97 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		}

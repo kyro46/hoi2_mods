@@ -9,7 +9,7 @@ province =
   anti_air   = 1
   air_base   = { size = 2 current_size = 2 }
   naval_base = { size = 2 current_size = 2 }
-  supplypool = 100
+  supplypool = 30
 }              # Crete
 province =
 { id         = 401
@@ -25,13 +25,13 @@ province = { id = 411 landfort = 5 anti_air = 2 } # Salonika
 
 country =
 { tag                    = GRE
-  manpower               = 69.6 # 70 - building queue
+  manpower               = 68.6 # 70 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
   rare_materials         = 500
   oil                    = 500
-  supplies               = 400
+  supplies               = 470
   money                  = 10
   consumer = 0.2400 
   supply = 0.1600 
@@ -77,7 +77,8 @@ country =
     }
     relation = { tag = SOV value = 15 }
     relation = { tag = TUR value = 100 }
-    relation =
+    relation = { tag = SCH value = -19 }
+	relation =
     { tag        = YUG
       value      = 100
       guaranteed = { day = 30 month = december year = 1934 }
@@ -297,9 +298,9 @@ country =
 		location = 401 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = october 
-			day = 9 
+			year = 1942 
+			month = july 
+			day = 14 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -311,7 +312,6 @@ country =
 		days = 2355 
 		days_for_first = 120 
 		gearing_bonus = 0.0000 
-		speed_step = 2 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -362,6 +362,29 @@ country =
 		} 
 	province_development = { 
 		id = { type = 15500 id = 35 } 
+		name = "" 
+		progress = 0.0000 
+		location = 401 
+		cost = 5.0000 
+		date = { 
+			year = 1939 
+			month = january 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 3 
+		done = 0 
+		days = 1080 
+		days_for_first = 360 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 15500 id = 36 } 
 		name = "" 
 		progress = 0.0000 
 		location = 395 

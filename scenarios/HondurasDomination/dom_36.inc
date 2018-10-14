@@ -27,7 +27,7 @@ country =
   production = 0.6666 
   reinforcement = 0.0000 
   upgrading = 0.0000 
-  manpower               = 7.9 # 8 - building queue
+  manpower               = 6.9 # 8 - building queue
   capital                = 894
   transports             = 10
   escorts                = 1
@@ -65,7 +65,7 @@ country =
   chiefofnavy            = { type = 9 id = 49009 }
   chiefofair             = { type = 9 id = 49010 }
   landunit =
-  { id       = { type = 28000 id = 75 }
+  { id       = { type = 28000 id = 7501 }
     name     = "Ejercito de Rep. Dominicana"
     location = 894
     division =
@@ -78,7 +78,7 @@ country =
     }
   } 
 	province_development = { 
-		id = { type = 28000 id = 7501 } 
+		id = { type = 28000 id = 7502 } 
 		name = "" 
 		progress = 0.0000 
 		location = 894 
@@ -100,5 +100,28 @@ country =
 		gearing_bonus = 0.0000 
 		speed_step = 1 
 		type = infrastructure 
+		} 
+	convoy_development = { 
+		id = { type = 28000 id = 7503 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 668 
+		days_for_first = 79 
+		gearing_bonus = 0.0000 
+		type = transports 
 		}
 }

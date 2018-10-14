@@ -25,9 +25,9 @@ country =
   supplies               = 100
   money                  = 10
   consumer = 0.1667 
-  supply = 0.0834 
+  supply = 0.1667 
   production = 0.6666 
-  reinforcement = 0.0833 
+  reinforcement = 0.0000 
   upgrading = 0.0000 
   manpower               = 99.5 # 100 - building queue
   capital                = 1390
@@ -53,6 +53,7 @@ country =
   # ######################
   # GW fighter
   techapps               = { 1010 1020 1190 2150 2290 2400 4010 5080 }
+  blueprints             = { 6010 6030 2300 2310 5310 }
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 1

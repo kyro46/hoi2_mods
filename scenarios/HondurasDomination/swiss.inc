@@ -20,7 +20,7 @@ province = { id = 533 landfort = 5 anti_air = 3 } # Zürich
 country =
 { tag                    = SCH
   capital                = 532
-  manpower               = 134.6 # 135 - building queue
+  manpower               = 133.6 # 135 - building queue
   # Resource Reserves
   energy                 = 1000
   metal                  = 1000
@@ -59,9 +59,25 @@ country =
     relation = { tag = ITA value = 1 }
     relation = { tag = SOV value = 1 }
     relation = { tag = USA value = 1 }
-	relation = { tag = CAN value = 3 }
+	relation = { tag = CAN value = 5 }
 	relation = { tag = SWE value = 3 }
+	relation = { tag = NOR value = 2 }
+	relation = { tag = DEN value = 3 }
+	relation = { tag = FIN value = 2 }
 	relation = { tag = MEX value = 3 }
+	relation = { tag = ROM value = 2 }
+	relation = { tag = LUX value = 6 }
+	relation = { tag = POL value = -10 }
+	relation = { tag = ALB value = -12 }
+	relation = { tag = POR value = -16 }
+	relation = { tag = TUR value = -20 }
+	relation = { tag = PER value = -22 }
+	relation = { tag = BUL value = -9 }
+	relation = { tag = SPR value = 3}
+	relation = { tag = EST value = -9 }
+	relation = { tag = GRE value = -19 }
+	relation = { tag = HUN value = -6}
+	
 	
   }
   headofstate            = { type = 9 id = 17001 }
@@ -267,5 +283,28 @@ country =
 		days_for_first = 215 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30600 id = 20 } 
+		name = "" 
+		progress = 0.0000 
+		location = 532 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = september 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 1 
+		done = 0 
+		days = 259 
+		days_for_first = 259 
+		gearing_bonus = 0.0000 
+		type = ic 
 		} 
 }

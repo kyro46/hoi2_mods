@@ -22,7 +22,7 @@ province =
 
 country =
 { tag                    = ARG
-  manpower               = 49.4 # 50 - building queue
+  manpower               = 48.4 # 50 - building queue
   transports             = 65
   escorts                = 10
   # Resource Reserves
@@ -34,8 +34,8 @@ country =
   money                  = 20
   consumer = 0.2600 
   supply = 0.0800 
-  production = 0.5600 
-  reinforcement = 0.1000 
+  production = 0.6600 
+  reinforcement = 0.0000 
   upgrading = 0.0000 
   capital                = 667
   policy =
@@ -71,7 +71,8 @@ country =
     relation = { tag = PRU value = 20 }
     relation = { tag = URU value = -50 }
     relation = { tag = USA value = 75 }
-    relation = { tag = VEN value = 10 }
+    relation = { tag = ROM value = 1 }
+	relation = { tag = VEN value = 10 }
   }
   headofstate            = { type = 9 id = 35001 }
   headofgovernment       = { type = 9 id = 35002 }
@@ -364,29 +365,6 @@ country =
 		id = { type = 12000 id = 28 } 
 		name = "" 
 		progress = 0.0000 
-		location = 850 
-		cost = 2.0000 
-		date = { 
-			year = 1942 
-			month = february 
-			day = 17 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 28 
-		done = 0 
-		days = 2208 
-		days_for_first = 96 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 12000 id = 29 } 
-		name = "" 
-		progress = 0.0000 
 		location = 845 
 		cost = 2.0000 
 		date = { 
@@ -403,6 +381,29 @@ country =
 		done = 0 
 		days = 2516 
 		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 12000 id = 29 } 
+		name = "" 
+		progress = 0.0000 
+		location = 850 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = february 
+			day = 17 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2208 
+		days_for_first = 96 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -428,5 +429,28 @@ country =
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 12000 id = 31 } 
+		name = "" 
+		progress = 0.0000 
+		location = 667 
+		cost = 5.0000 
+		date = { 
+			year = 1940 
+			month = january 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 5 
+		done = 0 
+		days = 1440 
+		days_for_first = 288 
+		gearing_bonus = 0.0000 
+		type = ic 
 		}
 }

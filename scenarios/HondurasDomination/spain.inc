@@ -37,24 +37,24 @@ province =
   anti_air   = 2
   naval_base = { size = 7 current_size = 7 }
   air_base   = { size = 4 current_size = 4 }
-  supplypool = 50
+  supplypool = 10
 }              # Mallorca
-province = { id = 957 supplypool = 50 } # Ceuta
+province = { id = 957 supplypool = 15 } # Ceuta
 province =
 { id         = 963
   naval_base = { size = 1 current_size = 1 }
   air_base   = { size = 2 current_size = 2 }
   oilpool    = 50
-  supplypool = 50
+  supplypool = 20
 }              # Gran Canaria
 province =
 { id         = 972
   anti_air   = 2
   naval_base = { size = 2 current_size = 2 }
   air_base   = { size = 2 current_size = 2 }
-  supplypool = 50
+  supplypool = 5
 }              # Villa Cisneros
-province = { id = 1091 supplypool = 50 } # Bata
+province = { id = 1091 supplypool = 5 } # Bata
 
 #####################
 # Country main data #
@@ -70,11 +70,11 @@ country =
   metal                  = 1000
   rare_materials         = 500
   oil                    = 450
-  supplies               = 250
+  supplies               = 445
   money                  = 20
   consumer = 0.3000 
-  supply = 0.2000 
-  production = 0.5000 
+  supply = 0.1375 
+  production = 0.5625 
   reinforcement = 0.0000 
   upgrading = 0.0000 
   dissent                = 30
@@ -92,6 +92,8 @@ country =
     relation = { tag = ITA value = -50 }
     relation = { tag = POR value = -50 }
     relation = { tag = SOV value = -10 }
+	relation = { tag = POL value = -13 }
+	relation = { tag = SCH value = 2}
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 3 }
@@ -562,8 +564,8 @@ navalunit =
 		cost = 2.0000 
 		date = { 
 			year = 1940 
-			month = august 
-			day = 2 
+			month = february 
+			day = 17 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -585,9 +587,9 @@ navalunit =
 		location = 347 
 		cost = 2.0000 
 		date = { 
-			year = 1941 
-			month = april 
-			day = 29 
+			year = 1940 
+			month = october 
+			day = 17 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -609,9 +611,9 @@ navalunit =
 		location = 357 
 		cost = 2.0000 
 		date = { 
-			year = 1942 
-			month = june 
-			day = 26 
+			year = 1944 
+			month = october 
+			day = 4 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -632,55 +634,9 @@ navalunit =
 		location = 339 
 		cost = 2.0000 
 		date = { 
-			year = 1943 
-			month = july 
-			day = 14 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 28 
-		done = 0 
-		days = 2443 
-		days_for_first = 108 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 27600 id = 68 } 
-		name = "" 
-		progress = 0.0000 
-		location = 354 
-		cost = 2.0000 
-		date = { 
-			year = 1943 
-			month = january 
-			day = 5 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 26 
-		done = 0 
-		days = 2188 
-		days_for_first = 162 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 27600 id = 69 } 
-		name = "" 
-		progress = 0.0000 
-		location = 342 
-		cost = 2.0000 
-		date = { 
-			year = 1943 
-			month = july 
-			day = 14 
+			year = 1942 
+			month = october 
+			day = 13 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -701,9 +657,9 @@ navalunit =
 		location = 334 
 		cost = 2.0000 
 		date = { 
-			year = 1944 
+			year = 1945 
 			month = august 
-			day = 3 
+			day = 29 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -718,15 +674,61 @@ navalunit =
 		type = infrastructure 
 		} 
 	province_development = { 
+		id = { type = 27600 id = 69 } 
+		name = "" 
+		progress = 0.0000 
+		location = 342 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = october 
+			day = 13 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2443 
+		days_for_first = 108 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 27600 id = 68 } 
+		name = "" 
+		progress = 0.0000 
+		location = 354 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = june 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 26 
+		done = 0 
+		days = 2188 
+		days_for_first = 162 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
 		id = { type = 27600 id = 71 } 
 		name = "" 
 		progress = 0.0000 
 		location = 351 
 		cost = 2.0000 
 		date = { 
-			year = 1943 
-			month = july 
-			day = 14 
+			year = 1946 
+			month = march 
+			day = 5 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -810,21 +812,21 @@ navalunit =
 		type = infrastructure 
 		} 
 	division_development = { 
-		id = { type = 27600 id = 62 } 
-		name = "Canarias" 
+		id = { type = 27600 id = 63 } 
+		name = "Baleares" 
 		progress = 0.0000 
 		location = 0 
 		cost = 2.5000 
 		date = { 
 			year = 1936 
-			month = march 
-			day = 1 
+			month = february 
+			day = 4 
 			hour = 0 
 			} 
 		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
-		total_progress = 0.7897 
+		total_progress = 0.8815 
 		size = 1 
 		done = 0 
 		days = 1 
@@ -844,21 +846,21 @@ navalunit =
 		brigade_model4 = 0 
 		} 
 	division_development = { 
-		id = { type = 27600 id = 63 } 
-		name = "Baleares" 
+		id = { type = 27600 id = 62 } 
+		name = "Canarias" 
 		progress = 0.0000 
 		location = 0 
 		cost = 2.5000 
 		date = { 
 			year = 1936 
-			month = june 
-			day = 1 
+			month = january 
+			day = 26 
 			hour = 0 
 			} 
 		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
-		total_progress = 0.4793 
+		total_progress = 0.9077 
 		size = 1 
 		done = 0 
 		days = 1 

@@ -29,7 +29,7 @@ country =
   reinforcement = 0.0000 
   upgrading = 0.0000 
   capital                = 840
-  manpower               = 14.7 # 15 - building queue
+  manpower               = 13.7 # 15 - building queue
   transports             = 40
   escorts                = 6
   policy =
@@ -216,9 +216,9 @@ country =
 		location = 839 
 		cost = 2.0000 
 		date = { 
-			year = 1952 
-			month = august 
-			day = 25 
+			year = 1947 
+			month = october 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -230,18 +230,42 @@ country =
 		days = 2389 
 		days_for_first = 265 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
 		id = { type = 12500 id = 16 } 
 		name = "" 
 		progress = 0.0000 
+		location = 840 
+		cost = 5.0000 
+		date = { 
+			year = 1938 
+			month = august 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 3 
+		done = 0 
+		days = 950 
+		days_for_first = 317 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 12500 id = 17 } 
+		name = "" 
+		progress = 0.0000 
 		location = 856 
 		cost = 2.0000 
 		date = { 
-			year = 1952 
-			month = august 
-			day = 25 
+			year = 1947 
+			month = october 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -253,6 +277,7 @@ country =
 		days = 2389 
 		days_for_first = 265 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		}
 }

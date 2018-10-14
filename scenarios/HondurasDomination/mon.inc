@@ -28,7 +28,7 @@ country =
   production = 0.7120 
   reinforcement = 0.0000 
   upgrading = 0.0000 
-  manpower               = 6.9 # 7 - building queue
+  manpower               = 6.6 # 7 - building queue
   capital                = 1404
   diplomacy =
   { relation = { tag = CHC value = 25 }
@@ -46,7 +46,7 @@ country =
   # ######################
   # GW fighter
   techapps               = { 4010 2150 2290 1010 1190 5080 }
-  blueprints             = { 6210 }
+  blueprints             = { 1020 6210 6300 2300 2310 }
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 1
@@ -115,6 +115,75 @@ country =
 		days_for_first = 300 
 		gearing_bonus = 0.0000 
 		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30500 id = 7 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1399 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = february 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 4 
+		done = 0 
+		days = 444 
+		days_for_first = 300 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30500 id = 8 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1385 
+		cost = 2.0000 
+		date = { 
+			year = 1937 
+			month = march 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 4 
+		done = 0 
+		days = 444 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 30500 id = 9 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1419 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = september 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 822 
+		days_for_first = 300 
+		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
 }

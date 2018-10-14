@@ -22,7 +22,7 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  manpower               = 13.8 # 15 - building queue
+  manpower               = 12.8 # 15 - building queue
   consumer = 0.2857 
   supply = 0.0477 
   production = 0.6666 
@@ -67,7 +67,7 @@ country =
   chiefofair             = { type = 9 id = 33010 }
   # Firepower
   landunit =
-  { id       = { type = 26000 id = 40 }
+  { id       = { type = 26000 id = 4002 }
     name     = "Ejercito de Cuba"
     location = 654
     division =
@@ -87,7 +87,7 @@ country =
     }
   } 
 	province_development = { 
-		id = { type = 26000 id = 4002 } 
+		id = { type = 26000 id = 4003 } 
 		name = "" 
 		progress = 0.0000 
 		location = 654 
@@ -111,7 +111,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 26000 id = 4003 } 
+		id = { type = 26000 id = 4004 } 
 		name = "" 
 		progress = 0.0000 
 		location = 655 
@@ -133,8 +133,31 @@ country =
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
+	convoy_development = { 
+		id = { type = 26000 id = 4005 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 668 
+		days_for_first = 79 
+		gearing_bonus = 0.0000 
+		type = transports 
+		} 
 	province_development = { 
-		id = { type = 26000 id = 4004 } 
+		id = { type = 26000 id = 4006 } 
 		name = "" 
 		progress = 0.0000 
 		location = 654 

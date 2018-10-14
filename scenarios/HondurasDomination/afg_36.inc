@@ -48,6 +48,7 @@ country =
     relation = { tag = JAP value = 2 }
 	relation = { tag = SOV value = 1 }
     relation = { tag = TUR value = 50 }
+	relation = { tag = USA value = -12 }
   }
   headofstate            = { type = 9 id = 54001 }
   headofgovernment       = { type = 9 id = 54002 }

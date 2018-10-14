@@ -29,7 +29,7 @@ country =
   reinforcement = 0.0000 
   upgrading = 0.0000 
   capital                = 1807
-  manpower               = 26.8 # 27 - building queue
+  manpower               = 26.7 # 27 - building queue
   transports             = 12
   policy =
   { date              = { year = 0 month = january day = 0 }
@@ -135,6 +135,29 @@ country =
 		size = 32 
 		done = 0 
 		days = 2926 
+		days_for_first = 285 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 22600 id = 202 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1804 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = june 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 781 
 		days_for_first = 285 
 		gearing_bonus = 0.0000 
 		type = infrastructure 

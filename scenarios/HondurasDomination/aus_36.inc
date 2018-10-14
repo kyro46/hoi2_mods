@@ -25,7 +25,7 @@ country =
   # Unwanted side-effect: Will never accept peace with Germany.
   regular_id             = GER
   intrinsic_gov_type     = social_liberal
-  manpower               = 64.6 # 65 - building queue
+  manpower               = 61.6 # 65 - building queue
   capital                = 463
   # Resource Reserves
   energy                 = 1000
@@ -34,10 +34,10 @@ country =
   oil                    = 500
   supplies               = 500
   money                  = 10
-  consumer = 0.2584 
-  supply = 0.2000 
-  production = 0.4166 
-  reinforcement = 0.1250 
+  consumer = 0.1822 
+  supply = 0.0678 
+  production = 0.7500 
+  reinforcement = 0.0000 
   upgrading = 0.0000 
   diplomacy =
   { relation = { tag = ENG value = 75 }
@@ -55,6 +55,8 @@ country =
     relation = { tag = IRE value = 10 }
     relation = { tag = ITA value = 125 }
     relation = { tag = SCH value = 50 }
+	relation = { tag = POL value = 1 }
+	relation = { tag = ROM value = -10}
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }
@@ -202,6 +204,30 @@ country =
     }
   } 
 	province_development = { 
+		id = { type = 14000 id = 204 } 
+		name = "" 
+		progress = 0.0000 
+		location = 463 
+		cost = 5.0000 
+		date = { 
+			year = 1943 
+			month = june 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 1584 
+		days_for_first = 317 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = ic 
+		} 
+	province_development = { 
 		id = { type = 14000 id = 200 } 
 		name = "" 
 		progress = 0.0000 
@@ -249,6 +275,29 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
+		id = { type = 14000 id = 203 } 
+		name = "" 
+		progress = 0.0000 
+		location = 465 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = september 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1649 
+		days_for_first = 125 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
 		id = { type = 14000 id = 202 } 
 		name = "" 
 		progress = 0.0000 
@@ -272,26 +321,84 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 14000 id = 203 } 
+		id = { type = 14000 id = 206 } 
 		name = "" 
 		progress = 0.0000 
-		location = 465 
-		cost = 2.0000 
+		location = 460 
+		cost = 3.0000 
 		date = { 
-			year = 1941 
-			month = september 
-			day = 15 
+			year = 1937 
+			month = march 
+			day = 29 
 			hour = 0 
 			} 
-		manpower = 0.1000 
+		manpower = 0.5000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 20 
+		size = 10 
 		done = 0 
-		days = 1649 
-		days_for_first = 125 
+		days = 448 
+		days_for_first = 53 
 		gearing_bonus = 0.0000 
-		type = infrastructure 
+		type = flak 
+		} 
+	province_development = { 
+		id = { type = 14000 id = 205 } 
+		name = "" 
+		progress = 0.0000 
+		location = 463 
+		cost = 3.0000 
+		date = { 
+			year = 1936 
+			month = october 
+			day = 10 
+			hour = 0 
+			} 
+		manpower = 0.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 6 
+		done = 0 
+		days = 280 
+		days_for_first = 53 
+		gearing_bonus = 0.0000 
+		type = flak 
+		} 
+	division_development = { 
+		id = { type = 14000 id = 207 } 
+		name = "Fliegergruppe 1" 
+		progress = 0.0000 
+		location = 463 
+		cost = 9.6800 
+		date = { 
+			year = 1938 
+			month = june 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 839 
+		days_for_first = 128 
+		gearing_bonus = 0.0000 
+		type = interceptor 
+		extra = none 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
 		}
 }

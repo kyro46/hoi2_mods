@@ -62,14 +62,14 @@ province =
   anti_air   = 2
   air_base   = { size = 6 current_size = 6 }
   naval_base = { size = 6 current_size = 6 }
-  supplypool = 1000
+  supplypool = 100 # was 1000 before 1.11
 }              # Okinawa
 province =
 { id         = 1196
   anti_air   = 2
   air_base   = { size = 10 current_size = 10 }
   naval_base = { size = 10 current_size = 10 }
-  supplypool = 2000
+  supplypool = 200 # was 200 before 1.11
   oilpool    = 100
 }              # Busan
 province =
@@ -77,16 +77,16 @@ province =
   anti_air   = 4
   naval_base = { size = 5 current_size = 5 }
   air_base   = { size = 7 current_size = 7 }
-  supplypool = 500
+  supplypool = 50 # was 500 before 1.11
   oilpool    = 100
 }              # Dalian
-province = { id = 1203 supplypool = 1000 oilpool = 100 } # Tangshan
+province = { id = 1203 energypool = 30 oilpool = 100 supplypool = 100 } # Tangshan
 province =
 { id         = 1322
   anti_air   = 2
   air_base   = { size = 8 current_size = 8 }
   naval_base = { size = 10 current_size = 10 }
-  supplypool = 1000
+  supplypool = 100 # was 1000 before 1.11
   oilpool    = 100
 }              # Kaohsiung
 province = { id = 1323 anti_air = 2 } # Taipei
@@ -100,13 +100,13 @@ province =
   anti_air = 2
   air_base = { size = 2 current_size = 2 }
 }            # Changde
-province = { id = 1599 supplypool = 500 } # Iwo Jima
+province = { id = 1599 supplypool = 50 } # Iwo Jima
 province =
 { id         = 1601
   anti_air   = 5
   air_base   = { size = 4 current_size = 4 }
   naval_base = { size = 2 current_size = 2 }
-  supplypool = 500
+  supplypool = 50 # was 500 before 1.11
 }              # Eniwetok
 province = { id = 1605 anti_air = 3 } # Majuro
 province =
@@ -114,24 +114,24 @@ province =
   anti_air   = 5
   air_base   = { size = 4 current_size = 4 }
   naval_base = { size = 2 current_size = 2 }
-  supplypool = 1000
+  supplypool = 100 # was 1000 before 1.11
 }              # Kwajalein
-province = { id = 1610 supplypool = 500 } # Ponape
+province = { id = 1610 supplypool = 50 } # Ponape
 province =
 { id         = 1613
   anti_air   = 5
   air_base   = { size = 10 current_size = 10 }
   naval_base = { size = 10 current_size = 10 }
-  supplypool = 500
+  supplypool = 50 # was 500 before 1.11
 }              # Truk
-province = { id = 1618 supplypool = 500 } # Ulithi
-province = { id = 1619 anti_air = 3 supplypool = 500 } # Yap
-province = { id = 1621 supplypool = 500 } # Palau
-province = { id = 1625 supplypool = 500 } # Rota
-province = { id = 1626 supplypool = 500 } # Tinian
-province = { id = 1627 anti_air = 3 supplypool = 500 } # Saipan
+province = { id = 1618 supplypool = 50 } # Ulithi
+province = { id = 1619 anti_air = 3 supplypool = 50 } # Yap
+province = { id = 1621 supplypool = 50 } # Palau
+province = { id = 1625 supplypool = 50 } # Rota
+province = { id = 1626 supplypool = 50 } # Tinian
+province = { id = 1627 anti_air = 3 supplypool = 50 } # Saipan
 province = { id = 1784 anti_air = 2 } # Bonin Islands
-province = { id = 1785 supplypool = 500 } # Marcus Island
+province = { id = 1785 supplypool = 50 } # Marcus Island
 
 #####################
 # Country main data #
@@ -141,18 +141,18 @@ country =
 { tag                    = JAP
   belligerence           = 10
   capital                = 1184
-  manpower               = 1715.5 # 1735 - building queue
+  manpower               = 1857.0 # 1735 + 202.8 from garrisons - building queue
   # Resource Reserves
-  energy                 = 1000
+  energy                 = 970
   metal                  = 1000
   rare_materials         = 500
   oil                    = 500
-  supplies               = 4450
+  supplies               = 15250
   money                  = 100
   consumer = 0.1750 
-  supply = 0.1500 
-  production = 0.6250 
-  reinforcement = 0.0500 
+  supply = 0.1556 
+  production = 0.6694 
+  reinforcement = 0.0000 
   upgrading = 0.0000 
   transports             = 431
   escorts                = 100
@@ -182,6 +182,7 @@ country =
 	relation = { tag = PHI value = 1 }
     relation = { tag = SIA value = 75 }
     relation = { tag = SOV value = -10 }
+	relation = { tag = ROM value = -11 }
     relation = { tag = USA value = 15 }
   }
   SpyInfo                = { country = "JAP" NumberOfSpies = 5 }
@@ -597,7 +598,7 @@ country =
     division =
     { id       = { type = 13016 id = 50 }
       name     = "Dai 7 Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       model    = 0
       locked = yes
@@ -605,7 +606,7 @@ country =
     division =
     { id       = { type = 13016 id = 51 }
       name     = "Dai 57 Shubitai" 
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       model    = 0
       locked = yes
@@ -631,7 +632,7 @@ country =
     division =
     { id       = { type = 13016 id = 55 }
       name     = "Dai 8 Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       model    = 0
       extra    = anti_air
@@ -640,7 +641,7 @@ country =
     division =
     { id       = { type = 13016 id = 56 }
       name     = "Dai 14 Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       model    = 0
       extra    = anti_air
@@ -688,7 +689,7 @@ country =
     division =
     { id       = { type = 13016 id = 72 }
       name     = "Dai 1 Chôsen Shubitai" # Korean Garrison
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       model    = 0
       locked = yes
@@ -696,7 +697,7 @@ country =
     division =
     { id       = { type = 13016 id = 73 }
       name     = "Dai 2 Chôsen Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       model    = 0
       locked = yes
@@ -710,7 +711,7 @@ country =
     division =
     { id       = { type = 13016 id = 75 }
       name     = "Saishu Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -722,7 +723,7 @@ country =
     division =
     { id       = { type = 13016 id = 77 }
       name     = "Naha Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -734,7 +735,7 @@ country =
     division =
     { id       = { type = 13016 id = 79 }
       name     = "Toyohara Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -746,7 +747,7 @@ country =
     division =
     { id       = { type = 13016 id = 81 }
       name     = "Tomari Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -758,7 +759,7 @@ country =
     division =
     { id       = { type = 13016 id = 83 }
       name     = "Shana Shubitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -770,7 +771,7 @@ country =
     division =
     { id       = { type = 13016 id = 85 }
       name     = "Mariane Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -782,7 +783,7 @@ country =
     division =
     { id       = { type = 13016 id = 87 }
       name     = "Palau Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -794,7 +795,7 @@ country =
     division =
     { id       = { type = 13016 id = 89 }
       name     = "Eniwetok Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -806,7 +807,7 @@ country =
     division =
     { id       = { type = 13016 id = 91 }
       name     = "Bikini Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -818,7 +819,7 @@ country =
     division =
     { id       = { type = 13016 id = 93 }
       name     = "Kwajalein Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -830,7 +831,7 @@ country =
     division =
     { id       = { type = 13016 id = 95 }
       name     = "Saipan Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -842,7 +843,7 @@ country =
     division =
     { id       = { type = 13016 id = 97 }
       name     = "Shumushushima Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -854,7 +855,7 @@ country =
     division =
     { id       = { type = 13016 id = 99 }
       name     = "Bonin Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -866,7 +867,7 @@ country =
     division =
     { id       = { type = 13016 id = 101 }
       name     = "Marcus Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -878,7 +879,7 @@ country =
     division =
     { id       = { type = 13016 id = 103 }
       name     = "Ulithi Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -890,7 +891,7 @@ country =
     division =
     { id       = { type = 13016 id = 105 }
       name     = "Truk Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -902,7 +903,7 @@ country =
     division =
     { id       = { type = 13016 id = 107 }
       name     = "Ponape Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -914,7 +915,7 @@ country =
     division =
     { id       = { type = 13016 id = 109 }
       name     = "Marshall Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -926,7 +927,7 @@ country =
     division =
     { id       = { type = 13016 id = 111 }
       name     = "Yap Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -939,7 +940,7 @@ country =
     division =
     { id       = { type = 13016 id = 301 }
       name     = "Asahikawa Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -952,7 +953,7 @@ country =
     division =
     { id       = { type = 13016 id = 303 }
       name     = "Sapporo Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -965,7 +966,7 @@ country =
     division =
     { id       = { type = 13016 id = 305 }
       name     = "Sendai Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -978,7 +979,7 @@ country =
     division =
     { id       = { type = 13016 id = 307 }
       name     = "Fukushima Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -991,7 +992,7 @@ country =
     division =
     { id       = { type = 13016 id = 309 }
       name     = "Tokyo Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1004,7 +1005,7 @@ country =
     division =
     { id       = { type = 13016 id = 311 }
       name     = "Nagoya Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1017,7 +1018,7 @@ country =
     division =
     { id       = { type = 13016 id = 313 }
       name     = "Osaka Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1030,7 +1031,7 @@ country =
     division =
     { id       = { type = 13016 id = 315 }
       name     = "Shikoku Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1043,7 +1044,7 @@ country =
     division =
     { id       = { type = 13016 id = 317 }
       name     = "Kagoshima Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1056,7 +1057,7 @@ country =
     division =
     { id       = { type = 13016 id = 319 }
       name     = "Fukuoka Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1069,7 +1070,7 @@ country =
     division =
     { id       = { type = 13016 id = 321 }
       name     = "Hiroshima Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1082,7 +1083,7 @@ country =
     division =
     { id       = { type = 13016 id = 323 }
       name     = "Kanazawa Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1095,7 +1096,7 @@ country =
     division =
     { id       = { type = 13016 id = 325 }
       name     = "Niigata Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -1108,7 +1109,7 @@ country =
     division =
     { id       = { type = 13016 id = 327 }
       name     = "Akita Keibitai"
-      strength = 100
+      strength = 35 # was 100 before 1.11
       type     = garrison
       locked = yes
     }
@@ -2393,7 +2394,55 @@ country =
 		path = { 1190 2192 2188 2189 2190 1395 } 
 		} 
 	province_development = { 
+		id = { type = 13016 id = 1000 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = february 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 3802 
+		days_for_first = 317 
+		gearing_bonus = 0.0000 
+		speed_step = 2 
+		type = ic 
+		} 
+	province_development = { 
 		id = { type = 13016 id = 1001 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1190 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = march 
+			day = 21 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 4752 
+		days_for_first = 317 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 13016 id = 1002 } 
 		name = "" 
 		progress = 0.0000 
 		location = 1184 
@@ -2423,33 +2472,9 @@ country =
 		location = 1187 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = april 
-			day = 1 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 20 
-		done = 0 
-		days = 1662 
-		days_for_first = 150 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 13016 id = 1002 } 
-		name = "" 
-		progress = 0.0000 
-		location = 1190 
-		cost = 2.0000 
-		date = { 
-			year = 1939 
-			month = april 
-			day = 1 
+			year = 1940 
+			month = november 
+			day = 16 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2468,22 +2493,22 @@ country =
 		id = { type = 13016 id = 1004 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1179 
+		location = 1185 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = april 
-			day = 1 
+			year = 1945 
+			month = september 
+			day = 16 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 20 
+		size = 24 
 		done = 0 
-		days = 1662 
-		days_for_first = 150 
+		days = 1178 
+		days_for_first = 250 
 		gearing_bonus = 0.0000 
 		speed_step = 1 
 		type = infrastructure 
@@ -2492,12 +2517,12 @@ country =
 		id = { type = 13016 id = 1005 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1182 
+		location = 1190 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = april 
-			day = 1 
+			year = 1940 
+			month = november 
+			day = 16 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2516,22 +2541,22 @@ country =
 		id = { type = 13016 id = 1006 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1183 
+		location = 1189 
 		cost = 2.0000 
 		date = { 
-			year = 1941 
-			month = june 
-			day = 28 
+			year = 1942 
+			month = november 
+			day = 24 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 24 
+		size = 20 
 		done = 0 
-		days = 1984 
-		days_for_first = 250 
+		days = 855 
+		days_for_first = 150 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -2539,98 +2564,27 @@ country =
 		id = { type = 13016 id = 1007 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1185 
+		location = 1188 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
+			year = 1942 
 			month = november 
-			day = 18 
+			day = 24 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 24 
+		size = 20 
 		done = 0 
-		days = 1178 
-		days_for_first = 250 
+		days = 855 
+		days_for_first = 150 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
 		id = { type = 13016 id = 1008 } 
-		name = "" 
-		progress = 0.0000 
-		location = 1189 
-		cost = 2.0000 
-		date = { 
-			year = 1939 
-			month = april 
-			day = 1 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 20 
-		done = 0 
-		days = 855 
-		days_for_first = 150 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 13016 id = 1009 } 
-		name = "" 
-		progress = 0.0000 
-		location = 1188 
-		cost = 2.0000 
-		date = { 
-			year = 1940 
-			month = august 
-			day = 6 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 20 
-		done = 0 
-		days = 855 
-		days_for_first = 150 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 13016 id = 1010 } 
-		name = "" 
-		progress = 0.0000 
-		location = 1201 
-		cost = 2.0000 
-		date = { 
-			year = 1941 
-			month = june 
-			day = 28 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 1178 
-		days_for_first = 100 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 13016 id = 1011 } 
 		name = "" 
 		progress = 0.0000 
 		location = 1199 
@@ -2649,6 +2603,76 @@ country =
 		done = 0 
 		days = 1178 
 		days_for_first = 100 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 13016 id = 1009 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1183 
+		cost = 2.0000 
+		date = { 
+			year = 1945 
+			month = september 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1984 
+		days_for_first = 250 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 13016 id = 1010 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1182 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1662 
+		days_for_first = 150 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 13016 id = 1011 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1179 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1662 
+		days_for_first = 150 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -2702,7 +2726,7 @@ country =
 		id = { type = 13016 id = 1014 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1181 
+		location = 1201 
 		cost = 2.0000 
 		date = { 
 			year = 1941 
@@ -2716,8 +2740,8 @@ country =
 		total_progress = 0.0000 
 		size = 24 
 		done = 0 
-		days = 1984 
-		days_for_first = 250 
+		days = 1178 
+		days_for_first = 100 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -2748,7 +2772,7 @@ country =
 		id = { type = 13016 id = 1016 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1196 
+		location = 1195 
 		cost = 2.0000 
 		date = { 
 			year = 1941 
@@ -2771,7 +2795,7 @@ country =
 		id = { type = 13016 id = 1017 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1195 
+		location = 1181 
 		cost = 2.0000 
 		date = { 
 			year = 1941 
@@ -2786,7 +2810,7 @@ country =
 		size = 24 
 		done = 0 
 		days = 1984 
-		days_for_first = 150 
+		days_for_first = 250 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -2814,52 +2838,546 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = {  type = 13016 id = 1026 } 
+		id = { type = 13016 id = 1019 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1184 
-		cost = 5.0000 
+		location = 1196 
+		cost = 2.0000 
 		date = { 
 			year = 1941 
-			month = february 
-			day = 0 
+			month = june 
+			day = 28 
 			hour = 0 
 			} 
-		manpower = 1.0000 
+		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 10 
+		size = 24 
 		done = 0 
-		days = 4752 
-		days_for_first = 317 
+		days = 1984 
+		days_for_first = 150 
 		gearing_bonus = 0.0000 
-		speed_step = 2 
-		type = ic 
+		type = infrastructure 
 		} 
 	convoy_development = { 
-		id = { type = 13016 id = 1000 } 
+		id = { type = 13016 id = 1020 } 
 		name = "" 
 		progress = 0.0000 
 		location = 0 
 		cost = 3.0000 
 		date = { 
-			year = 1944 
-			month = december 
-			day = 4 
+			year = 1940 
+			month = july 
+			day = 6 
 			hour = 0 
 			} 
 		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 50 
+		size = 25 
 		done = 0 
 		days = 1 
 		days_for_first = 79 
 		gearing_bonus = 0.0000 
 		type = transports 
 		} 
+	convoy_development = { 
+		id = { type = 13016 id = 1026 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1940 
+			month = july 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 25 
+		done = 0 
+		days = 1 
+		days_for_first = 79 
+		gearing_bonus = 0.0000 
+		type = transports 
+		} 
+	convoy_development = { 
+		id = { type = 13016 id = 1027 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = july 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 0.6000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 25 
+		done = 0 
+		days = 1 
+		days_for_first = 79 
+		gearing_bonus = 0.0000 
+		type = escorts 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1028 } 
+		name = "Dai 2 Konoe Shidan" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 7.6028 
+		date = { 
+			year = 1939 
+			month = august 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 12.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 22 
+		done = 0 
+		days = 1177 
+		days_for_first = 71 
+		gearing_bonus = 0.0000 
+		type = infantry 
+		extra = artillery 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 3 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1029 } 
+		name = "Dai 1 'Tokyo' Hoheishidan" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 7.6028 
+		date = { 
+			year = 1938 
+			month = october 
+			day = 15 
+			hour = 0 
+			} 
+		manpower = 12.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 17 
+		done = 0 
+		days = 1177 
+		days_for_first = 71 
+		gearing_bonus = 0.0000 
+		type = infantry 
+		extra = artillery 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 3 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1030 } 
+		name = "Dai 2 'Sendai' Hoheishidan" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 7.6028 
+		date = { 
+			year = 1938 
+			month = april 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 12.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 14 
+		done = 0 
+		days = 1177 
+		days_for_first = 71 
+		gearing_bonus = 0.0000 
+		type = infantry 
+		extra = artillery 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 3 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1031 } 
+		name = "Dai 3 'Nagoya' Hoheishidan" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 7.6028 
+		date = { 
+			year = 1937 
+			month = november 
+			day = 3 
+			hour = 0 
+			} 
+		manpower = 12.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 11 
+		done = 0 
+		days = 1177 
+		days_for_first = 71 
+		gearing_bonus = 0.0000 
+		type = infantry 
+		extra = artillery 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 3 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1032 } 
+		name = "Dai 4 'Osaka' Hoheishidan" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 7.6028 
+		date = { 
+			year = 1937 
+			month = may 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 12.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 1063 
+		days_for_first = 71 
+		gearing_bonus = 0.0000 
+		type = infantry 
+		extra = artillery 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 3 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 259 } 
+		name = "Soryu" 
+		progress = 0.0000 
+		location = 0 
+		cost = 5.7295 
+		date = { 
+			year = 1942 
+			month = august 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 2.2000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.3584 
+		size = 5 
+		done = 0 
+		days = 1 
+		days_for_first = 578 
+		gearing_bonus = 0.0000 
+		type = carrier 
+		extra = cag 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 3 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1033 } 
+		name = "Hiryu" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 5.7295 
+		date = { 
+			year = 1943 
+			month = march 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 2.2000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 5 
+		done = 0 
+		days = 2604 
+		days_for_first = 578 
+		gearing_bonus = 0.0000 
+		type = carrier 
+		extra = cag 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 2 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1034 } 
+		name = "Shokaku" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 5.7295 
+		date = { 
+			year = 1943 
+			month = march 
+			day = 24 
+			hour = 0 
+			} 
+		manpower = 2.2000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		retooling_time = 1.0000 
+		total_progress = 0.0000 
+		size = 5 
+		done = 0 
+		days = 2604 
+		days_for_first = 578 
+		gearing_bonus = 0.0000 
+		type = carrier 
+		extra = cag 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 2 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 1035 } 
+		name = "Shoho" 
+		progress = 0.0000 
+		location = 1184 
+		cost = 2.4288 
+		date = { 
+			year = 1937 
+			month = june 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 1.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.2618 
+		size = 2 
+		done = 0 
+		days = 317 
+		days_for_first = 317 
+		gearing_bonus = 0.0000 
+		type = escort_carrier 
+		extra = b_u1 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 1 
+		brigade_model = 1 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 267 } 
+		name = "Kumano" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.4913 
+		date = { 
+			year = 1936 
+			month = december 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.5556 # 0.4868
+		size = 2 
+		done = 0 
+		days = 1 
+		days_for_first = 253 
+		gearing_bonus = 0.0000 
+		type = heavy_cruiser 
+		extra = naval_sa_l 
+		extra1 = naval_spotter_l 
+		extra2 = naval_anti_air_l 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 1 
+		brigade_model1 = 2 
+		brigade_model2 = 1 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 13016 id = 268 } 
+		name = "Suzuya" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.4913 
+		date = { 
+			year = 1936 
+			month = october 
+			day = 19 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.8058 # 0.5319
+		size = 2 
+		done = 0 
+		days = 1 
+		days_for_first = 253 
+		gearing_bonus = 0.0000 
+		type = heavy_cruiser 
+		extra = naval_sa_l 
+		extra1 = naval_spotter_l 
+		extra2 = naval_anti_air_l 
+		extra3 = none 
+		extra4 = none 
+		model = 2 
+		brigade_model = 1 
+		brigade_model1 = 2 
+		brigade_model2 = 1 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+#	division_development = { 
+#		id = { type = 13016 id = 266 } 
+#		name = "Chikuma" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 3.4913 
+#		date = { 
+#			year = 1936 
+#			month = july 
+#			day = 3 
+#			hour = 0 
+#			} 
+#		manpower = 1.4000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.2729 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 253 
+#		gearing_bonus = 0.0000 
+#		type = heavy_cruiser 
+#		extra = naval_sa_l 
+#		extra1 = naval_spotter_l 
+#		extra2 = naval_anti_air_l 
+#		extra3 = none 
+#		extra4 = none 
+#		model = 2 
+#		brigade_model = 1 
+#		brigade_model1 = 2 
+#		brigade_model2 = 1 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
+#	division_development = { 
+#		id = { type = 13016 id = 269 } 
+#		name = "Tone" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 3.4913 
+#		date = { 
+#			year = 1936 
+#			month = august 
+#			day = 25 
+#			hour = 0 
+#			} 
+#		manpower = 1.4000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0688 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 253 
+#		gearing_bonus = 0.0000 
+#		type = heavy_cruiser 
+#		extra = naval_sa_l 
+#		extra1 = naval_spotter_l 
+#		extra2 = naval_anti_air_l 
+#		extra3 = none 
+#		extra4 = none 
+#		model = 2 
+#		brigade_model = 1 
+#		brigade_model1 = 2 
+#		brigade_model2 = 1 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
 	division_development = { 
 		id = { type = 13016 id = 215 } 
 		name = "Dai 14 Kuchikusentai" 
@@ -3025,244 +3543,6 @@ country =
 		extra4 = none 
 		model = 1 
 		brigade_model = 1 
-		brigade_model1 = 0 
-		brigade_model2 = 0 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 268 } 
-		name = "Suzuya" 
-		progress = 0.0000 
-		location = 0 
-		cost = 3.4913 
-		date = { 
-			year = 1936 
-			month = may 
-			day = 8 
-			hour = 0 
-			} 
-		manpower = 1.4000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.4941 
-		size = 1 
-		done = 0 
-		days = 1 
-		days_for_first = 253 
-		gearing_bonus = 0.0000 
-		type = heavy_cruiser 
-		extra = naval_sa_l 
-		extra1 = naval_spotter_l 
-		extra2 = naval_anti_air_l 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 1 
-		brigade_model1 = 2 
-		brigade_model2 = 1 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 269 } 
-		name = "Tone" 
-		progress = 0.0000 
-		location = 0 
-		cost = 3.4913 
-		date = { 
-			year = 1936 
-			month = may 
-			day = 12 
-			hour = 0 
-			} 
-		manpower = 1.4000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.4783 
-		size = 1 
-		done = 0 
-		days = 1 
-		days_for_first = 253 
-		gearing_bonus = 0.0000 
-		type = heavy_cruiser 
-		extra = naval_sa_l 
-		extra1 = naval_spotter_l 
-		extra2 = naval_anti_air_l 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 1 
-		brigade_model1 = 2 
-		brigade_model2 = 1 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 267 } 
-		name = "Kumano" 
-		progress = 0.0000 
-		location = 0 
-		cost = 3.4913 
-		date = { 
-			year = 1936 
-			month = june 
-			day = 10 
-			hour = 0 
-			} 
-		manpower = 1.4000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.3676 
-		size = 1 
-		done = 0 
-		days = 1 
-		days_for_first = 253 
-		gearing_bonus = 0.0000 
-		type = heavy_cruiser 
-		extra = naval_sa_l 
-		extra1 = naval_spotter_l 
-		extra2 = naval_anti_air_l 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 1 
-		brigade_model1 = 2 
-		brigade_model2 = 1 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 266 } 
-		name = "Chikuma" 
-		progress = 0.0000 
-		location = 0 
-		cost = 3.4913 
-		date = { 
-			year = 1936 
-			month = september 
-			day = 1 
-			hour = 0 
-			} 
-		manpower = 1.4000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0474 
-		size = 1 
-		done = 0 
-		days = 1 
-		days_for_first = 253 
-		gearing_bonus = 0.0000 
-		type = heavy_cruiser 
-		extra = naval_sa_l 
-		extra1 = naval_spotter_l 
-		extra2 = naval_anti_air_l 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 1 
-		brigade_model1 = 2 
-		brigade_model2 = 1 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 259 } 
-		name = "Soryu" 
-		progress = 0.0000 
-		location = 0 
-		cost = 5.7295 
-		date = { 
-			year = 1942 
-			month = august 
-			day = 5 
-			hour = 0 
-			} 
-		manpower = 2.2000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.3945 
-		size = 5 
-		done = 0 
-		days = 1 
-		days_for_first = 578 
-		gearing_bonus = 0.0000 
-		type = carrier 
-		extra = cag 
-		extra1 = none 
-		extra2 = none 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 2 
-		brigade_model1 = 0 
-		brigade_model2 = 0 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 1019 } 
-		name = "Amagi" 
-		progress = 0.0000 
-		location = 1184 
-		cost = 5.7295 
-		date = { 
-			year = 1943 
-			month = march 
-			day = 23 
-			hour = 0 
-			} 
-		manpower = 2.2000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 5 
-		done = 0 
-		days = 2604 
-		days_for_first = 578 
-		gearing_bonus = 0.0000 
-		type = carrier 
-		extra = cag 
-		extra1 = none 
-		extra2 = none 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 2 
-		brigade_model1 = 0 
-		brigade_model2 = 0 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
-	division_development = { 
-		id = { type = 13016 id = 1020 } 
-		name = "Hiryu" 
-		progress = 0.0000 
-		location = 1184 
-		cost = 5.7295 
-		date = { 
-			year = 1943 
-			month = march 
-			day = 23 
-			hour = 0 
-			} 
-		manpower = 2.2000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 5 
-		done = 0 
-		days = 2604 
-		days_for_first = 578 
-		gearing_bonus = 0.0000 
-		type = carrier 
-		extra = cag 
-		extra1 = none 
-		extra2 = none 
-		extra3 = none 
-		extra4 = none 
-		model = 2 
-		brigade_model = 2 
 		brigade_model1 = 0 
 		brigade_model2 = 0 
 		brigade_model3 = 0 

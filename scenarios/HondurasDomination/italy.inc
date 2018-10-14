@@ -59,6 +59,7 @@ province =
   anti_air   = 1
   naval_base = { size = 2 current_size = 2 }
   air_base   = { size = 4 current_size = 4 }
+  metalpool = 38 
   oilpool    = 100
   supplypool = 150 # was 800
 }              # Sardinia
@@ -122,18 +123,18 @@ province = { id = 1056 oilpool = 100 supplypool = 300 } # Mogadishu
 
 country =
 { tag                    = ITA
-  manpower               = 893.8 # 900 - building queue
+  manpower               = 938.8 # 900 + 55 from militia disbanding - building queue
   # Resource Reserves
   energy                 = 1000
-  metal                  = 1000
+  metal                  = 962
   rare_materials         = 500
   oil                    = 500
-  supplies               = 2800
+  supplies               = 2830.8 # 2800 + 30.8 from militia dsbanding
   money                  = 50
-  consumer = 0.1627 
-  supply = 0.0000 
-  production = 0.3373 
-  reinforcement = 0.5000 
+  consumer = 0.2000 
+  supply = 0.0500 
+  production = 0.4500 
+  reinforcement = 0.3000 
   upgrading = 0.0000 
   belligerence           = 0 # to avoid MP problems
   capital                = 515
@@ -292,8 +293,8 @@ country =
     { id            = { type = 23500 id = 3 }
       name          = "22a Divisione 'Cacciatori delle Alpi'"
       type          = infantry
-      extra         = artillery
-      brigade_model = 2
+#      extra         = artillery # moved to "4a Divisione 'Livorno'"
+#      brigade_model = 2
       strength      = 70
     }
   }
@@ -302,22 +303,9 @@ country =
     location = 531 # Turin
     name     = "II Corpo d'Armata"
     division =
-    { id       = { type = 23500 id = 5 }
-      name     = "4a Divisione 'Livorno'"
-      type     = infantry
-      strength = 70
-      model    = 1
-    }
-    division =
     { id       = { type = 23500 id = 6 }
       name     = "25a Divisione 'Bologna'"
       type     = infantry
-      strength = 70
-    }
-    division =
-    { id       = { type = 23500 id = 7 }
-      name     = "4a Divisione Alpina 'Cuneense'"
-      type     = bergsjaeger
       strength = 70
     }
   }
@@ -346,8 +334,8 @@ country =
     { id            = { type = 23500 id = 12 }
       name          = "13a Divisione 'Re'"
       type          = infantry
-      extra         = artillery
-      brigade_model = 2
+#      extra         = artillery # moved to "24a Divisione 'Pinerolo'"
+#      brigade_model = 2
       strength      = 70
     }
   }
@@ -398,42 +386,73 @@ country =
       type     = infantry
       strength = 70
     }
-    division =
-    { id       = { type = 23500 id = 21 }
-      name     = "3a Divisione Alpina 'Julia'"
-      type     = bergsjaeger
-      strength = 70
-    }
   }
   landunit =
   { id       = { type = 23500 id = 2 }
-    location = 919
+    location = 1038 # Assab, was Tobruk
     name     = "Comando Superiore FF.AA. Africa SETT"
     division =
     { id       = { type = 23500 id = 22 }
       name     = "18a Divisione 'Messina'"
       type     = infantry
       model    = 1
+      extra    = artillery # from "16a Divisione 'Pistoia'"
+      brigade_model = 2
       strength = 70
     }
     division =
-    { id       = { type = 23500 id = 78 }
-      name     = "7a Divisione CC.NN. 'Cirene'"
-      type     = militia
-      strength = 100
+    { id       = { type = 23500 id = 5 }
+      name     = "4a Divisione 'Livorno'"
+      type     = infantry
+      model    = 1
+      extra    = artillery # from "22a Divisione 'Cacciatori delle Alpi'"
+      brigade_model = 2
+      strength = 70
     }
+    division =
+    { id       = { type = 23500 id = 62 }
+      name     = "24a Divisione 'Pinerolo'"
+      type     = infantry
+      model    = 1
+      extra    = artillery # from "13a Divisione 'Re'"
+      brigade_model = 2
+      strength = 70
+   }
+    division =
+    { id       = { type = 23500 id = 65 }
+      name     = "27a Divisione 'Brescia'"
+      type     = infantry
+      model    = 1
+      extra    = artillery # from "11a Divisione 'Brennero'"
+      brigade_model = 2
+      strength = 70
+    }
+#    division =
+#    { id       = { type = 23500 id = 78 }
+#      name     = "7a Divisione CC.NN. 'Cirene'"
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#    }
   }
   landunit =
   { id       = { type = 23500 id = 23 }
-    location = 378 # Venezia
+    location = 1039 # Asmara, was Venezia
     name     = "Corpo d'Armata Celere"
     # Gen. G. Messe#
+    division =
+    { id       = { type = 23500 id = 186 }
+      name     = "Gr. squadroni cavalleria indigena"
+      type     = cavalry
+ 	  extra = armored_car 
+	  strength = 100
+    }
     division =
     { id       = { type = 23500 id = 24 }
       name     = "1a Divisione 'Eugenio di Savoia'"
       type     = cavalry
       strength = 70
       model    = 1
+      extra    = armored_car
     }
     division =
     { id       = { type = 23500 id = 25 }
@@ -441,6 +460,7 @@ country =
       type     = cavalry
       strength = 70
       model    = 1
+      extra    = armored_car # from "V-XV Indigeni e banda 'Scimezana'"
     }
     division =
     { id       = { type = 23500 id = 26 }
@@ -448,7 +468,7 @@ country =
       type     = cavalry
       strength = 70
       model    = 1
-      extra    = armored_car
+      extra    = armored_car # from "Gr. Bande Altopiano - Seraé, Cheren and Hamasien"
     }
   }
   landunit =
@@ -459,8 +479,8 @@ country =
     { id            = { type = 23500 id = 28 }
       name          = "16a Divisione 'Pistoia'"
       type          = infantry
-      extra         = artillery
-      brigade_model = 2
+#      extra         = artillery # moved to "18a Divisione 'Messina'"
+#      brigade_model = 2
       strength      = 70
     }
   }
@@ -532,8 +552,8 @@ country =
     { id            = { type = 23500 id = 41 }
       name          = "11a Divisione 'Brennero'"
       type          = infantry
-      extra         = artillery
-      brigade_model = 2
+#      extra         = artillery # moved to "27a Divisione 'Brescia'"
+#      brigade_model = 2
       strength      = 70
     }
   }
@@ -546,7 +566,7 @@ country =
     { id       = { type = 23500 id = 44 }
       name     = "1a Divisione 'Superga'"
       type     = infantry
-      extra    = armored_car
+#      extra    = armored_car # moved to "29a Divisione 'Piemonte'"
       strength = 70
     }
   }
@@ -559,25 +579,48 @@ country =
     { id       = { type = 23500 id = 46 }
       name     = "2a Divisione 'Sforzesca'"
       type     = infantry
-      extra    = armored_car
+#      extra    = armored_car # moved to "29a Divisione 'Peloritana'"
       strength = 70
     }
   }
   landunit =
   { id       = { type = 23500 id = 47 }
-    location = 368 # Genoa
+    location = 1039 # Asmara, was Genoa
     name     = "Corpo d'Armata Alpino"
     # Gen. L. Negri#
+   division =
+    { id       = { type = 23500 id = 7 }
+      name     = "4a Divisione Alpina 'Cuneense'"
+      type     = bergsjaeger
+	  extra = artillery	# From "29a Divisione 'Peloritana'"
+      strength = 70
+    }
     division =
+    { id       = { type = 23500 id = 58 }
+      name     = "5a Divisione Alpina 'Pusteria'"
+      type     = bergsjaeger
+	  extra = artillery	  
+      strength = 100
+    }
+     division =
     { id       = { type = 23500 id = 48 }
       name     = "1a Divisione Alpina 'Taurinense'"
       type     = bergsjaeger
+      extra    = artillery # from "1° Gr. Btg CC.NN. dell'Eritrea"
       strength = 70
     }
     division =
     { id       = { type = 23500 id = 49 }
       name     = "2a Divisione Alpina 'Tridentina'"
       type     = bergsjaeger
+      extra    = artillery # from "Banda dell'Hassamò"
+      strength = 70
+    }
+    division =
+    { id       = { type = 23500 id = 21 }
+      name     = "3a Divisione Alpina 'Julia'"
+      type     = bergsjaeger
+      extra    = artillery # from "3a Divisione CC.NN. '21 Aprile'"
       strength = 70
     }
   }
@@ -599,35 +642,6 @@ country =
       strength = 70		#reduced the strenght
     }
     #removed from AOI and placed in Rome as central reserve, strenght reduced from 100 to 70
-	division =
-    { id       = { type = 23500 id = 61 }
-      name     = "19a Divisione 'Venezia'"
-      type     = infantry
-      model    = 1
-      extra    = armored_car
-      strength = 70
-   }
-    division =
-    { id       = { type = 23500 id = 62 }
-      name     = "24a Divisione 'Pinerolo'"
-      type     = infantry
-      model    = 1
-      strength = 70
-   }
-    division =
-    { id       = { type = 23500 id = 65 }
-      name     = "27a Divisione 'Brescia'"
-      type     = infantry
-      model    = 1
-      strength = 70
-    }
-   division =
-    { id       = { type = 23500 id = 75 }
-      name     = "29a Divisione 'Piemonte'"
-      type     = infantry
-      model    = 1
-      strength = 70
-    }
  }
 ####################################################################################
 #OOB Italian Troops Campagna d'Africa 1935-1936 by Cardus
@@ -654,13 +668,13 @@ country =
     #Div Sila is with the III CORPO D'ARMATA
 	#CC.NN. '1 Febbraio'is with IV CORPO D'ARMATA
 	#6a Divisione CC.NN. 'Tevere' is with Forze Armate della Somalia
-    division =
-    { id       = { type = 23500 id = 59 }
-      name     = "4a Divisione CC.NN. '3 Gennaio'"
-	  #Gen. Alessandro Traditi
-      type     = militia
-      strength = 100
-    }
+#    division =
+#    { id       = { type = 23500 id = 59 }
+#      name     = "4a Divisione CC.NN. '3 Gennaio'"
+#	  #Gen. Alessandro Traditi
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#    }
   }
   landunit =
   { id       = { type = 23500 id = 55 }
@@ -685,24 +699,17 @@ country =
 	  extra = artillery	  
       strength = 100
     }
-    division =
-    { id       = { type = 23500 id = 58 }
-      name     = "5a Divisione Alpina 'Pusteria'"
-      type     = bergsjaeger
-	  extra = artillery	  
-      strength = 100
-    }
-    division =
-	{ id       = { type = 23500 id = 180 }
-      name     = "V-XV Indigeni e banda 'Scimezana'"
-      type     = militia
-      strength = 100
-	  extra = armored_car
-    }
+#    division =
+#	{ id       = { type = 23500 id = 180 }
+#      name     = "V-XV Indigeni e banda 'Scimezana'"
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#	  extra = armored_car # moved to "2a Divisione 'Emanuele Filiberto'"
+#    }
   }
   landunit =
   { id       = { type = 23500 id = 60 }
-    location = 1039
+    location = 1055 # Bardera, was Asmara
     name     = "II Corpo d'Armata dell'A.O.I."
     # Gen. Maravigna
 #    division =
@@ -738,21 +745,21 @@ country =
       extra = artillery
       strength      = 100
     }
-    division =
-    { id       = { type = 23500 id = 63 }
-      name     = "3a Divisione CC.NN. '21 Aprile'"
-	  #Gen. Giacomo Appiotti
-      type     = militia
-	  extra = artillery
-      strength = 100
-    }
-    division =
-    { id       = { type = 23500 id = 184 }
-      name     = "Gr. Bande Altopiano - Seraé, Cheren and Hamasien"
-	  type     = militia
-	  extra = armored_car
-      strength = 100
-    }
+#    division =
+#    { id       = { type = 23500 id = 63 }
+#      name     = "3a Divisione CC.NN. '21 Aprile'"
+#	  #Gen. Giacomo Appiotti
+#      type     = militia # disbanded for AI in 1.11
+#	  extra = artillery # moved to "3a Divisione Alpina 'Julia'"
+#      strength = 100
+#    }
+#    division =
+#    { id       = { type = 23500 id = 184 }
+#      name     = "Gr. Bande Altopiano - Seraé, Cheren and Hamasien"
+#	  type     = militia # disbanded for AI in 1.11
+#	  extra = armored_car # moved to "3a Divisione 'Principe Amedeo'"
+#      strength = 100
+#    }
   } 
 
   landunit =
@@ -768,6 +775,22 @@ country =
 #      strength = 100
 #    }
 	division =
+    { id       = { type = 23500 id = 61 }
+      name     = "19a Divisione 'Venezia'"
+      type     = infantry
+      model    = 1
+      extra    = armored_car
+      strength = 70
+   }
+   division =
+    { id       = { type = 23500 id = 75 }
+      name     = "29a Divisione 'Piemonte'"
+      type     = infantry
+      model    = 1
+      extra    = armored_car # from "1a Divisione 'Superga'"
+      strength = 70
+    }
+    division =
     { id            = { type = 23500 id = 183 }
       name          = "27a Divisione 'Sila'"
 	  #Gen. Francesco Bertini
@@ -776,20 +799,20 @@ country =
       extra = artillery
       strength      = 100
     }
-    division =
-    { id       = { type = 23500 id = 66 }
-      name     = "1a Divisione CC.NN. '23 Marzo'"
-	  #Gen. Domenico Siciliani
-      type     = militia
-      strength = 100
-    }
+#    division =
+#    { id       = { type = 23500 id = 66 }
+#      name     = "1a Divisione CC.NN. '23 Marzo'"
+#	  #Gen. Domenico Siciliani
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#    }
   }
   landunit =
   { id       = { type = 23500 id = 67 }
-    location = 1039
+    location = 1055 # Bardera, was Asmara
     name     = "IV Corpo d'Armata dell'A.O.I."
     # Gen. Babbini#
-    division =
+	division =
     { id       = { type = 23500 id = 68 }
       name     = "5a Divisione 'Cosseria'"
 	  #Gen. Adolfo Olivetti
@@ -798,24 +821,24 @@ country =
 	  extra = artillery
       strength = 100
     }
-    division =
-    { id       = { type = 23500 id = 69 }
-      name     = "2a Divisione CC.NN. '28 Ottobre'"
-	  #Gen. Umberto Somma
-      type     = militia
-      strength = 100
-    }
-    division =
-    { id       = { type = 23500 id = 70 }
-      name     = "5a Divisione CC.NN. '1 Febbraio'"
-	  #Gen. Attilio Teruzzi
-      type     = militia
-      strength = 100
-    }
+#    division =
+#    { id       = { type = 23500 id = 69 }
+#      name     = "2a Divisione CC.NN. '28 Ottobre'"
+#	  #Gen. Umberto Somma
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#    }
+#    division =
+#    { id       = { type = 23500 id = 70 }
+#      name     = "5a Divisione CC.NN. '1 Febbraio'"
+#	  #Gen. Attilio Teruzzi
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#    }
   }
   landunit =
   { id       = { type = 23500 id = 71 }
-    location = 1039
+    location = 1055 # Bardera, was Asmara
     name     = "Corpo d'Armata Eritreo"
     # Gen. Pirzio Biroli#
     division =
@@ -834,27 +857,20 @@ country =
   	  extra = artillery
       strength = 100
     }
-    division =
-    { id       = { type = 23500 id = 185 }
-      name     = "1° Gr. Btg CC.NN. dell'Eritrea"
-      type     = militia
-  	  extra = artillery
-      strength = 100
-    }
-    division =
-    { id       = { type = 23500 id = 186 }
-      name     = "Gr. squadroni cavalleria indigena"
-      type     = cavalry
- 	  extra = armored_car 
-	  strength = 100
-    }
-    division =
-    { id       = { type = 23500 id = 187 }
-      name     = "Banda dell'Hassamò"
-      type     = militia
-  	  extra = artillery
-      strength = 100
-    }
+#    division =
+#    { id       = { type = 23500 id = 185 }
+#      name     = "1° Gr. Btg CC.NN. dell'Eritrea"
+#      type     = militia # disbanded for AI in 1.11
+#  	  extra = artillery # moved to "1a Divisione Alpina 'Taurinense'"
+#      strength = 100
+#    }
+#    division =
+#    { id       = { type = 23500 id = 187 }
+#      name     = "Banda dell'Hassamò"
+#      type     = militia # disbanded for AI in 1.11
+#  	  extra = artillery # moved to "2a Divisione Alpina 'Tridentina'"
+#      strength = 100
+#    }
   }
   landunit =
   { id       = { type = 23500 id = 74 }
@@ -881,7 +897,8 @@ country =
 	  #Gen. sisto Bertoldi
       type     = infantry
 	  model    = 1
-	  extra = artillery
+      extra    = armored_car # from "2a Divisione 'Sforzesca'"
+#	  extra = artillery # moved to "4a Divisione Alpina 'Cuneense'"
       strength = 100
     }
     division =
@@ -893,13 +910,13 @@ country =
   	  extra = artillery
       strength = 100
     }
-    division =
-    { id       = { type = 23500 id = 77 }
-      name     = "6a Divisione CC.NN. 'Tevere'"
-	  #Gen. Enrico Boscardi
-      type     = militia
-      strength = 100
-    }
+#    division =
+#    { id       = { type = 23500 id = 77 }
+#      name     = "6a Divisione CC.NN. 'Tevere'"
+#	  #Gen. Enrico Boscardi
+#      type     = militia # disbanded for AI in 1.11
+#      strength = 100
+#    }
   } 
   # ###########################################
 	### Italian Navy OOB ###
@@ -1800,6 +1817,100 @@ country =
 		id = { type = 23500 id = 208 } 
 		name = "" 
 		progress = 0.0000 
+		location = 515 
+		cost = 5.0000 
+		date = { 
+			year = 1941 
+			month = december 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 10 
+		done = 0 
+		days = 3024 
+		days_for_first = 302 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 209 } 
+		name = "" 
+		progress = 0.0000 
+		location = 370 
+		cost = 5.0000 
+		date = { 
+			year = 1941 
+			month = january 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 6 
+		done = 0 
+		days = 1814 
+		days_for_first = 302 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 210 } 
+		name = "" 
+		progress = 0.0000 
+		location = 378 
+		cost = 5.0000 
+		date = { 
+			year = 1941 
+			month = january 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 6 
+		done = 0 
+		days = 1814 
+		days_for_first = 302 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 211 } 
+		name = "" 
+		progress = 0.0000 
+		location = 515 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = july 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1110 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 212 } 
+		name = "" 
+		progress = 0.0000 
 		location = 370 
 		cost = 2.0000 
 		date = { 
@@ -1821,7 +1932,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 23500 id = 209 } 
+		id = { type = 23500 id = 213 } 
 		name = "" 
 		progress = 0.0000 
 		location = 378 
@@ -1845,31 +1956,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 23500 id = 210 } 
-		name = "" 
-		progress = 0.0000 
-		location = 515 
-		cost = 2.0000 
-		date = { 
-			year = 1941 
-			month = july 
-			day = 2 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 1110 
-		days_for_first = 144 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 23500 id = 211 } 
+		id = { type = 23500 id = 214 } 
 		name = "" 
 		progress = 0.0000 
 		location = 531 
@@ -1893,7 +1980,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 23500 id = 212 } 
+		id = { type = 23500 id = 215 } 
 		name = "" 
 		progress = 0.0000 
 		location = 512 
@@ -1917,15 +2004,15 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 23500 id = 213 } 
+		id = { type = 23500 id = 216 } 
 		name = "" 
 		progress = 0.0000 
 		location = 521 
 		cost = 2.0000 
 		date = { 
-			year = 1941 
-			month = march 
-			day = 9 
+			year = 1939 
+			month = september 
+			day = 1 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -1937,18 +2024,19 @@ country =
 		days = 1110 
 		days_for_first = 96 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 23500 id = 214 } 
+		id = { type = 23500 id = 217 } 
 		name = "" 
 		progress = 0.0000 
 		location = 368 
 		cost = 2.0000 
 		date = { 
-			year = 1942 
-			month = july 
-			day = 10 
+			year = 1940 
+			month = august 
+			day = 11 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -1960,18 +2048,19 @@ country =
 		days = 808 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 23500 id = 215 } 
+		id = { type = 23500 id = 218 } 
 		name = "" 
 		progress = 0.0000 
 		location = 525 
 		cost = 2.0000 
 		date = { 
-			year = 1945 
-			month = january 
-			day = 17 
+			year = 1940 
+			month = april 
+			day = 5 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -1983,169 +2072,354 @@ country =
 		days = 1412 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-#	province_development = { 
-#		id = { type = 23500 id = 216 } 
-#		name = "" 
-#		progress = 0.0000 
-#		location = 534 
-#		cost = 2.0000 
-#		date = { 
-#			year = 1945 
-#			month = january 
-#			day = 17 
-#			hour = 0 
-#			} 
-#		manpower = 0.1000 
-#		close_when_finished = yes 
-#		waitingforclosure = no 
-#		total_progress = 0.0000 
-#		size = 28 
-#		done = 0 
-#		days = 1412 
-#		days_for_first = 144 
-#		gearing_bonus = 0.0000 
-#		type = infrastructure 
-#		} 
-	province_development = { 
-		id = { type = 23500 id = 217 } 
-		name = "" 
-		progress = 0.0000 
-		location = 517 
-		cost = 2.0000 
-		date = { 
-			year = 1943 
-			month = october 
-			day = 13 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 1865 
-		days_for_first = 144 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 23500 id = 218 } 
-		name = "" 
-		progress = 0.0000 
-		location = 513 
-		cost = 2.0000 
-		date = { 
-			year = 1943 
-			month = october 
-			day = 13 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 1865 
-		days_for_first = 144 
-		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
 		id = { type = 23500 id = 221 } 
 		name = "" 
 		progress = 0.0000 
-		location = 515 
-		cost = 5.0000 
+		location = 534 
+		cost = 2.0000 
 		date = { 
-			year = 1941 
-			month = december 
-			day = 5 
+			year = 1942 
+			month = may 
+			day = 23 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 28 
+		done = 0 
+		days = 2166 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 222 } 
+		name = "" 
+		progress = 0.0000 
+		location = 513 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = september 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1865 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 23500 id = 223 } 
+		name = "" 
+		progress = 0.0000 
+		location = 517 
+		cost = 2.0000 
+		date = { 
+			year = 1939 
+			month = september 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1865 
+		days_for_first = 144 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	convoy_development = { 
+		id = { type = 23500 id = 224 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1940 
+			month = april 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 10 
+		size = 25 
 		done = 0 
-		days = 3024 
-		days_for_first = 302 
+		days = 1 
+		days_for_first = 76 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = ic 
+		type = transports 
+		} 
+	convoy_development = { 
+		id = { type = 23500 id = 225 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 3.0000 
+		date = { 
+			year = 1940 
+			month = april 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 25 
+		done = 0 
+		days = 1 
+		days_for_first = 76 
+		gearing_bonus = 0.0000 
+		type = transports 
+		} 
+	convoy_development = { 
+		id = { type = 23500 id = 226 } 
+		name = "" 
+		progress = 0.0000 
+		location = 0 
+		cost = 2.0000 
+		date = { 
+			year = 1940 
+			month = april 
+			day = 9 
+			hour = 0 
+			} 
+		manpower = 0.6000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 25 
+		done = 0 
+		days = 1 
+		days_for_first = 76 
+		gearing_bonus = 0.0000 
+		type = escorts 
+		} 
+	division_development = { 
+		id = { type = 23500 id = 201 } 
+		name = "RN Littorio" 
+		progress = 0.0000 
+		location = 0 
+		cost = 7.0217 
+		date = { 
+			year = 1937 
+			month = october 
+			day = 22 
+			hour = 0 
+			} 
+		manpower = 2.5000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.4264 # 0.2128
+		size = 2 
+		done = 0 
+		days = 1 
+		days_for_first = 428 
+		gearing_bonus = 0.0000 
+		type = battleship 
+		extra = none 
+		extra1 = naval_sa_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_spotter_l 
+		extra4 = naval_anti_air_l 
+		model = 3 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 1 
+		brigade_model3 = 0 
+		brigade_model4 = 1 
 		} 
 #	division_development = { 
-#		id = { type = 23500 id = 205 } 
-#		name = "RN Duca degli Abruzzi" 
+#		id = { type = 23500 id = 202 } 
+#		name = "RN Vittorio Veneto" 
 #		progress = 0.0000 
 #		location = 0 
-#		cost = 4.4025 
+#		cost = 7.0217 
 #		date = { 
 #			year = 1936 
-#			month = june 
-#			day = 26 
+#			month = december 
+#			day = 6 
 #			hour = 0 
 #			} 
-#		manpower = 1.4000 
+#		manpower = 2.5000 
 #		close_when_finished = yes 
 #		waitingforclosure = no 
-#		total_progress = 0.0000 
+#		total_progress = 0.2136 
 #		size = 1 
 #		done = 0 
 #		days = 1 
-#		days_for_first = 176 
+#		days_for_first = 428 
 #		gearing_bonus = 0.0000 
-#		type = light_cruiser 
+#		type = battleship 
 #		extra = none 
-#		extra1 = naval_fire_controll_s 
-#		extra2 = naval_spotter_s 
-#		extra3 = none 
-#		extra4 = none 
+#		extra1 = naval_sa_l 
+#		extra2 = naval_fire_controll_l 
+#		extra3 = naval_spotter_l 
+#		extra4 = naval_anti_air_l 
 #		model = 3 
 #		brigade_model = 0 
 #		brigade_model1 = 1 
-#		brigade_model2 = 0 
+#		brigade_model2 = 1 
 #		brigade_model3 = 0 
-#		brigade_model4 = 0 
+#		brigade_model4 = 1 
 #		} 
-#	division_development = { 
-#		id = { type = 23500 id = 206 } 
-#		name = "RN Giuseppe Garibaldi" 
-#		progress = 0.0000 
-#		location = 0 
-#		cost = 4.4025 
-#		date = { 
-#			year = 1936 
-#			month = june 
-#			day = 26 
-#			hour = 0 
-#			} 
-#		manpower = 1.4000 
-#		close_when_finished = yes 
-#		waitingforclosure = no 
-#		total_progress = 0.0000 
-#		size = 1 
-#		done = 0 
-#		days = 1 
-#		days_for_first = 176 
-#		gearing_bonus = 0.0000 
-#		type = light_cruiser 
-#		extra = none 
-#		extra1 = naval_fire_controll_s 
-#		extra2 = naval_spotter_s 
-#		extra3 = none 
-#		extra4 = none 
-#		model = 3 
-#		brigade_model = 0 
-#		brigade_model1 = 1 
-#		brigade_model2 = 0 
-#		brigade_model3 = 0 
-#		brigade_model4 = 0 
-#		} 
+	division_development = { 
+		id = { type = 23500 id = 204 } 
+		name = "RN Giulio Cesare" 
+		progress = 0.0000 
+		location = 0 
+		cost = 5.3983 
+		date = { 
+			year = 1936 
+			month = may 
+			day = 16 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.6472 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 386 
+		gearing_bonus = 0.0000 
+		type = battleship 
+		extra = none 
+		extra1 = naval_sa_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_anti_air_l 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 1 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 23500 id = 203 } 
+		name = "RN Conte di Cavour" 
+		progress = 0.0000 
+		location = 0 
+		cost = 5.3983 
+		date = { 
+			year = 1936 
+			month = may 
+			day = 0 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.6891 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 386 
+		gearing_bonus = 0.0000 
+		type = battleship 
+		extra = none 
+		extra1 = naval_sa_l 
+		extra2 = naval_fire_controll_l 
+		extra3 = naval_anti_air_l 
+		extra4 = none 
+		model = 1 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 1 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 23500 id = 205 } 
+		name = "RN Duca degli Abruzzi" 
+		progress = 0.0000 
+		location = 0 
+		cost = 4.4025 
+		date = { 
+			year = 1936 
+			month = march 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.5117 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 176 
+		gearing_bonus = 0.0000 
+		type = light_cruiser 
+		extra = none 
+		extra1 = naval_fire_controll_s 
+		extra2 = naval_spotter_s 
+		extra3 = none 
+		extra4 = none 
+		model = 3 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 23500 id = 206 } 
+		name = "RN Giuseppe Garibaldi" 
+		progress = 0.0000 
+		location = 0 
+		cost = 4.4025 
+		date = { 
+			year = 1936 
+			month = march 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 1.4000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.5140 
+		size = 1 
+		done = 0 
+		days = 1 
+		days_for_first = 176 
+		gearing_bonus = 0.0000 
+		type = light_cruiser 
+		extra = none 
+		extra1 = naval_fire_controll_s 
+		extra2 = naval_spotter_s 
+		extra3 = none 
+		extra4 = none 
+		model = 3 
+		brigade_model = 0 
+		brigade_model1 = 1 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
 	division_development = { 
 		id = { type = 23500 id = 29 } 
 		name = "RN Eugenio di Savoia" 
@@ -2155,13 +2429,13 @@ country =
 		date = { 
 			year = 1936 
 			month = january 
-			day = 14 
+			day = 2 
 			hour = 0 
 			} 
 		manpower = 1.4000 
 		close_when_finished = yes 
 		waitingforclosure = no 
-		total_progress = 0.9148 
+		total_progress = 0.9835 
 		size = 1 
 		done = 0 
 		days = 1 
@@ -2180,40 +2454,40 @@ country =
 		brigade_model3 = 0 
 		brigade_model4 = 0 
 		} 
-	division_development = { 
-		id = { type = 23500 id = 42 } 
-		name = "27a Flottiglia Sommergibili" 
-		progress = 0.0000 
-		location = 0 
-		cost = 1.6800 
-		date = { 
-			year = 1939 
-			month = december 
-			day = 17 
-			hour = 0 
-			} 
-		manpower = 0.3000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0109 
-		size = 19 
-		done = 0 
-		days = 1 
-		days_for_first = 92 
-		gearing_bonus = 0.0000 
-		type = submarine 
-		extra = none 
-		extra1 = none 
-		extra2 = none 
-		extra3 = none 
-		extra4 = none 
-		model = 1 
-		brigade_model = 0 
-		brigade_model1 = 0 
-		brigade_model2 = 0 
-		brigade_model3 = 0 
-		brigade_model4 = 0 
-		} 
+#	division_development = { 
+#		id = { type = 23500 id = 42 } 
+#		name = "27a Flottiglia Sommergibili" 
+#		progress = 0.0000 
+#		location = 0 
+#		cost = 1.6800 
+#		date = { 
+#			year = 1936 
+#			month = april 
+#			day = 0 
+#			hour = 0 
+#			} 
+#		manpower = 0.3000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0109 
+#		size = 1 
+#		done = 0 
+#		days = 1 
+#		days_for_first = 92 
+#		gearing_bonus = 0.0000 
+#		type = submarine 
+#		extra = none 
+#		extra1 = none 
+#		extra2 = none 
+#		extra3 = none 
+#		extra4 = none 
+#		model = 1 
+#		brigade_model = 0 
+#		brigade_model1 = 0 
+#		brigade_model2 = 0 
+#		brigade_model3 = 0 
+#		brigade_model4 = 0 
+#		} 
 #	division_development = { 
 #		id = { type = 23500 id = 207 } 
 #		name = "10a Squadriglia Cacciatorpediniere" 
@@ -2247,141 +2521,5 @@ country =
 #		brigade_model2 = 0 
 #		brigade_model3 = 0 
 #		brigade_model4 = 0 
-#		} 
-#	division_development = { 
-#		id = { type = 23500 id = 203 } 
-#		name = "RN Conte di Cavour" 
-#		progress = 0.0000 
-#		location = 0 
-#		cost = 5.3983 
-#		date = { 
-#			year = 1937 
-#			month = january 
-#			day = 6 
-#			hour = 0 
-#			} 
-#		manpower = 1.4000 
-#		close_when_finished = yes 
-#		waitingforclosure = no 
-#		total_progress = 0.0518 
-#		size = 1 
-#		done = 0 
-#		days = 1 
-#		days_for_first = 386 
-#		gearing_bonus = 0.0000 
-#		type = battleship 
-#		extra = none 
-#		extra1 = naval_sa_l 
-#		extra2 = naval_fire_controll_l 
-#		extra3 = naval_anti_air_l 
-#		extra4 = none 
-#		model = 1 
-#		brigade_model = 0 
-#		brigade_model1 = 1 
-#		brigade_model2 = 1 
-#		brigade_model3 = 0 
-#		brigade_model4 = 0 
-#		} 
-#	division_development = { 
-#		id = { type = 23500 id = 204 } 
-#		name = "RN Giulio Cesare" 
-#		progress = 0.0000 
-#		location = 0 
-#		cost = 5.3983 
-#		date = { 
-#			year = 1937 
-#			month = january 
-#			day = 10 
-#			hour = 0 
-#			} 
-#		manpower = 1.4000 
-#		close_when_finished = yes 
-#		waitingforclosure = no 
-#		total_progress = 0.0415 
-#		size = 1 
-#		done = 0 
-#		days = 1 
-#		days_for_first = 386 
-#		gearing_bonus = 0.0000 
-#		type = battleship 
-#		extra = none 
-#		extra1 = naval_sa_l 
-#		extra2 = naval_fire_controll_l 
-#		extra3 = naval_anti_air_l 
-#		extra4 = none 
-#		model = 1 
-#		brigade_model = 0 
-#		brigade_model1 = 1 
-#		brigade_model2 = 1 
-#		brigade_model3 = 0 
-#		brigade_model4 = 0 
-#		} 
-	division_development = { 
-		id = { type = 23500 id = 201 } 
-		name = "RN Littorio" 
-		progress = 0.0000 
-		location = 0 
-		cost = 7.0217 
-		date = { 
-			year = 1940 
-			month = may 
-			day = 23 
-			hour = 0 
-			} 
-		manpower = 2.5000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 4 
-		done = 0 
-		days = 1 
-		days_for_first = 428 
-		gearing_bonus = 0.0000 
-		type = battleship 
-		extra = none 
-		extra1 = naval_sa_l 
-		extra2 = naval_fire_controll_l 
-		extra3 = naval_spotter_l 
-		extra4 = naval_anti_air_l 
-		model = 3 
-		brigade_model = 0 
-		brigade_model1 = 1 
-		brigade_model2 = 1 
-		brigade_model3 = 0 
-		brigade_model4 = 1 
-		} 
-#	division_development = { 
-#		id = { type = 23500 id = 202 } 
-#		name = "RN Vittorio Veneto" 
-#		progress = 0.0000 
-#		location = 0 
-#		cost = 7.0217 
-#		date = { 
-#			year = 1937 
-#			month = march 
-#			day = 8 
-#			hour = 0 
-#			} 
-#		manpower = 2.5000 
-#		close_when_finished = yes 
-#		waitingforclosure = no 
-#		total_progress = 0.0000 
-#		size = 1 
-#		done = 0 
-#		days = 1 
-#		days_for_first = 428 
-#		gearing_bonus = 0.0000 
-#		type = battleship 
-#		extra = none 
-#		extra1 = naval_sa_l 
-#		extra2 = naval_fire_controll_l 
-#		extra3 = naval_spotter_l 
-#		extra4 = naval_anti_air_l 
-#		model = 3 
-#		brigade_model = 0 
-#		brigade_model1 = 1 
-#		brigade_model2 = 1 
-#		brigade_model3 = 0 
-#		brigade_model4 = 1 
 #		}
 }

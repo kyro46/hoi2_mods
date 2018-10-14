@@ -36,7 +36,7 @@ country =
   production = 1.0000 
   reinforcement = 0.0000 
   upgrading = 0.0000 
-  manpower               = -0.1 # 0 - "building queue"
+  manpower               = 0.3 # 0 + 0.4 from Philippine Constabulary - "building queue"
   transports             = 50
   capital                = 1737
   policy =
@@ -57,6 +57,7 @@ country =
   # ######################
   # GW fighter
   techapps               = { 4010 2150 2290 1010 1190 5080 5090 }
+  blueprints             = { 5050 5060 6010 6020 2300 }
   diplomacy =
   { relation = { tag = AST value = 40 }
     # relation = { tag = CHI value = 5 }
@@ -81,7 +82,7 @@ country =
     name     = "Manila Garrison"
     division =
     { id       = { type = 11804 id = 2 }
-      strength = 30
+      strength = 25 # was 30 before 1.11
       name     = "Philippine Constabulary"
       type     = garrison
     }
@@ -109,5 +110,29 @@ country =
 		gearing_bonus = 0.0000 
 		speed_step = 1 
 		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11804 id = 4 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1737 
+		cost = 5.0000 
+		date = { 
+			year = 1936 
+			month = december 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		halted = yes 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 1 
+		done = 0 
+		days = 342 
+		days_for_first = 342 
+		gearing_bonus = 0.0000 
+		type = ic 
 		}
 }

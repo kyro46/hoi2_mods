@@ -31,7 +31,7 @@ country =
   production = 0.5454 
   reinforcement = 0.0000 
   upgrading = 0.0000 
-  manpower               = 59.6 # 60 - building queue
+  manpower               = 59.5 # 60 - building queue
   capital                = 417
   # navalunit = {
   # id = { type = 19000 id = 15 }
@@ -58,6 +58,8 @@ country =
     relation = { tag = SOV value = 15 }
     relation = { tag = TUR value = 75 }
     relation = { tag = YUG value = 25 }
+	relation = { tag = SCH value = -7 }
+	relation = { tag = HUN value = 3}
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }
@@ -197,9 +199,9 @@ country =
 		location = 417 
 		cost = 2.0000 
 		date = { 
-			year = 1945 
-			month = august 
-			day = 28 
+			year = 1947 
+			month = november 
+			day = 0 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -211,7 +213,7 @@ country =
 		days = 2412 
 		days_for_first = 262 
 		gearing_bonus = 0.0000 
-		speed_step = 2 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -244,9 +246,9 @@ country =
 		location = 420 
 		cost = 2.0000 
 		date = { 
-			year = 1952 
-			month = september 
-			day = 24 
+			year = 1947 
+			month = november 
+			day = 0 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -258,6 +260,7 @@ country =
 		days = 2412 
 		days_for_first = 262 
 		gearing_bonus = 0.0000 
+		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -267,9 +270,9 @@ country =
 		location = 421 
 		cost = 2.0000 
 		date = { 
-			year = 1952 
-			month = september 
-			day = 24 
+			year = 1947 
+			month = november 
+			day = 0 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -279,6 +282,30 @@ country =
 		size = 28 
 		done = 0 
 		days = 2412 
+		days_for_first = 262 
+		gearing_bonus = 0.0000 
+		speed_step = 1 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 19000 id = 19 } 
+		name = "" 
+		progress = 0.0000 
+		location = 419 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = january 
+			day = 11 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 8 
+		done = 0 
+		days = 725 
 		days_for_first = 262 
 		gearing_bonus = 0.0000 
 		type = infrastructure 

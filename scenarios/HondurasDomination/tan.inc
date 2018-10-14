@@ -37,7 +37,7 @@ country =
   # ######################
   # GW fighter
   techapps               = { 4010 2150 2290 1010 1190 5080 }
-  blueprints             = { 6210 }
+  blueprints             = { 1020 6210 6300 2300 2310 }
   diplomacy =
   { relation = { tag = MON value = 200 }
     relation = { tag = SIK value = 125 }

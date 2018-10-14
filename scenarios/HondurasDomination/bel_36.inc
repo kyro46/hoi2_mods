@@ -20,6 +20,7 @@ province =
 province = { id = 68 landfort = 2 anti_air = 2 } # Liège
 province =
 { id         = 1095
+  metalpool = 134 
   oilpool    = 1
   supplypool = 50
   air_base   = { size = 1 current_size = 1 }
@@ -33,17 +34,17 @@ province =
 country =
 { tag                    = BEL
   capital                = 51
-  manpower               = 38 # 40 - building queue
+  manpower               = 36.8 # 40 - building queue
   # Resource Reserves
   energy                 = 1000
-  metal                  = 1000
+  metal                  = 866
   rare_materials         = 500
   oil                    = 500
   supplies               = 500
   money                  = 20
-  consumer = 0.2880 
-  supply = 0.1060 
-  production = 0.6060 
+  consumer = 0.2121 
+  supply = 0.0909 
+  production = 0.6970 
   reinforcement = 0.0000 
   upgrading = 0.0000 
   transports             = 60
@@ -64,8 +65,10 @@ country =
     relation = { tag = NOR value = 100 }
     relation = { tag = NZL value = 20 }
     relation = { tag = POR value = -20 }
-    relation = { tag = SAF value = 35 }
-    relation = { tag = SWE value = 100 }
+    relation = { tag = POL value = -15 }
+	relation = { tag = SAF value = 35 }
+    relation = { tag = ROM value = 3 }
+	relation = { tag = SWE value = 100 }
     relation = { tag = USA value = 75 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
@@ -336,9 +339,9 @@ country =
 		location = 68 
 		cost = 2.0000 
 		date = { 
-			year = 1940 
-			month = august 
-			day = 10 
+			year = 1942 
+			month = november 
+			day = 22 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -359,9 +362,9 @@ country =
 		location = 52 
 		cost = 2.0000 
 		date = { 
-			year = 1940 
-			month = august 
-			day = 10 
+			year = 1941 
+			month = october 
+			day = 1 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -379,35 +382,12 @@ country =
 		id = { type = 11500 id = 32 } 
 		name = "" 
 		progress = 0.0000 
-		location = 65 
-		cost = 2.0000 
-		date = { 
-			year = 1940 
-			month = august 
-			day = 10 
-			hour = 0 
-			} 
-		manpower = 0.1000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 20 
-		done = 0 
-		days = 1657 
-		days_for_first = 126 
-		gearing_bonus = 0.0000 
-		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 11500 id = 33 } 
-		name = "" 
-		progress = 0.0000 
 		location = 1127 
 		cost = 2.0000 
 		date = { 
-			year = 1943 
-			month = april 
-			day = 15 
+			year = 1945 
+			month = february 
+			day = 4 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -422,25 +402,48 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
+		id = { type = 11500 id = 33 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1127 
+		cost = 5.0000 
+		date = { 
+			year = 1941 
+			month = january 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 6 
+		done = 0 
+		days = 1814 
+		days_for_first = 302 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
 		id = { type = 11500 id = 34 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1144 
+		location = 1098 
 		cost = 2.0000 
 		date = { 
-			year = 1944 
+			year = 1954 
 			month = march 
-			day = 6 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 36 
+		size = 32 
 		done = 0 
-		days = 2861 
-		days_for_first = 151 
+		days = 2620 
+		days_for_first = 252 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
@@ -451,9 +454,9 @@ country =
 		location = 1073 
 		cost = 2.0000 
 		date = { 
-			year = 1944 
-			month = march 
-			day = 6 
+			year = 1956 
+			month = june 
+			day = 2 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -471,27 +474,96 @@ country =
 		id = { type = 11500 id = 36 } 
 		name = "" 
 		progress = 0.0000 
-		location = 1098 
+		location = 1071 
 		cost = 2.0000 
 		date = { 
-			year = 1943 
-			month = april 
-			day = 15 
+			year = 1956 
+			month = june 
+			day = 2 
 			hour = 0 
 			} 
 		manpower = 0.1000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 32 
+		size = 36 
 		done = 0 
-		days = 2620 
+		days = 2941 
 		days_for_first = 252 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
-	division_development = { 
+	province_development = { 
 		id = { type = 11500 id = 37 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1074 
+		cost = 2.0000 
+		date = { 
+			year = 1956 
+			month = june 
+			day = 2 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 36 
+		done = 0 
+		days = 2941 
+		days_for_first = 252 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 38 } 
+		name = "" 
+		progress = 0.0000 
+		location = 65 
+		cost = 2.0000 
+		date = { 
+			year = 1941 
+			month = october 
+			day = 1 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 20 
+		done = 0 
+		days = 1657 
+		days_for_first = 126 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 11500 id = 39 } 
+		name = "" 
+		progress = 0.0000 
+		location = 1144 
+		cost = 2.0000 
+		date = { 
+			year = 1948 
+			month = march 
+			day = 25 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 36 
+		done = 0 
+		days = 2861 
+		days_for_first = 151 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	division_development = { 
+		id = { type = 11500 id = 40 } 
 		name = "Escadrille La Comète" 
 		progress = 0.0000 
 		location = 51 
@@ -505,6 +577,7 @@ country =
 		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
+		retooling_time = 1.0000 
 		total_progress = 0.0000 
 		size = 8 
 		done = 0 

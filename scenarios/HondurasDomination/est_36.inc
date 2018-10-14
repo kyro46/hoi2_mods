@@ -49,6 +49,7 @@ country =
     }
     relation = { tag = POL value = 75 }
     relation = { tag = SOV value = -30 }
+	relation = { tag = SCH value = -8 }
   }
   SpyInfo                = { country = "ENG" NumberOfSpies = 1 }
   SpyInfo                = { country = "FRA" NumberOfSpies = 1 }

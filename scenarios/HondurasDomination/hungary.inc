@@ -18,7 +18,7 @@ province = { id = 497 ic = 2 } # Debrecen
 
 country =
 { tag                    = HUN
-  manpower               = 148.5 # 150 - building queue
+  manpower               = 127.5 # 150 - building queue
   capital                = 457
   # Resource Reserves
   energy                 = 1000
@@ -52,6 +52,7 @@ country =
     relation = { tag = POR value = 5 }
 	relation = { tag = ROM value = 1 }
     relation = { tag = YUG value = 80 }
+	relation = { tag = SCH value = -8}
   }
   SpyInfo                = { country = "HUN" NumberOfSpies = 7 }
   #SpyInfo                = { country = "ENG" NumberOfSpies = 8 }
@@ -189,6 +190,29 @@ country =
     }
   } 
 	province_development = { 
+		id = { type = 20500 id = 205 } 
+		name = "" 
+		progress = 0.0000 
+		location = 457 
+		cost = 5.0000 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 5 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 5 
+		done = 0 
+		days = 1656 
+		days_for_first = 331 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
 		id = { type = 20500 id = 200 } 
 		name = "" 
 		progress = 0.0000 
@@ -236,10 +260,10 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 20500 id = 202 } 
+		id = { type = 20500 id = 203 } 
 		name = "" 
 		progress = 0.0000 
-		location = 456 
+		location = 497 
 		cost = 2.0000 
 		date = { 
 			year = 1941 
@@ -259,10 +283,10 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 20500 id = 203 } 
+		id = { type = 20500 id = 202 } 
 		name = "" 
 		progress = 0.0000 
-		location = 497 
+		location = 456 
 		cost = 2.0000 
 		date = { 
 			year = 1941 
@@ -304,27 +328,72 @@ country =
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
-	province_development = { 
-		id = { type = 20500 id = 205 } 
-		name = "" 
+	division_development = { 
+		id = { type = 20500 id = 206 } 
+		name = "6. gyalog hadosztály" 
 		progress = 0.0000 
 		location = 457 
-		cost = 5.0000 
+		cost = 10.6457 
 		date = { 
-			year = 1940 
-			month = august 
+			year = 1937 
+			month = october 
 			day = 5 
 			hour = 0 
 			} 
-		manpower = 1.0000 
+		manpower = 12.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 5 
+		size = 9 
 		done = 0 
-		days = 1656 
-		days_for_first = 331 
+		days = 635 
+		days_for_first = 83 
 		gearing_bonus = 0.0000 
-		type = ic 
+		type = infantry 
+		extra = artillery 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 0 
+		brigade_model = 2 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
+		} 
+	division_development = { 
+		id = { type = 20500 id = 207 } 
+		name = "1. Páncélosezred hadosztály" 
+		progress = 0.0000 
+		location = 457 
+		cost = 17.7385 
+		date = { 
+			year = 1940 
+			month = august 
+			day = 12 
+			hour = 0 
+			} 
+		manpower = 9.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 1659 
+		days_for_first = 166 
+		gearing_bonus = 0.0000 
+		type = armor 
+		extra = heavy_armor 
+		extra1 = none 
+		extra2 = none 
+		extra3 = none 
+		extra4 = none 
+		model = 0 
+		brigade_model = 0 
+		brigade_model1 = 0 
+		brigade_model2 = 0 
+		brigade_model3 = 0 
+		brigade_model4 = 0 
 		}
 }
