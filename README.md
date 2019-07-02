@@ -1,5 +1,5 @@
 # Mods for "Hearts of Iron 2 - Arsenal of Democracy"
-My Repo for HoI2-AoD Mods - tested with german V1.11 (Beta 11)
+My Repo for HoI2-AoD Mods - tested with german V1.12 (Beta 6)
 
 ### Honduras Domination
 * Help Honduras to become a global power

@@ -1820,9 +1820,9 @@ country =
 		location = 515 
 		cost = 5.0000 
 		date = { 
-			year = 1941 
-			month = december 
-			day = 5 
+			year = 1944 
+			month = may 
+			day = 20 
 			hour = 0 
 			} 
 		manpower = 1.0000 
@@ -1834,7 +1834,6 @@ country =
 		days = 3024 
 		days_for_first = 302 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = ic 
 		} 
 	province_development = { 
@@ -2010,9 +2009,9 @@ country =
 		location = 521 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = september 
-			day = 1 
+			year = 1941 
+			month = march 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2024,7 +2023,6 @@ country =
 		days = 1110 
 		days_for_first = 96 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -2034,9 +2032,9 @@ country =
 		location = 368 
 		cost = 2.0000 
 		date = { 
-			year = 1940 
-			month = august 
-			day = 11 
+			year = 1942 
+			month = july 
+			day = 10 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2048,7 +2046,6 @@ country =
 		days = 808 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -2058,9 +2055,9 @@ country =
 		location = 525 
 		cost = 2.0000 
 		date = { 
-			year = 1940 
-			month = april 
-			day = 5 
+			year = 1942 
+			month = january 
+			day = 11 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2072,7 +2069,6 @@ country =
 		days = 1412 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -2083,8 +2079,8 @@ country =
 		cost = 2.0000 
 		date = { 
 			year = 1942 
-			month = may 
-			day = 23 
+			month = january 
+			day = 11 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2096,7 +2092,6 @@ country =
 		days = 2166 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -2106,9 +2101,9 @@ country =
 		location = 513 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = september 
-			day = 1 
+			year = 1941 
+			month = march 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2120,7 +2115,6 @@ country =
 		days = 1865 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	province_development = { 
@@ -2130,9 +2124,9 @@ country =
 		location = 517 
 		cost = 2.0000 
 		date = { 
-			year = 1939 
-			month = september 
-			day = 1 
+			year = 1941 
+			month = march 
+			day = 9 
 			hour = 0 
 			} 
 		manpower = 0.1000 
@@ -2144,7 +2138,6 @@ country =
 		days = 1865 
 		days_for_first = 144 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
 		type = infrastructure 
 		} 
 	convoy_development = { 

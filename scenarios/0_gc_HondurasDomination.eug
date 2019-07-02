@@ -35,6 +35,10 @@ globaldata =
   { id          = { type = 15000 id = 10 }
     participant = { CHI CXB }
   }
+  alliance =
+  { id          = { type = 15000 id = 11 }
+    participant = { EST LAT }
+  }
   war =
   { id        = { type = 9430 id = 1 }
     date      = { year = 1935 month = october day = 3 }
@@ -1229,6 +1233,7 @@ event      = "db\events\AI_GER.txt"
 event      = "db\events\ai_ger_emt.txt"
 event      = "db\events\AI_Other.txt"
 event      = "db\events\AI_CHI.txt"
+event      = "db\events\AI_U87.txt"
 event      = "db\events\AI_ENG.txt"
 event      = "db\events\ai_eng_emt.txt"
 event      = "db\events\AI_SOV.txt"

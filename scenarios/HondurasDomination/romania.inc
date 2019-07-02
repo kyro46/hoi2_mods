@@ -416,30 +416,29 @@ country =
 		name = "" 
 		progress = 0.0000 
 		location = 424 
-		cost = 2.0000 
+		cost = 5.0000 
 		date = { 
-			year = 1940 
-			month = august 
-			day = 2 
+			year = 1942 
+			month = january 
+			day = 0 
 			hour = 0 
 			} 
-		manpower = 0.1000 
+		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 24 
+		size = 6 
 		done = 0 
-		days = 1391 
-		days_for_first = 120 
+		days = 2160 
+		days_for_first = 360 
 		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = infrastructure 
+		type = ic 
 		} 
 	province_development = { 
 		id = { type = 20600 id = 201 } 
 		name = "" 
 		progress = 0.0000 
-		location = 431 
+		location = 424 
 		cost = 2.0000 
 		date = { 
 			year = 1940 
@@ -463,7 +462,7 @@ country =
 		id = { type = 20600 id = 202 } 
 		name = "" 
 		progress = 0.0000 
-		location = 433 
+		location = 431 
 		cost = 2.0000 
 		date = { 
 			year = 1942 
@@ -486,6 +485,29 @@ country =
 		id = { type = 20600 id = 203 } 
 		name = "" 
 		progress = 0.0000 
+		location = 433 
+		cost = 2.0000 
+		date = { 
+			year = 1942 
+			month = june 
+			day = 26 
+			hour = 0 
+			} 
+		manpower = 0.1000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 24 
+		done = 0 
+		days = 1391 
+		days_for_first = 120 
+		gearing_bonus = 0.0000 
+		type = infrastructure 
+		} 
+	province_development = { 
+		id = { type = 20600 id = 204 } 
+		name = "" 
+		progress = 0.0000 
 		location = 428 
 		cost = 2.0000 
 		date = { 
@@ -506,7 +528,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 20600 id = 204 } 
+		id = { type = 20600 id = 205 } 
 		name = "" 
 		progress = 0.0000 
 		location = 434 
@@ -529,7 +551,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 20600 id = 205 } 
+		id = { type = 20600 id = 206 } 
 		name = "" 
 		progress = 0.0000 
 		location = 230 
@@ -552,7 +574,7 @@ country =
 		type = infrastructure 
 		} 
 	province_development = { 
-		id = { type = 20600 id = 206 } 
+		id = { type = 20600 id = 207 } 
 		name = "" 
 		progress = 0.0000 
 		location = 426 
@@ -573,29 +595,6 @@ country =
 		days_for_first = 300 
 		gearing_bonus = 0.0000 
 		type = infrastructure 
-		} 
-	province_development = { 
-		id = { type = 20600 id = 207 } 
-		name = "" 
-		progress = 0.0000 
-		location = 424 
-		cost = 5.0000 
-		date = { 
-			year = 1942 
-			month = january 
-			day = 0 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 6 
-		done = 0 
-		days = 2160 
-		days_for_first = 360 
-		gearing_bonus = 0.0000 
-		type = ic 
 		} 
 	province_development = { 
 		id = { type = 20600 id = 208 } 
