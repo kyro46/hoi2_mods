@@ -42,7 +42,7 @@ country =
     defense_lobby     = 4
     interventionism   = 4
   }
-  nationalprovinces      = { 889 888 }
+  nationalprovinces      = { 888 889 }
   ownedprovinces         = { 888 }
   controlledprovinces    = { 888 }
   # ROTW Minor Tech '36

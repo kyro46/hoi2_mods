@@ -62,9 +62,9 @@ country =
   SpyInfo                = { country = "FIN" NumberOfSpies = 2 }
   SpyInfo                = { country = "SWE" NumberOfSpies = 2 }
   SpyInfo                = { country = "GER" NumberOfSpies = 1 }
-  nationalprovinces      = { 205 204 203 197 202 198 }
-  ownedprovinces         = { 205 204 203 197 202 198 }
-  controlledprovinces    = { 205 204 203 197 202 198 }
+  nationalprovinces      = { 197 198 202 203 204 205 }
+  ownedprovinces         = { 197 198 202 203 204 205 }
+  controlledprovinces    = { 197 198 202 203 204 205 }
   # Group D 1936 techs
   # ######################
   # GW fighter

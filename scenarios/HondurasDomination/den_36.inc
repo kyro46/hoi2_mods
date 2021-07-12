@@ -73,9 +73,9 @@ country =
   SpyInfo                = { country = "GER" NumberOfSpies = 3 }
   SpyInfo                = { country = "HOL" NumberOfSpies = 1 }
   SpyInfo                = { country = "USA" NumberOfSpies = 1 }
-  nationalprovinces      = { 91 92 292 293 294 295 800 1 2 }
-  ownedprovinces         = { 91 92 292 293 294 295 800 1 2 }
-  controlledprovinces    = { 91 92 292 293 294 295 800 1 2 }
+  nationalprovinces      = { 1 2 91 92 292 293 294 295 800 }
+  ownedprovinces         = { 1 2 91 92 292 293 294 295 800 }
+  controlledprovinces    = { 1 2 91 92 292 293 294 295 800 }
   # Western Minor Tech '36
   # Group C 1936 techs
   # ######################

@@ -72,9 +72,9 @@ country =
   SpyInfo                = { country = "GRE" NumberOfSpies = 1 }
   SpyInfo                = { country = "ROM" NumberOfSpies = 1 }
   SpyInfo                = { country = "ITA" NumberOfSpies = 1 }
-  nationalprovinces      = { 419 420 422 421 417 416 413 414 412 410 423 }
-  ownedprovinces         = { 419 420 422 421 417 416 }
-  controlledprovinces    = { 419 420 422 421 417 416 }
+  nationalprovinces      = { 410 412 413 414 416 417 419 420 421 422 423 }
+  ownedprovinces         = { 416 417 419 420 421 422 }
+  controlledprovinces    = { 416 417 419 420 421 422 }
   # Eastern Minor Tech '36
   # Group D 1936 techs
   # ######################

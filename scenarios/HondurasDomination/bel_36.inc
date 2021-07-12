@@ -78,9 +78,9 @@ country =
   SpyInfo                = { country = "DEN" NumberOfSpies = 1 }
   SpyInfo                = { country = "HOL" NumberOfSpies = 3 }
   SpyInfo                = { country = "LUX" NumberOfSpies = 1 }
-  nationalprovinces      = { 45 50 51 52 65 68 69 70 1095 1142 1071 1072 1073 1074 1143 1144 1127 1098 1063 }
-  ownedprovinces         = { 45 50 51 52 65 68 69 70 1095 1142 1071 1072 1073 1074 1143 1144 1127 1098 1063 }
-  controlledprovinces    = { 45 50 51 52 65 68 69 70 1095 1142 1071 1072 1073 1074 1143 1144 1127 1098 1063 }
+  nationalprovinces      = { 45 50 51 52 65 68 69 70 1063 1071 1072 1073 1074 1095 1098 1127 1142 1143 1144 }
+  ownedprovinces         = { 45 50 51 52 65 68 69 70 1063 1071 1072 1073 1074 1095 1098 1127 1142 1143 1144 }
+  controlledprovinces    = { 45 50 51 52 65 68 69 70 1063 1071 1072 1073 1074 1095 1098 1127 1142 1143 1144 }
   # Western Minor Tech '36
   # Group C 1936 techs
   # ######################

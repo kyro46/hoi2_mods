@@ -1169,7 +1169,7 @@ technology =
     name      = TECH_APP_LD_33_NAME
     desc      = TECH_APP_LD_33_DESC
     position  = { x = 184 y = 288 }
-    year      = 1940
+    year      = 1939
     # Mechanized forward elements
     component = { id = 6331 name = TECH_CMP_LD_33_1_NAME type = combined_arms_focus difficulty = 10 }
     # Self-sufficient commands
@@ -1203,7 +1203,7 @@ technology =
     name      = TECH_APP_LD_32_NAME
     desc      = TECH_APP_LD_32_DESC
     position  = { x = 184 y = 312 }
-    year      = 1941
+    year      = 1940
     # Artillery groups
     component = { id = 6321 name = TECH_CMP_LD_32_1_NAME type = infantry_focus difficulty = 10 }
     # All-around defence
@@ -1261,7 +1261,7 @@ technology =
     name      = TECH_APP_LD_35_NAME
     desc      = TECH_APP_LD_35_DESC
     position  = { x = 360 y = 280 }
-    year      = 1941
+    year      = 1942
     # Operational deception 
     component = { id = 6351 name = TECH_CMP_LD_35_1_NAME type = combined_arms_focus difficulty = 10 }
     # Maskirovka 
@@ -1352,6 +1352,85 @@ technology =
       command = { type = sce_frequency value = 0.25 }
     }
   }
+  
+  # Future Construction Ops. 1
+  application =
+  { id = 6660
+    name = TECH_APP_INDUSTRY_8_NAME # new
+    desc = TECH_APP_INDUSTRY_8_DESC # new
+    position = { x = 432 y = 438 }
+    year = 1964
+    # Improved Turbojet Engine
+    component = { id =  6661 name = TECH_CMP_AIRCRAFT_101_1_NAME type = rocketry difficulty = 50 }
+    # Regular Composite Airframe
+    component = { id =  6662 name = TECH_CMP_SW_5_2_NAME type = aeronautics difficulty = 60 }
+    # Air-to-Air Missle
+    component = { id =  6663 name = TECH_CMP_AIRCRAFT_101_3_NAME type = artillery difficulty = 50 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id =  6664 name = TECH_CMP_AIRCRAFT_115_4_NAME type = electronics difficulty = 70 }
+    # Improved Turbojet Fighter Prototype Tests
+    component = { id =  6665 name = TECH_CMP_SW_29_5_NAME type = technical_efficiency difficulty = 80 double_time = yes }
+    required = { 7050 7320 7120 }
+    effects =
+    { command = { type = industrial_modifier which = gearing_limit value = 100 }
+	  command = { type = research_mod value = 50 }
+	  command = { type = building_prod_mod which = infrastructure value = 100 }
+      command = { type = building_prod_mod which = ic value = 75 }
+	  command = { type = building_prod_mod which = land_fort value = 75 }
+      command = { type = building_prod_mod which = coastal_fort value = 75 }
+    }
+  }
+# Future Construction Ops. 2
+  application =
+  { id = 6670
+    name = TECH_APP_INDUSTRY_9_NAME # new
+    desc = TECH_APP_INDUSTRY_9_DESC # new
+    position = { x = 432 y = 454 }
+    year = 1964
+    # Improved Turbojet Engine
+    component = { id = 6671 name = TECH_CMP_AIRCRAFT_101_1_NAME type = rocketry difficulty = 50 }
+    # Regular Composite Airframe
+    component = { id = 6672 name = TECH_CMP_SW_5_2_NAME type = aeronautics difficulty = 60 }
+    # Air-to-Air Missle
+    component = { id = 6673 name = TECH_CMP_AIRCRAFT_101_3_NAME type = artillery difficulty = 50 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id = 6674 name = TECH_CMP_AIRCRAFT_115_4_NAME type = electronics difficulty = 70 }
+    # Improved Turbojet Fighter Prototype Tests
+    component = { id = 6675 name = TECH_CMP_SW_29_5_NAME type = technical_efficiency difficulty = 80 double_time = yes }
+    required = { 7050 7320 7120 }
+    effects =
+    { command = { type = max_organization which = land value = 20 }
+      command = { type = max_organization which = air value = 20 }
+      command = { type = max_organization which = naval value = 20 }
+      command = { type = max_positioning which = carrier value = 1.00 }
+      command = { type = min_positioning which = carrier value = 1.00 }
+      command = { type = task_efficiency which = air_superiority value = 1.00 }
+	  command = { type = AA_batteries value = 500 }
+    }
+  }
+# Future Construction Ops. 3
+  application =
+  { id = 6680
+    name = TECH_APP_INDUSTRY_10_NAME # new
+    desc = TECH_APP_INDUSTRY_10_DESC # new
+    position = { x = 432 y = 470 }
+    year = 1964
+    # Improved Turbojet Engine
+    component = { id =  6681 name = TECH_CMP_AIRCRAFT_101_1_NAME type = rocketry difficulty = 50 }
+    # Regular Composite Airframe
+    component = { id =  6682 name = TECH_CMP_SW_5_2_NAME type = aeronautics difficulty = 60 }
+    # Air-to-Air Missle
+    component = { id =  6683 name = TECH_CMP_AIRCRAFT_101_3_NAME type = artillery difficulty = 50 }
+    # Improved Centimetric Airborne Radar Navigation
+    component = { id =  6684 name = TECH_CMP_AIRCRAFT_115_4_NAME type = electronics difficulty = 70 }
+    # Improved Turbojet Fighter Prototype Tests
+    component = { id =  6685 name = TECH_CMP_SW_29_5_NAME type = technical_efficiency difficulty = 80 double_time = yes }
+    required = { 7050 7320 7120 }
+    effects =
+    { command = { type = industrial_modifier which = total value = 100 }
+    }
+  }
+  
   # Mechanized Wave
   application =
   { id        = 14060
@@ -1512,81 +1591,5 @@ technology =
       command = { type = trickleback_mod value = 5 }
     }
   }
-# Future Construction Ops. 1
-  application =
-  { id = 6660
-    name = TECH_APP_INDUSTRY_8_NAME # new
-    desc = TECH_APP_INDUSTRY_8_DESC # new
-    position = { x = 432 y = 438 }
-    year = 1964
-    # Improved Turbojet Engine
-    component = { id =  6661 name = TECH_CMP_AIRCRAFT_101_1_NAME type = rocketry difficulty = 50 }
-    # Regular Composite Airframe
-    component = { id =  6662 name = TECH_CMP_SW_5_2_NAME type = aeronautics difficulty = 60 }
-    # Air-to-Air Missle
-    component = { id =  6663 name = TECH_CMP_AIRCRAFT_101_3_NAME type = artillery difficulty = 50 }
-    # Improved Centimetric Airborne Radar Navigation
-    component = { id =  6664 name = TECH_CMP_AIRCRAFT_115_4_NAME type = electronics difficulty = 70 }
-    # Improved Turbojet Fighter Prototype Tests
-    component = { id =  6665 name = TECH_CMP_SW_29_5_NAME type = technical_efficiency difficulty = 80 double_time = yes }
-    required = { 7050 7320 7120 }
-    effects =
-    { command = { type = industrial_modifier which = gearing_limit value = 100 }
-	  command = { type = research_mod value = 50 }
-	  command = { type = building_prod_mod which = infrastructure value = 100 }
-      command = { type = building_prod_mod which = ic value = 75 }
-	  command = { type = building_prod_mod which = land_fort value = 75 }
-      command = { type = building_prod_mod which = coastal_fort value = 75 }
-    }
-  }
-# Future Construction Ops. 2
-  application =
-  { id = 6670
-    name = TECH_APP_INDUSTRY_9_NAME # new
-    desc = TECH_APP_INDUSTRY_9_DESC # new
-    position = { x = 432 y = 454 }
-    year = 1964
-    # Improved Turbojet Engine
-    component = { id = 6671 name = TECH_CMP_AIRCRAFT_101_1_NAME type = rocketry difficulty = 50 }
-    # Regular Composite Airframe
-    component = { id = 6672 name = TECH_CMP_SW_5_2_NAME type = aeronautics difficulty = 60 }
-    # Air-to-Air Missle
-    component = { id = 6673 name = TECH_CMP_AIRCRAFT_101_3_NAME type = artillery difficulty = 50 }
-    # Improved Centimetric Airborne Radar Navigation
-    component = { id = 6674 name = TECH_CMP_AIRCRAFT_115_4_NAME type = electronics difficulty = 70 }
-    # Improved Turbojet Fighter Prototype Tests
-    component = { id = 6675 name = TECH_CMP_SW_29_5_NAME type = technical_efficiency difficulty = 80 double_time = yes }
-    required = { 7050 7320 7120 }
-    effects =
-    { command = { type = max_organization which = land value = 20 }
-      command = { type = max_organization which = air value = 20 }
-      command = { type = max_organization which = naval value = 20 }
-      command = { type = max_positioning which = carrier value = 1.00 }
-      command = { type = min_positioning which = carrier value = 1.00 }
-      command = { type = task_efficiency which = air_superiority value = 1.00 }
-	  command = { type = AA_batteries value = 500 }
-    }
-  }
-# Future Construction Ops. 3
-  application =
-  { id = 6680
-    name = TECH_APP_INDUSTRY_10_NAME # new
-    desc = TECH_APP_INDUSTRY_10_DESC # new
-    position = { x = 432 y = 470 }
-    year = 1964
-    # Improved Turbojet Engine
-    component = { id =  6681 name = TECH_CMP_AIRCRAFT_101_1_NAME type = rocketry difficulty = 50 }
-    # Regular Composite Airframe
-    component = { id =  6682 name = TECH_CMP_SW_5_2_NAME type = aeronautics difficulty = 60 }
-    # Air-to-Air Missle
-    component = { id =  6683 name = TECH_CMP_AIRCRAFT_101_3_NAME type = artillery difficulty = 50 }
-    # Improved Centimetric Airborne Radar Navigation
-    component = { id =  6684 name = TECH_CMP_AIRCRAFT_115_4_NAME type = electronics difficulty = 70 }
-    # Improved Turbojet Fighter Prototype Tests
-    component = { id =  6685 name = TECH_CMP_SW_29_5_NAME type = technical_efficiency difficulty = 80 double_time = yes }
-    required = { 7050 7320 7120 }
-    effects =
-    { command = { type = industrial_modifier which = total value = 100 }
-    }
-  }
+
 }

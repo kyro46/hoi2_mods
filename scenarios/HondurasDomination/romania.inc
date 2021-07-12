@@ -92,9 +92,9 @@ country =
   SpyInfo                = { country = "GRE" NumberOfSpies = 2 }
   SpyInfo                = { country = "BUL" NumberOfSpies = 3 }
   SpyInfo                = { country = "ITA" NumberOfSpies = 1 }
-  nationalprovinces      = { 423 424 425 431 426 495 496 498 427 428 429 430 432 436 433 435 230 434 }
-  ownedprovinces         = { 423 424 425 431 426 495 496 498 427 428 429 430 432 436 433 435 230 434 }
-  controlledprovinces    = { 423 424 425 431 426 495 496 498 427 428 429 430 432 436 433 435 230 434 }
+  nationalprovinces      = { 230 423 424 425 426 427 428 429 430 431 432 433 434 435 436 495 496 498 }
+  ownedprovinces         = { 230 423 424 425 426 427 428 429 430 431 432 433 434 435 436 495 496 498 }
+  controlledprovinces    = { 230 423 424 425 426 427 428 429 430 431 432 433 434 435 436 495 496 498 }
   # Eastern Minor Tech '36
   # Group C 1936 techs
   # ######################

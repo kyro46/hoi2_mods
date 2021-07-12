@@ -44,9 +44,9 @@ country =
     relation = { tag = USA value = 75 }
     relation = { tag = VEN value = 10 }
   }
-  nationalprovinces      = { 831 829 830 821 816 818 }
-  ownedprovinces         = { 831 829 830 821 816 }
-  controlledprovinces    = { 831 829 830 821 816 }
+  nationalprovinces      = { 816 818 830 821 829 831 }
+  ownedprovinces         = { 816 821 829 830 831 }
+  controlledprovinces    = { 816 821 829 830 831 }
   # ROTW Minor Tech '36
   # Group D 1936 techs
   # ######################

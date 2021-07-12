@@ -76,9 +76,9 @@ country =
   SpyInfo                = { country = "JAP" NumberOfSpies = 3 }
   SpyInfo                = { country = "CYN" NumberOfSpies = 2 }
   SpyInfo                = { country = "CSX" NumberOfSpies = 2 }
-  nationalprovinces      = { 1258 1310 1311 1309 1319 1325 1312 1313 1316 1249 1248 1314 1317 1318 1320 1321 }
-  ownedprovinces         = { 1258 1310 1311 1309 1319 1325 1312 1313 1249 1248 1314 1317 1318 1320 1321 }
-  controlledprovinces    = { 1258 1310 1311 1309 1319 1325 1312 1313 1249 1248 1314 1317 1318 1320 1321 }
+  nationalprovinces      = { 1248 1249 1258 1309 1310 1311 1312 1313 1314 1316 1317 1318 1319 1320 1321 1325 }
+  ownedprovinces         = { 1248 1249 1258 1309 1310 1311 1312 1313 1314 1317 1318 1319 1320 1321 1325 }
+  controlledprovinces    = { 1248 1249 1258 1309 1310 1311 1312 1313 1314 1317 1318 1319 1320 1321 1325 }
   # Guangxi
   # ROTW Minor Tech '36
   # Group E 1936 techs

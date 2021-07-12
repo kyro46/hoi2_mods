@@ -51,7 +51,7 @@ country =
     defense_lobby     = 5
     interventionism   = 4
   }
-  nationalprovinces      = { 392 393 394 395 396 400 401 402 403 405 410 411 412 398 399 413 444 }
+  nationalprovinces      = { 392 393 394 395 396 398 399 400 401 402 403 405 410 411 412 413 444 }
   ownedprovinces         = { 392 393 394 395 396 400 401 402 403 405 410 411 412 }
   controlledprovinces    = { 392 393 394 395 396 400 401 402 403 405 410 411 412 }
   # Western Minor Tech '36

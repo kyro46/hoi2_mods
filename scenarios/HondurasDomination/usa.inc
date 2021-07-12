@@ -265,7 +265,7 @@ country =
   production = 0.7473 
   reinforcement = 0.0000 
   upgrading = 0.0000 
-  manpower               = 64.4 # 100 + 7.5 from Phillippine Division - building queue
+  manpower               = 65.4 # 100 + 7.5 from Phillippine Division - building queue
   transports             = 240
   escorts                = 53
   peacetime_ic_mod       = 0.50
@@ -435,40 +435,45 @@ country =
   SpyInfo                = { country = "ITA" NumberOfSpies = 1 }
   SpyInfo                = { country = "CHI" NumberOfSpies = 1 }
   SpyInfo                = { country = "MEX" NumberOfSpies = 4 }
-  nationalprovinces      = { 651  650  649  648  677  676  672  646  647  669  670  644  645  634  635  636  637  643  633  632  631  638  639  606 
-                             607  605  604  603  612  602  598  593  592  608  609  610  611  594  597  595  596  582  583  599  600  601  613  614 
-                             629  630  640  641  642  671  673  674  675  678  679  615  628  617  616  618  619  627  680  681  682  683  684  685 
-                             686  687  688  689  626  625  620  621  624  623  622  690  691  692  693  694  695  696  697  698  699  787  788  789 
-                             790  791  792  793  710  711  712  713  714  715  716  717  719  720  721  748  722  723  724  725  727  728  729  730 
-                             731  732  733  706  707  708  709  705  704  703  702  701  700  775  774  770  771  772  773  776  777  779  780  781 
-                             782  783  784  785  786  778  769  768  734  736  735  767  761  762  763  764  765  766  553  551  550  549  548  547 
-                             546  545  544  543  542  718  726  746  1408 895  889 
+  nationalprovinces      = { 542 543 544 545 546 547 548 549 550 551 553 582 583 592 593 594 595 596 597 598 599 
+							 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 616 617 618 619 620 
+							 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641 
+							 642 643 644 645 646 647 648 649 650 651 669 670 671 672 673 674 675 676 677 678 679 
+							 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694 695 696 697 698 699 700 
+							 701 702 703 704 705 706 707 708 709 710 711 712 713 714 715 716 717 718 719 720 721 
+							 722 723 724 725 726 727 728 729 730 731 732 733 734 736 735 746 748 761 762 763 764 
+							 765 766 768 769 767 770 771 772 773 774 775 776 777 778 779 780 781 782 783 784 785 
+							 786 787 788 789 790 791 792 793 895 889 1408 
                            }
-  ownedprovinces         = { 651  650  649  648  677  676  672  646  647  669  670  644  645  634  635  636  637  643  633  632  631  638  639  606 
-                             607  605  604  603  612  602  598  593  592  608  609  610  611  594  597  595  596  582  583  599  600  601  613  614 
-                             629  630  640  641  642  671  673  674  675  678  679  615  628  617  616  618  619  627  680  681  682  683  684  685 
-                             686  687  688  689  626  625  620  621  624  623  622  690  691  692  693  694  695  696  697  698  699  787  788  789 
-                             790  791  792  793  710  711  712  713  714  715  716  717  719  720  721  748  722  723  724  725  727  728  729  730 
-                             731  732  733  706  707  708  709  705  704  703  702  701  700  775  774  770  771  772  773  776  777  779  780  781 
-                             782  783  784  785  786  778  769  768  734  736  735  767  761  762  763  764  765  766  553  551  550  549  548  547 
-                             546  545  544  543  542  718  726  746  895  889  658  659  660  661  662  663  1756 1766 1762 1786 1624 1408 1764 1765
+  ownedprovinces         = { 542 543 544 545 546 547 548 549 550 551 553 582 583 592 593 594 595 596 597 598 599
+							 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 617 616 618 619 620
+							 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641
+							 642 643 644 645 646 647 648 649 650 651 658 659 660 661 662 663 669 670 671 672 673
+							 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694
+							 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 715
+							 716 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736
+                             746 748 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 778 779
+							 780 781 782 783 784 785 786 787 788 789 790 791 792 793 895 889
+							 1408 1624 1756 1762 1764 1765 1766 1786
                            }
-  controlledprovinces    = { 651  650  649  648  677  676  672  646  647  669  670  644  645  634  635  636  637  643  633  632  631  638  639  606 
-                             607  605  604  603  612  602  598  593  592  608  609  610  611  594  597  595  596  582  583  599  600  601  613  614 
-                             629  630  640  641  642  671  673  674  675  678  679  615  628  617  616  618  619  627  680  681  682  683  684  685 
-                             686  687  688  689  626  625  620  621  624  623  622  690  691  692  693  694  695  696  697  698  699  787  788  789 
-                             790  791  792  793  710  711  712  713  714  715  716  717  719  720  721  748  722  723  724  725  727  728  729  730 
-                             731  732  733  706  707  708  709  705  704  703  702  701  700  775  774  770  771  772  773  776  777  779  780  781 
-                             782  783  784  785  786  778  769  768  734  736  735  767  761  762  763  764  765  766  553  551  550  549  548  547 
-                             546  545  544  543  542  718  726  746  895  889  658  659  660  661  662  663  1756 1766 1762 1786 1624 1408 1764 1765
+  controlledprovinces    = { 542 543 544 545 546 547 548 549 550 551 553 582 583 592 593 594 595 596 597 598 599
+							 600 601 602 603 604 605 606 607 608 609 610 611 612 613 614 615 617 616 618 619 620
+							 621 622 623 624 625 626 627 628 629 630 631 632 633 634 635 636 637 638 639 640 641
+							 642 643 644 645 646 647 648 649 650 651 658 659 660 661 662 663 669 670 671 672 673
+							 674 675 676 677 678 679 680 681 682 683 684 685 686 687 688 689 690 691 692 693 694
+							 695 696 697 698 699 700 701 702 703 704 705 706 707 708 709 710 711 712 713 714 715
+							 716 717 718 719 720 721 722 723 724 725 726 727 728 729 730 731 732 733 734 735 736
+                             746 748 761 762 763 764 765 766 767 768 769 770 771 772 773 774 775 776 777 778 779
+							 780 781 782 783 784 785 786 787 788 789 790 791 792 793 895 889
+							 1408 1624 1756 1762 1764 1765 1766 1786
                            }
   # early esc car
   # USA 1936 techs
   # ######################
-  techapps               = { 12100 4010  4020  4120  4130  4250  4260  4190  4220  2150  2010  2290  2300  2310  2450  2460  2510  1010  1190  1200 
-                             1310  5010  5020  5050  5060  5080  5090  5310  5320  5470  5480  9010  9020  9030  9140  6010  6020  8010  8020  8030 
-                             8040  8050  8060  8090  8100  3010  3020  3070  3080  3130  3140  3150  3190  3200  3210  3250  3260  3270  3280  3320 
-                             3330  3340  3400  3410  3420  14000 3470  5290  3100  3160  3090  5190
+  techapps               = { 12100 4010 4020 4120 4130 4250 4260 4190 4220 2150 2010 2290 2300 2310 2450 2460 2510 1010 1190 1200 
+                             1310 5010 5020 5050 5060 5080 5090 5310 5320 5470 5480 9010 9020 9030 9140 6010 6020 8010 8020 8030 
+                             8040 8050 8060 8090 8100 3010 3020 3070 3080 3130 3140 3150 3190 3200 3210 3250 3260 3270 3280 3320 
+                             3330 3340 3400 3410 3420 14000 3470 5290 3100 3160 3090 5190
                            }
   blueprints             = { 1150 }
   policy =
@@ -2374,9 +2379,9 @@ division =
 		location = 716 
 		cost = 5.0000 
 		date = { 
-			year = 1949 
-			month = march 
-			day = 5 
+			year = 1952 
+			month = february 
+			day = 22 
 			hour = 0 
 			} 
 		manpower = 1.0000 
@@ -2388,7 +2393,7 @@ division =
 		days = 5472 
 		days_for_first = 274 
 		gearing_bonus = 0.0000 
-		speed_step = 2 
+		speed_step = 1 
 		type = ic 
 		} 
 	province_development = { 
@@ -2396,148 +2401,6 @@ division =
 		name = "" 
 		progress = 0.0000 
 		location = 677 
-		cost = 5.0000 
-		date = { 
-			year = 1948 
-			month = november 
-			day = 29 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 216 } 
-		name = "" 
-		progress = 0.0000 
-		location = 672 
-		cost = 5.0000 
-		date = { 
-			year = 1948 
-			month = november 
-			day = 29 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 5472 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 217 } 
-		name = "" 
-		progress = 0.0000 
-		location = 613 
-		cost = 5.0000 
-		date = { 
-			year = 1948 
-			month = november 
-			day = 29 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 24 
-		done = 0 
-		days = 5472 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 218 } 
-		name = "" 
-		progress = 0.0000 
-		location = 620 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = september 
-			day = 7 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 18 
-		done = 0 
-		days = 4925 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		speed_step = 1 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 219 } 
-		name = "" 
-		progress = 0.0000 
-		location = 602 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 220 } 
-		name = "" 
-		progress = 0.0000 
-		location = 603 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 221 } 
-		name = "" 
-		progress = 0.0000 
-		location = 608 
 		cost = 5.0000 
 		date = { 
 			year = 1945 
@@ -2603,6 +2466,98 @@ division =
 		type = ic 
 		} 
 	province_development = { 
+		id = { type = 14800 id = 220 } 
+		name = "" 
+		progress = 0.0000 
+		location = 603 
+		cost = 5.0000 
+		date = { 
+			year = 1945 
+			month = february 
+			day = 18 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 216 } 
+		name = "" 
+		progress = 0.0000 
+		location = 672 
+		cost = 5.0000 
+		date = { 
+			year = 1945 
+			month = february 
+			day = 18 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 5472 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 217 } 
+		name = "" 
+		progress = 0.0000 
+		location = 613 
+		cost = 5.0000 
+		date = { 
+			year = 1945 
+			month = february 
+			day = 18 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 5472 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 221 } 
+		name = "" 
+		progress = 0.0000 
+		location = 608 
+		cost = 5.0000 
+		date = { 
+			year = 1945 
+			month = february 
+			day = 18 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 12 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
 		id = { type = 14800 id = 224 } 
 		name = "" 
 		progress = 0.0000 
@@ -2626,10 +2581,10 @@ division =
 		type = ic 
 		} 
 	province_development = { 
-		id = { type = 14800 id = 225 } 
+		id = { type = 14800 id = 218 } 
 		name = "" 
 		progress = 0.0000 
-		location = 727 
+		location = 620 
 		cost = 5.0000 
 		date = { 
 			year = 1945 
@@ -2643,145 +2598,7 @@ division =
 		total_progress = 0.0000 
 		size = 12 
 		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 226 } 
-		name = "" 
-		progress = 0.0000 
-		location = 609 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 227 } 
-		name = "" 
-		progress = 0.0000 
-		location = 640 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 228 } 
-		name = "" 
-		progress = 0.0000 
-		location = 641 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 229 } 
-		name = "" 
-		progress = 0.0000 
-		location = 614 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 230 } 
-		name = "" 
-		progress = 0.0000 
-		location = 629 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
-		days_for_first = 274 
-		gearing_bonus = 0.0000 
-		type = ic 
-		} 
-	province_development = { 
-		id = { type = 14800 id = 231 } 
-		name = "" 
-		progress = 0.0000 
-		location = 630 
-		cost = 5.0000 
-		date = { 
-			year = 1945 
-			month = february 
-			day = 18 
-			hour = 0 
-			} 
-		manpower = 1.0000 
-		close_when_finished = yes 
-		waitingforclosure = no 
-		total_progress = 0.0000 
-		size = 12 
-		done = 0 
-		days = 3283 
+		days = 4925 
 		days_for_first = 274 
 		gearing_bonus = 0.0000 
 		type = ic 
@@ -3246,6 +3063,190 @@ division =
 		gearing_bonus = 0.0000 
 		type = infrastructure 
 		} 
+	province_development = { 
+		id = { type = 14800 id = 225 } 
+		name = "" 
+		progress = 0.0000 
+		location = 727 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 226 } 
+		name = "" 
+		progress = 0.0000 
+		location = 609 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 227 } 
+		name = "" 
+		progress = 0.0000 
+		location = 640 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 228 } 
+		name = "" 
+		progress = 0.0000 
+		location = 641 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 229 } 
+		name = "" 
+		progress = 0.0000 
+		location = 614 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 230 } 
+		name = "" 
+		progress = 0.0000 
+		location = 629 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+	province_development = { 
+		id = { type = 14800 id = 231 } 
+		name = "" 
+		progress = 0.0000 
+		location = 630 
+		cost = 5.0000 
+		date = { 
+			year = 1942 
+			month = november 
+			day = 6 
+			hour = 0 
+			} 
+		manpower = 1.0000 
+		close_when_finished = yes 
+		waitingforclosure = no 
+		total_progress = 0.0000 
+		size = 9 
+		done = 0 
+		days = 3283 
+		days_for_first = 274 
+		gearing_bonus = 0.0000 
+		type = ic 
+		} 
+#	province_development = { 
+#		id = { type = 14800 id = 219 } 
+#		name = "" 
+#		progress = 0.0000 
+#		location = 602 
+#		cost = 5.0000 
+#		date = { 
+#			year = 1942 
+#			month = november 
+#			day = 6 
+#			hour = 0 
+#			} 
+#		manpower = 1.0000 
+#		close_when_finished = yes 
+#		waitingforclosure = no 
+#		total_progress = 0.0000 
+#		size = 9 
+#		done = 0 
+#		days = 3283 
+#		days_for_first = 274 
+#		gearing_bonus = 0.0000 
+#		type = ic 
+#		} 
 	province_development = { 
 		id = { type = 14800 id = 252 } 
 		name = "" 

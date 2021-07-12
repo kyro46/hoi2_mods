@@ -38,9 +38,9 @@ country =
   SpyInfo                = { country = "SOV" NumberOfSpies = 2 }
   SpyInfo                = { country = "CHI" NumberOfSpies = 1 }
   SpyInfo                = { country = "MAN" NumberOfSpies = 1 }
-  nationalprovinces      = { 1420 1419 1434 1436 1437 1438 1399 1404 1385 1207 1398 1386 1382 1387 1388 1397 }
-  ownedprovinces         = { 1420 1419 1434 1436 1437 1438 1399 1404 1385 }
-  controlledprovinces    = { 1420 1419 1434 1436 1437 1438 1399 1404 1385 }
+  nationalprovinces      = { 1385 1399 1404 1419 1420 1434 1436 1437 1438 } #  1207 1382 1386 1387 1388 1397 1398
+  ownedprovinces         = { 1385 1399 1404 1419 1420 1434 1436 1437 1438 }
+  controlledprovinces    = { 1385 1399 1404 1419 1420 1434 1436 1437 1438 }
   # ROTW Minor Tech '36
   # Group E 1936 techs
   # ######################

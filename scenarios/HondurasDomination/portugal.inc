@@ -115,11 +115,9 @@ country =
   SpyInfo                = { country = "ITA" NumberOfSpies = 1 }
   SpyInfo                = { country = "BRA" NumberOfSpies = 4 }
   SpyInfo                = { country = "MEX" NumberOfSpies = 1 }
-  # Cabinda
   nationalprovinces      = { 335 336 337 344 345 1867 }
-  ownedprovinces         = { 335 336 337 344 345 1867 1146 983 1090 1096 1097 1101 1100 1102 1103 1122 1123 1130 1131 1133 1138 1658 1316 1094 }
-  # Cabinda
-  controlledprovinces    = { 335 336 337 344 345 1867 1146 983 1090 1096 1097 1101 1100 1102 1103 1122 1123 1130 1131 1133 1138 1658 1316 1094 }
+  ownedprovinces         = { 335 336 337 344 345 983 1090 1094 1096 1097 1100 1101 1102 1103 1122 1123 1130 1131 1133 1138 1146 1316 1658 1867 }
+  controlledprovinces    = { 335 336 337 344 345 983 1090 1094 1096 1097 1100 1101 1102 1103 1122 1123 1130 1131 1133 1138 1146 1316 1658 1867 }
   # Western Minor Tech '36
   # Group C 1936 techs
   # ######################

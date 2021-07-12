@@ -34,9 +34,9 @@ country =
     defense_lobby     = 5
     interventionism   = 5
   }
-  nationalprovinces      = { 1421 1432 1433 1435 1445 1446 1447 1430 1431 }
-  ownedprovinces         = { 1435 1445 1447 1421 1432 1433 1446 1430 1431 }
-  controlledprovinces    = { 1421 1432 1433 1446 1430 1431 1445 1447 1435 }
+  nationalprovinces      = { 1421 1430 1431 1432 1433 1435 1445 1446 1447 }
+  ownedprovinces         = { 1421 1430 1431 1432 1433 1435 1445 1447 1446 }
+  controlledprovinces    = { 1421 1430 1431 1432 1433 1435 1446 1445 1447 }
   # ROTW Minor Tech '36
   # Group E 1936 techs
   # ######################

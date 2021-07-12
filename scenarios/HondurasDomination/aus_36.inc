@@ -72,7 +72,7 @@ country =
   SpyInfo                = { country = "ALB" NumberOfSpies = 1 }
   SpyInfo                = { country = "ROM" NumberOfSpies = 2 }
   SpyInfo                = { country = "ITA" NumberOfSpies = 4 }
-  nationalprovinces      = { 373 377 460 461 462 463 464 465 467 371 }
+  nationalprovinces      = { 371 373 377 460 461 462 463 464 465 467 }
   ownedprovinces         = { 373 377 460 461 462 463 464 465 }
   controlledprovinces    = { 373 377 460 461 462 463 464 465 }
   # Western Minor Tech '36
@@ -210,16 +210,16 @@ country =
 		location = 463 
 		cost = 5.0000 
 		date = { 
-			year = 1943 
-			month = june 
-			day = 19 
+			year = 1942 
+			month = march 
+			day = 21 
 			hour = 0 
 			} 
 		manpower = 1.0000 
 		close_when_finished = yes 
 		waitingforclosure = no 
 		total_progress = 0.0000 
-		size = 12 
+		size = 10 
 		done = 0 
 		days = 1584 
 		days_for_first = 317 

@@ -41,9 +41,9 @@ country =
     defense_lobby     = 5
     interventionism   = 3
   }
-  nationalprovinces      = { 1821 1818 1809 1808 1807 1805 1804 }
-  ownedprovinces         = { 1821 1818 1809 1808 1807 1805 1804 }
-  controlledprovinces    = { 1821 1818 1809 1808 1807 1805 1804 }
+  nationalprovinces      = { 1804 1805 1807 1808 1809 1818 1821 }
+  ownedprovinces         = { 1804 1805 1807 1808 1809 1818 1821 }
+  controlledprovinces    = { 1804 1805 1807 1808 1809 1818 1821 }
   # ROTW Minor Tech '36
   # Group E 1936 techs
   # ######################

@@ -19,8 +19,6 @@ country =
   upgrading = 0.0000 
   capital                = 1453
   manpower               = 9.9 # 10 - building queue
-# Test
-# free                   = { ic = 100 energy = 200 metal = 100 rare_materials = 50 oil = 20 supplies = 50 money = 10 }
   policy =
   { date              = { year = 0 month = january day = 0 }
     democratic        = 3
@@ -31,6 +29,8 @@ country =
     defense_lobby     = 1
     interventionism   = 1
   }
+  #Amdo, Eastern Kham (optional, half-national: Ya'an 1281), South Tibet (optional, half-national: Dimapur 1284)
+  nationalprovinces      = { 1282 1283 1284 1442 1443 1444 1448 1450 1451 1452 1453 1454 1877 1878 } 
   ownedprovinces         = { 1283 1448 1450 1451 1452 1453 }
   controlledprovinces    = { 1283 1448 1450 1451 1452 1453 }
   # ROTW Minor Tech '36
@@ -38,11 +38,6 @@ country =
   # ######################
   # Basic Armoured Car
   techapps               = { 2150 2290 1010 1190 5080 }
-  nationalprovinces      = { 1283 1448 1450 1451 1452 1453
-				1442 1443 1444 #Amdo
-				1282 #Eastern Kham (optional, half-national: Ya'an 1281)
-				1877 1878 1454 1284 #South Tibet (optional, half-national: Dimapur 1284)
-				 }
   headofstate            = { type = 9 id = 73001 }
   headofgovernment       = { type = 9 id = 73002 }
   foreignminister        = { type = 9 id = 73003 }

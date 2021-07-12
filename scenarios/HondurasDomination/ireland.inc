@@ -66,7 +66,7 @@ country =
   SpyInfo                = { country = "ENG" NumberOfSpies = 4 }
   SpyInfo                = { country = "GER" NumberOfSpies = 1 }
   SpyInfo                = { country = "USA" NumberOfSpies = 1 }
-  nationalprovinces      = { 27 26 25 24 30 29 28 }
+  nationalprovinces      = { 27 26 25 24 29 28 30 }
   ownedprovinces         = { 27 26 25 24 30 }
   controlledprovinces    = { 27 26 25 24 30 }
   # Western Minor Tech '36

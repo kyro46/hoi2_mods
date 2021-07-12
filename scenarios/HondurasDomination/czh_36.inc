@@ -74,14 +74,14 @@ country =
   SpyInfo                = { country = "YUG" NumberOfSpies = 1 }
   SpyInfo                = { country = "HUN" NumberOfSpies = 3 }
   SpyInfo                = { country = "ITA" NumberOfSpies = 1 }
-  nationalprovinces      = { 471 472 466 467 470 469 468 474 475 478 477 490 499 476 }
-  ownedprovinces         = { 471 472 466 467 470 469 468 474 475 478 477 490 499 476 }
-  controlledprovinces    = { 471 472 466 467 470 469 468 474 475 478 477 490 499 476 }
+  nationalprovinces      = { 466 467 468 469 470 471 472 474 475 476 477 478 490 499 }
+  ownedprovinces         = { 466 467 468 469 470 471 472 474 475 476 477 478 490 499 }
+  controlledprovinces    = { 466 467 469 468 470 471 472 474 475 476 477 478 490 499 }
   # Eastern Minor Tech '36
   # Group C 1936 techs
   # ######################
-  techapps               = { 1010  1020  1110  1190  1310  14000 2010  2020  2030  2040  2150  2290  2300  2310  2450  2460  2510  4010  4020  4120 
-                             5010  5020  5080  5090  5190  6010  6020  9010 
+  techapps               = { 1010 1020 1110 1190 1310 14000 2010 2020 2030 2040 2150 2290 2300 2310 2450 2460 2510 4010 4020 4120 
+                             5010 5020 5080 5090 5190 6010 6020 9010 
                            }
   policy =
   { date              = { year = 0 month = january day = 0 }

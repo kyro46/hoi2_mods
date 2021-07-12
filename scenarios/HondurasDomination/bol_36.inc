@@ -39,9 +39,9 @@ country =
     defense_lobby     = 8
     interventionism   = 5
   }
-  nationalprovinces      = { 836 833 838 832 828 827 837 822 839 }
-  ownedprovinces         = { 836 833 838 832 828 827 }
-  controlledprovinces    = { 836 833 838 832 828 827 }
+  nationalprovinces      = { 822 827 828 832 833 836 837 838 839 }
+  ownedprovinces         = { 827 828 832 833 836 838 }
+  controlledprovinces    = { 827 828 832 833 836 838 }
   # ROTW Minor Tech '36
   # Group D 1936 techs
   # ######################

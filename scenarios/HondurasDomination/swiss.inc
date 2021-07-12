@@ -43,9 +43,9 @@ country =
     defense_lobby     = 8
     interventionism   = 1
   }
-  nationalprovinces      = { 532 530 533 372 }
-  ownedprovinces         = { 532 530 533 372 }
-  controlledprovinces    = { 532 530 533 372 }
+  nationalprovinces      = { 372 530 532 533 }
+  ownedprovinces         = { 372 530 532 533 }
+  controlledprovinces    = { 372 530 532 533 }
   # Western Minor Tech '36
   # Group C 1936 techs
   # ######################

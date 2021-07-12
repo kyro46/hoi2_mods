@@ -49,9 +49,9 @@ country =
     defense_lobby     = 2
     interventionism   = 6
   }
-  nationalprovinces      = { 1860 1864 1865 1866 1790 1824 1823 1806 1791 1825 }
-  ownedprovinces         = { 1860 1864 1865 1866 1790 1824 1823 1806 1791 }
-  controlledprovinces    = { 1860 1864 1865 1866 1790 1824 1823 1806 1791 }
+  nationalprovinces      = { 1790 1791 1806 1823 1824 1825 1860 1864 1865 1866 }
+  ownedprovinces         = { 1790 1791 1806 1823 1824 1860 1864 1865 1866 }
+  controlledprovinces    = { 1790 1791 1806 1823 1824 1860 1864 1865 1866 }
   # ROTW Minor Tech '36
   # Group E 1936 techs
   # ######################

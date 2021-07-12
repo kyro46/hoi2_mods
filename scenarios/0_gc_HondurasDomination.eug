@@ -1231,6 +1231,7 @@ globaldata =
 # ###################
 event      = "db\events\AI_GER.txt"
 event      = "db\events\ai_ger_emt.txt"
+event      = "db\events\ai_puppet_creation.txt"
 event      = "db\events\AI_Other.txt"
 event      = "db\events\AI_CHI.txt"
 event      = "db\events\AI_U87.txt"
