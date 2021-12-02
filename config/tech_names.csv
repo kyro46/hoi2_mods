@@ -80,6 +80,7 @@ TECH_CAT_DESTROYERS;Destroyers;Destroyers;Cacciatorpedinieri;Destructores;Zerst�
 TECH_CAT_SUBMARINES;Submarines;Sous-marins;Sottomarini;Submarinos;U-Boote;Okrêty podwodne;;Ïîäâîäíûå ëîäêè;;;x
 TECH_CAT_BATTLESHIPS;Battleships;Cuirassés;Corazzate;Acorazados;Schlachtschiffe;Pancerniki;;Ëèíêîðû;;;x
 TECH_CAT_LIGHTCARRIER;Light Carriers;Porte-avions léger;Portaerei Leggere;Portaaviones ligeros;Geleitträger;Lekkie lotniskowce;;Ëåãêèå àâèàíîñöû;;;x
+TECH_CAT_TRANSPORTS;Transport;Cargo;Veicolo da trasporto;Transporte;Transporter;Transportowiec;;Ýñìèíöû;;;x
 TECH_CAT_MATERIALS;Material Science;Sciences de la matière;Scienza dei Materiali;Ciencia de materiales;Materialwissenschaft;Nauki o materia³ach ;;Ìàòåðèàëîâåäåíèå;;;x
 #;;;;;;;;;;;x
 TECH_INFANTRY_NAME;Infantry;Infanterie;Fanteria;Infantería;Infanterie;Piechota;;Ïåõîòà;;;x
@@ -3275,6 +3276,10 @@ TECH_CMP_NAVAL_115_2_NAME;Modern Light Air Carrier Propulsion;Propulsion porte-a
 TECH_CMP_NAVAL_115_3_NAME;Floating Airbase Deck;Pont base aérienne flottante;Ponte di Volo Flottante;Cubierta de base aérea flotante;Schwimmendes Luftstützpunkt-Deck;P³ywaj¹cy pok³ad lotniczy;;Ïëàâó÷àÿ àâèàáàçà;;;x
 TECH_CMP_NAVAL_115_4_NAME;Modern Light Carrier Aircraft Group;Escadrille aéro-navale moderne;Squadriglia Aeronavale Moderna;Grupo aeronaval embarcado ligero moderno;Moderne Geleitträgerstaffel;Now. lekka lotnicza grupa lotniskowcowa;;Ñîâðåìåííàÿ ïàëóáíàÿ àâèàöèÿ;;;x
 TECH_CMP_NAVAL_115_5_NAME;Modern Light Air Carrier Prototype Testing;Essais du prototype de porte-avions moderne;Test di Prototipi di Portaerei Leggere Moderne;Pruebas protot. de portaaviones ligero moderno;Prototypentests halbmod. Geleitträger;Testy prototypu now. lekkiego lotniskowca;;Èñïûòàíèÿ ñîâðåìåííîãî ëåãêîãî àâèàíîñöà;;;x
+TECH_APP_NAVAL_116_NAME;Large Transport;Grands Cargo;Grandi Veicolo da trasporto;Transporte grandes;Großtransporter;Duzy statek Transportowiec;;Ñîâðåìåííûé ëåãêèé àâèàíîñåö;;;x
+TECH_APP_NAVAL_116_DESC;;;;;;;;;;;x
+TECH_APP_NAVAL_117_NAME;Super Transport;Super Cargo;Super Veicolo da trasporto;Super Transporte;Supertransporter;Super Transportowiec;;Ñîâðåìåííûé ëåãêèé àâèàíîñåö;;;x
+TECH_APP_NAVAL_117_DESC;;;;;;;;;;;x
 #;;;;;;;;;;;x
 TECH_APP_INDUSTRY_100_NAME;Advanced Agricultural Production;Production agricole II;Produzione Agricola Avanzata;Producción agraria avanzada;Fortgeschrittene Landwirtschaftsproduktion;Zaawansowana produkcja rolnicza;;Óñîâåðøåíñò. ñåëüñêîõîçÿéñòâåííîå ïðîèçâîäñòâî;;;x
 TECH_APP_INDUSTRY_100_DESC;;;;;;;;;;;x
@@ -3621,6 +3626,8 @@ SHORT_TECH_APP_NAVAL_112_NAME;Improved Light Carrier;Porte-avions léger III;Por
 SHORT_TECH_APP_NAVAL_113_NAME;Advanced Light Carrier;Porte-avions léger IV;Portaerei Leggera Avanzata;Portaav. ligero mejorado;Fortg. Begleitträger;Zaawansowany lekki lotniskowiec;;Óñîâåðøåíñò.;;;x
 SHORT_TECH_APP_NAVAL_114_NAME;Semi-Modern Light Carrier;P-A léger semi-moderne;Portaerei Leggera Semi Moderna;Portaav. ligero semimoderno;Halbmoderner Begleitträger;Prawie nowoczesny lekki lotniskowiec;;Ïîëóñîâðåìåííûå;;;x
 SHORT_TECH_APP_NAVAL_115_NAME;Modern Light Carrier;Porte-avions léger moderne;Portaerei Leggera Moderna;Portaav. ligero moderno;Moderner Begleitträger;Nowoczesny lekki lotniskowiec;;Ñîâðåìåííûå;;;x
+SHORT_TECH_APP_NAVAL_116_NAME;Large Transport;Grands Cargo;Grandi Veicolo da trasporto;Transporte grandes;Großtransporter;Duzy statek Transportowiec;;Ñîâðåìåííûå;;;x
+SHORT_TECH_APP_NAVAL_117_NAME;Super Transport;Super Cargo;Super Veicolo da trasporto;Super Transporte;Supertransporter;Super Transportowiec;;Ñîâðåìåííûå;;;x
 #;;;;;;;;;;;x
 SHORT_TECH_APP_INDUSTRY_100_NAME;Advanced Prod;Prod. avancée;Produzione Avanzata;Prod. avanzada;Fortg. Prod.;Zaawansowana prod.;;Óñîâåðøåíñò.;;;x
 SHORT_TECH_APP_INDUSTRY_101_NAME;Modern Prod;Prod. Moderne;Produzione Moderna;Prod. moderna;Moderne Prod.;Nowoczesna prod.;;Ñîâðåìåííîå;;;x

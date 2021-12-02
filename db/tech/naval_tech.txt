@@ -35,6 +35,10 @@ technology =
   { tag      = TECH_CAT_BATTLESHIPS
     position = { x = 296 y = 164 }
   }
+   label =
+  { tag      = TECH_CAT_TRANSPORTS
+    position = { x = 24 y = 330 }
+  }
   # Great War Light Cruiser
   application =
   { id        = 3070
@@ -1474,6 +1478,50 @@ technology =
       command = { type = scrap_model which = escort_carrier value = 3 }
       command = { type = new_model which = b_u1 value = 5 }
       command = { type = scrap_model which = b_u1 value = 3 }
+    }
+  }
+    # large transporter
+  application =
+  { id        = 12160
+    name      = TECH_APP_NAVAL_116_NAME
+    desc      = TECH_APP_NAVAL_116_DESC
+    position  = { x = 24 y = 344 }
+    year      = 1943
+    # ?
+    component = { id = 12161 name = TECH_CMP_NAVAL_115_1_NAME type = naval_engineering difficulty = 5 }
+    # ?
+    component = { id = 12162 name = TECH_CMP_NAVAL_115_2_NAME type = naval_engineering difficulty = 5 }
+    # ?
+    component = { id = 12163 name = TECH_CMP_NAVAL_115_3_NAME type = aeronautics difficulty = 5 }
+    # ?
+    component = { id = 12164 name = TECH_CMP_NAVAL_115_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 12165 name = TECH_CMP_NAVAL_115_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
+    required  = {  }
+    effects =
+    { 	  command = { type = new_model which = transport value = 1 }
+    }
+  }
+    # super transporter
+  application =
+  { id        = 12170
+    name      = TECH_APP_NAVAL_117_NAME
+    desc      = TECH_APP_NAVAL_117_DESC
+    position  = { x = 24 y = 364 }
+    year      = 1948
+    # ?
+    component = { id = 12171 name = TECH_CMP_NAVAL_115_1_NAME type = naval_engineering difficulty = 5 }
+    # ?
+    component = { id = 12172 name = TECH_CMP_NAVAL_115_2_NAME type = naval_engineering difficulty = 5 }
+    # ?
+    component = { id = 12173 name = TECH_CMP_NAVAL_115_3_NAME type = aeronautics difficulty = 5 }
+    # ?
+    component = { id = 12174 name = TECH_CMP_NAVAL_115_4_NAME type = electronics difficulty = 5 }
+    # ?
+    component = { id = 12175 name = TECH_CMP_NAVAL_115_5_NAME type = technical_efficiency difficulty = 5 double_time = yes }
+    required  = { 12160 }
+    effects =
+    { 	  command = { type = new_model which = transport value = 2 }
     }
   }
 }
