@@ -1,0 +1,29 @@
+naval_unit_type = 1
+# 0 - General Purpose
+model = {
+	cost						= 5
+	buildtime 					= 90
+	defaultorganisation 				= 30
+	morale						= 30
+	manpower					= 1
+	maxspeed					= 12
+	surfacedetectioncapability			= 0
+	airdetectioncapability				= 0
+	subdetectioncapability				= 0
+	visibility					= 90
+	seadefence					= 0
+	airdefence					= 0
+	seaattack					= 0
+	convoyattack					= 0
+	airattack					= 0
+	subattack					= 0
+	shorebombardment				= 0
+	transportcapability				= 40
+	
+	range						= 3000
+	supplyconsumption				= 0.3
+	fuelconsumption					= 1
+	distance					= 0.1
+	max_supply_stock = 100
+	max_oil_stock = 100
+}
