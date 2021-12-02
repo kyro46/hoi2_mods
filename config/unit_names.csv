@@ -530,6 +530,8 @@ MODEL_28_7;Heavy Submarine;;Sommergibile Pesante;Submarino pesado;Schweres Uboot
 MODEL_28_8;Improved Heavy Submarine;;Sommergibile Pesante migliorato;Submarino pesado mejorado;Verbessertes schweres Uboot;;Submarino Pesado Melhorado;Óëó÷. òÿæ. ñóáìàðèíà;;;x
 MODEL_29_0;Nuclear Submarine;Sous-marin nucléaire;Sottomarino nucleare;Submarino nuclear;Atom-U-Boot;Nuklearny okrêt podwodny;;Àòîìíàÿ ïîäâîäíàÿ ëîäêà;;;x
 MODEL_30_0;Transport;Cargo;Veicolo da trasporto;Transporte;Transporter;Transportowiec;;Òðàíñïîðò;;;x
+MODEL_30_1;Large Transport;Grands Cargo;Grandi Veicolo da trasporto;Transporte grandes;Großtransporter;Duzy statek Transportowiec;;Òðàíñïîðò;;;x
+MODEL_30_2;Super Transport;Super Cargo;Super Veicolo da trasporto;Super Transporte;Supertransporter;Super Transportowiec;;Òðàíñïîðò;;;x
 #;;;;;;;;;;;x
 BRIG_MODEL_0_0;No Brigade;Aucune brigade;Nessuna brigata;Sin brigada;Keine Brigade;Bez brygady;;Íåò áðèãàäû;;;x
 BRIG_MODEL_1_0;Great War Light Artillery;Artillerie légère Grande Guerre;Artiglieria leggera della Grande Guerra;Artillería ligera de la Gran Guerra;Leichte Vorkriegs-Artillerie;Lekka artyleria z I w. œw.;;Ëåãê. àðòèëëåðèÿ Ïåðâîé Ìèðîâîé;;;x
